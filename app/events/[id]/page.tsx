@@ -204,7 +204,7 @@ export default function EventDetailPage() {
               {isTeamAWinner && (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FFD500]/15 border border-[#FFD500]/25 text-[10px] font-black text-[#FFD500]">
                   <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  冠军
+                  胜者
                 </span>
               )}
             </div>
@@ -233,7 +233,7 @@ export default function EventDetailPage() {
               {isTeamBWinner && (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FFD500]/15 border border-[#FFD500]/25 text-[10px] font-black text-[#FFD500]">
                   <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  冠军
+                  胜者
                 </span>
               )}
             </div>
