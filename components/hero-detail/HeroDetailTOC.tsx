@@ -5,7 +5,7 @@ const items = [
   { id: 'gadgets', label: '随身妙具' },
   { id: 'starpowers', label: '星辉之力' },
   { id: 'hypercharge', label: '极限充能' },
-  { id: 'gears', label: '随身秒具' },
+  { id: 'gears', label: '装备' },
   { id: 'pins', label: '表情' },
 ];
 
