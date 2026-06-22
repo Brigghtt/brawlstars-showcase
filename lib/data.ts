@@ -1285,9 +1285,9 @@ export const modeData: Record<string, GameMode> = {
     banner: "/mode-banner/hotzone.jpg",
     color: "#dc3c52",
     sections: [
-      { img: "/Usedinmode/mdimg/mode51.png", text: "3v3占领据点模式，站在据点内即可积累分数，先满100%的队伍获胜。", align: "right" },
-      { img: "/Usedinmode/mdimg/mode52.png", text: "地图有多个据点，控制越多得分越快，需要不断争夺与防守。", align: "left" },
-      { img: "/Usedinmode/mdimg/mode53.png", text: "坦克类角色适合占点，输出角色负责掩护，战术性极强。", align: "right" }
+      { img: "/Usedinmode/mdimg/hotzone11.jpg", text: "3v3占领据点模式，站在据点内即可积累分数，先满100%的队伍获胜。", align: "right" },
+      { img: "/Usedinmode/mdimg/hotzone12.jpg", text: "地图有多个据点，控制越多得分越快，需要不断争夺与防守。", align: "left" },
+      { img: "/Usedinmode/mdimg/hotzone13.jpg", text: "坦克类角色适合占点，输出角色负责掩护，战术性极强。", align: "right" }
     ]
   },
   basketball: {
@@ -1433,7 +1433,7 @@ export const liveMapImages: Record<string, string> = {
   gemgrab:    '/Usedinmode/mdimg/mode21.png',
   brawlball:  '/Usedinmode/mdimg/brawlball51.jpg',
   knockout:   '/Usedinmode/mdimg/mode41.png',
-  hotzone:    '/Usedinmode/mdimg/mode51.png',
+  hotzone:    '/Usedinmode/mdimg/hotzone11.jpg',
   basketball: '/Usedinmode/mdimg/mode61.png',
   duels:      '/Usedinmode/mdimg/duels11.jpg',
   bounty:     '/Usedinmode/mdimg/mode81.png',
