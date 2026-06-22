@@ -10,7 +10,7 @@ function HeroCard({ name, avatarUrl }: { name: string; avatarUrl: string }) {
     name === '雪莉'
       ? 'scale-[1.5] object-[center_25%]'
       : name === '柯尔特'
-      ? 'scale-[1.5] object-[70%_25%]'
+      ? 'scale-[1.5] object-[80%_25%]'
       : '';
   return (
     <div className="relative w-full aspect-[3/2] border-3 border-black rounded-lg overflow-visible bg-white cursor-pointer transition-all duration-300 hover:scale-110 hover:shadow-[0_10px_30px_rgba(255,213,0,0.4)] hover:z-10 hover:border-[#FFD500]">
