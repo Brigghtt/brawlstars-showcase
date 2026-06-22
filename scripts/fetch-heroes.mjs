@@ -120,7 +120,7 @@ const CN_NAME_MAP = {
   'Najia': '娜吉亚',
   'Damian': '达米安',
   'Starr Nova': '丝塔诺娃',
-  'Bolt': '波尔特',
+  'Bolt': '博尔特',
 };
 
 // BrawlAPI class -> 站点筛选用中文定位
@@ -139,6 +139,7 @@ const CLASS_TO_ROLE = {
 /** @type {Record<string, string>} */
 const ROLE_OVERRIDES = {
   'Jae-Yong': '辅助',
+  'Bolt': '坦克',
 };
 
 const knownByApiId = new Map(KNOWN_HEROES.map(k => [k.apiId, k]));
@@ -211,12 +212,42 @@ const STAT_TERM_CN = {
   'Very Slow': '极慢',
 };
 
+function balanceParens(str) {
+  let open = 0;
+  let out = '';
+  for (const ch of String(str)) {
+    if (ch === '(') open++;
+    else if (ch === ')') open--;
+    out += ch;
+  }
+  while (open > 0) {
+    out += ')';
+    open--;
+  }
+  return out;
+}
+
 function cnStatText(text) {
   if (!text) return text;
-  let s = String(text).replace(/\bseconds?\b/g, '秒');
+  let s = balanceParens(String(text)).replace(/\bseconds?\b/g, '秒');
   for (const [en, cn] of Object.entries(STAT_TERM_CN)) {
     s = s.replace(new RegExp(`\\b${en}\\b`, 'g'), cn);
   }
+  // 兜底：处理中英文混合的 Very/Fast/Slow 截断残留
+  s = s.replace(/Very 慢/g, '极慢');
+  s = s.replace(/Very 快/g, '极快');
+  s = s.replace(/Very Long/g, '极远');
+  // 括号内混有其他说明（如 jump; Very 慢）时，翻译其中的英文术语
+  s = s.replace(/\(([^)]*Very[^)]*)\)/g, (m, inner) => {
+    let out = inner;
+    const terms = { 'Very Long': '极远', 'Very Short': '极近', 'Very Fast': '极快', 'Very Slow': '极慢' };
+    for (const [en, cn] of Object.entries(terms)) {
+      out = out.replace(new RegExp(`\\b${en}\\b`, 'g'), cn);
+    }
+    return `(${out})`;
+  });
+  // 单独被截断的 Very
+  s = s.replace(/\(Very\)/g, '(极远)');
   return s;
 }
 
@@ -253,6 +284,8 @@ function cleanDesc(html) {
     .replace(/<[^>]+>/g, '')
     .replace(/<!card\.[^>]+>/g, 'x')
     .replace(/&nbsp;/g, ' ')
+    .replace(/\\n/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
@@ -382,9 +415,16 @@ async function resolveHeroImage(localId, apiId) {
 
 async function main() {
   console.log('Fetching brawlers from BrawlAPI...');
-  const res = await fetch('https://api.brawlapi.com/v1/brawlers');
-  if (!res.ok) throw new Error(`BrawlAPI error: ${res.status}`);
-  const { list } = await res.json();
+  let list = [];
+  try {
+    const res = await fetch('https://api.brawlapi.com/v1/brawlers');
+    if (!res.ok) throw new Error(`BrawlAPI error: ${res.status}`);
+    list = (await res.json()).list;
+  } catch (err) {
+    console.warn(`BrawlAPI fetch failed: ${err.message}, falling back to brawlers_api.json`);
+    const raw = await fs.readFile(path.join(ROOT, 'brawlers_api.json'), 'utf-8');
+    list = JSON.parse(raw).list;
+  }
 
   // 读取旧 36 位英雄的中文数据（按 apiId 索引，方便重新排序）
   let oldHeroes = {};
@@ -420,7 +460,7 @@ async function main() {
   // 按 API ID 升序排列，新英雄排在 36 位之后
   const sorted = [...list].sort((a, b) => a.id - b.id);
 
-  const heroes = [];
+  let heroes = [];
   const usedLocalIds = new Set();
   let nextLocalId = 37;
 
@@ -439,6 +479,11 @@ async function main() {
     const cnName = known ? known.cnName : (CN_NAME_MAP[enName] || enName);
     const fandom = fandomStats[enName] || {};
     const old = oldHeroes[b.id];
+
+    // 过滤掉混入其他英雄的妙具（如 Bolt 被错误附加了 Brock 的妙具）
+    if (enName === 'Bolt' && b.gadgets) {
+      b.gadgets = b.gadgets.filter(g => !['Rocket Laces', 'Rocket Fuel'].includes(g.name));
+    }
     const role = known?.role || ROLE_OVERRIDES[enName] || CLASS_TO_ROLE[b.class?.name] || '输出';
 
     // 头像：优先本地 apiId，最后 CDN
@@ -447,18 +492,21 @@ async function main() {
       avatar = `https://cdn.brawlify.com/brawlers/borders/${b.id}.png`;
     }
 
-    // 星辉：旧数据中文 > 机器翻译 > 英文原文，追加 Fandom 数值
+    // 星辉：旧数据中文 > 机器翻译 > 英文原文，用 Fandom 数值填充 x 占位符
     const starPowers = [];
     for (let i = 0; i < (b.starPowers || []).length; i++) {
       const sp = b.starPowers[i];
       const oldSp = old?.skills?.[i + 2];
       const cnSp = starPowerCn[sp.name];
-      const fandomSp = fandom.starPowerValues?.[sp.name];
-      let desc = oldSp?.desc || cnSp?.cnDesc || cleanDesc(sp.descriptionHtml || sp.description);
+      const spValues = getAbilityValues(fandom, sp.name);
+      let desc = oldSp?.desc || cleanDesc(cnSp?.cnDesc) || cleanDesc(sp.descriptionHtml || sp.description);
       desc = localizeText(desc);
-      if (fandomSp?.value) {
-        const label = fandomSp.label ? `${fandomSp.label}：` : '';
-        desc = `${desc} ${label}${fandomSp.value}`.trim();
+      if (spValues.length) {
+        desc = fillPlaceholders(desc, spValues);
+      }
+      // 硬编码：Fandom 未提供但已知的关键数值
+      if (enName === 'Bolt' && sp.name === 'Unstoppaball') {
+        desc = desc.replace(/x%/g, '15%');
       }
       starPowers.push({
         id: sp.id,
@@ -468,14 +516,18 @@ async function main() {
       });
     }
 
-    // 妙具：机器翻译 > 英文原文，追加 Fandom 冷却时间
+    // 妙具：机器翻译 > 英文原文，用 Fandom 数值填充 x 占位符，并追加冷却时间
     const gadgets = [];
     for (let i = 0; i < (b.gadgets || []).length; i++) {
       const g = b.gadgets[i];
       const cnG = gadgetCn[g.name];
-      const fandomCd = fandom.gadgetCooldowns?.[g.name];
-      let desc = cnG?.cnDesc || cleanDesc(g.descriptionHtml || g.description);
+      const fandomCd = findFandomEntry(fandom.gadgetCooldowns, g.name) || fandom.gadgetCooldowns?.[g.name];
+      const gadgetValues = getAbilityValues(fandom, g.name);
+      let desc = cleanDesc(cnG?.cnDesc) || cleanDesc(g.descriptionHtml || g.description);
       desc = localizeText(desc);
+      if (gadgetValues.length) {
+        desc = fillPlaceholders(desc, gadgetValues);
+      }
       if (fandomCd) {
         desc = `${desc}（冷却：${cnCooldown(fandomCd)}）`;
       }
@@ -531,18 +583,10 @@ async function main() {
         damage: fandom.damage || 0,
         range: cnStatText(fandom.range) || '-',
         reload: cnStatText(fandom.reload) || '-',
-        speed: String(fandom.speed || '-'),
+        speed: cnStatText(fandom.speed) || '-',
       },
-      attack: {
-        name: old?.skills?.[0]?.name || '普通攻击',
-        desc: old?.skills?.[0]?.desc || '',
-        icon: old?.skills?.[0]?.icon || '/Usedinheroes/skills/skill0.png',
-      },
-      super: {
-        name: old?.skills?.[1]?.name || '超级技能',
-        desc: old?.skills?.[1]?.desc || '',
-        icon: old?.skills?.[1]?.icon || '/Usedinheroes/skills/skill01.png',
-      },
+      attack: resolveAttackDesc(enName, fandom, old?.skills?.[0]),
+      super: resolveSuperDesc(enName, fandom, old?.skills?.[1]),
       starPowers,
       gadgets,
       gears,
@@ -633,6 +677,84 @@ export const heroListV2 = Object.values(heroDetailsData).map(h => ({
 
   await fs.writeFile(outputPath, ts, 'utf-8');
   console.log(`Wrote ${heroes.length} heroes to ${outputPath}`);
+}
+
+function normalizeName(name) {
+  return String(name)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function findFandomEntry(map, name) {
+  if (!map) return undefined;
+  const key = Object.keys(map).find(k => normalizeName(k) === normalizeName(name));
+  return key ? map[key] : undefined;
+}
+
+function getAbilityValues(fandom, name) {
+  // 优先使用 infobox 中的 gadget/starPower 数值
+  const gadgetEntry = findFandomEntry(fandom.gadgetValues, name);
+  if (gadgetEntry?.values?.length) return gadgetEntry.values;
+  const spEntry = findFandomEntry(fandom.starPowerValues, name);
+  if (spEntry?.values?.length) return spEntry.values;
+  // fallback：从 Quote 描述文本中提取的数字
+  const nums = findFandomEntry(fandom.abilityDescNumbers, name);
+  if (Array.isArray(nums) && nums.length) return nums.map(v => ({ value: v, label: '' }));
+  return [];
+}
+
+function fillPlaceholders(desc, values) {
+  if (!desc || !values?.length) return desc;
+  const items = values.map(v => (typeof v === 'string' ? { value: v, label: '' } : v));
+  let remaining = items.slice();
+  return desc.replace(/x(%?)/g, (match, suffix) => {
+    if (!remaining.length) return match;
+    let idx = -1;
+    if (suffix === '%') {
+      idx = remaining.findIndex(v => String(v.value).endsWith('%'));
+    } else {
+      idx = remaining.findIndex(v => !String(v.value).endsWith('%'));
+    }
+    if (idx === -1) idx = 0;
+    const item = remaining[idx];
+    remaining.splice(idx, 1);
+    let replacement = String(item.value);
+    if (suffix === '%' && !replacement.endsWith('%')) replacement += '%';
+    return replacement;
+  });
+}
+
+function resolveAttackDesc(enName, fandom, oldSkill) {
+  const fallback = { name: '普通攻击', desc: '', icon: '/Usedinheroes/skills/skill0.png' };
+  if (oldSkill?.name) {
+    fallback.name = oldSkill.name;
+    fallback.icon = oldSkill.icon || fallback.icon;
+    if (oldSkill.desc) fallback.desc = oldSkill.desc;
+  }
+  if (enName === 'Bolt') {
+    const min = fandom.attackMin ?? (fandom.damage ? Math.round(fandom.damage * 0.5) : 540);
+    const max = fandom.attackMax ?? (fandom.damage || 900);
+    fallback.name = '滚动撞击';
+    fallback.desc = `博尔特向前滚动撞击敌人，移动速度越快造成的伤害越高，最低 ${min}，最高 ${max}。消耗弹药可让本次伤害翻倍。`;
+  }
+  return fallback;
+}
+
+function resolveSuperDesc(enName, fandom, oldSkill) {
+  const fallback = { name: '超级技能', desc: '', icon: '/Usedinheroes/skills/skill01.png' };
+  if (oldSkill?.name) {
+    fallback.name = oldSkill.name;
+    fallback.icon = oldSkill.icon || fallback.icon;
+    if (oldSkill.desc) fallback.desc = oldSkill.desc;
+  }
+  if (enName === 'Bolt') {
+    const dps = fandom.superDamage || fandom.super || 550;
+    fallback.name = '超速过载';
+    fallback.desc = `博尔特进入超速状态，获得移速提升与减伤护盾，并在身后留下闪电轨迹，对触碰的敌人每秒造成 ${dps} 伤害。`;
+  }
+  return fallback;
 }
 
 main().catch(err => {

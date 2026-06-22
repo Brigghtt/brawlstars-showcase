@@ -42,12 +42,17 @@ export default function StatusSection({ hero }: StatusSectionProps) {
   const [level, setLevel] = useState(MAX_LEVEL);
   const scaledHealth = scaleFromMax(hero.stats.health, level);
   const scaledDamage = scaleFromMax(hero.stats.damage, level);
+  const formatStat = (value: string | number) => {
+    if (typeof value !== 'string') return value;
+    return cleanHeroText(localizeHeroText(value)).replace(/\s*([（(])/g, '\n$1');
+  };
+
   const stats = [
     { key: 'health', label: '生命值', value: scaledHealth || '-' },
     { key: 'damage', label: '伤害', value: scaledDamage || '-' },
-    { key: 'range', label: '射程', value: cleanHeroText(localizeHeroText(hero.stats.range)) },
-    { key: 'reload', label: '装弹速度', value: cleanHeroText(localizeHeroText(hero.stats.reload)) },
-    { key: 'speed', label: '移动速度', value: hero.stats.speed || '-' },
+    { key: 'range', label: '射程', value: formatStat(hero.stats.range) },
+    { key: 'reload', label: '装弹速度', value: formatStat(hero.stats.reload) },
+    { key: 'speed', label: '移动速度', value: formatStat(hero.stats.speed) },
   ];
 
   return (
@@ -83,7 +88,7 @@ export default function StatusSection({ hero }: StatusSectionProps) {
             className="bg-white/10 rounded-xl p-4 border border-white/10 text-center hover:bg-white/15 transition-all"
           >
             <p className="text-white/70 text-sm mb-1">{s.label}</p>
-            <p className="text-2xl md:text-3xl font-black text-[#FFD500]">{s.value}</p>
+            <p className="text-2xl md:text-3xl font-black text-[#FFD500] whitespace-pre-line">{s.value}</p>
           </div>
         ))}
       </div>

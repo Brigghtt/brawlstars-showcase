@@ -171,8 +171,44 @@ function firstNum(str) {
 
 function firstToken(str) {
   // 取第一个 "数值 (单位/描述)"，例如 "7.67 (Long)"、"770 (Fast)"
-  const m = String(str).match(/[\d.]+\s*\([^)]+\)/);
-  return m ? m[0] : String(str).split(/\s+/)[0] || '-';
+  // 允许描述中再出现一层括号，如 "3 seconds (full ammo bar; Very Slow)"
+  const text = String(str).trim();
+  const m = text.match(/[\d.]+[^()]*\([^()]+\)/);
+  return m ? m[0] : text.split(/\s+/)[0] || '-';
+}
+
+function cleanQuote(text) {
+  return String(text)
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\{\{[^}]+\}\}/g, '')
+    .replace(/Cooldown:\s*[\d.]+\s*seconds?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractNumbersFromDesc(text) {
+  return [...text.matchAll(/[\d,.]+%?/g)]
+    .map(m => m[0])
+    .filter(v => /\d/.test(v));
+}
+
+function extractAbilityNumbers(wikitext, name) {
+  if (!name) return [];
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`===\\s*${escaped}\\s*===`, 'i');
+  const m = wikitext.match(re);
+  if (!m) return [];
+  const after = m.index + m[0].length;
+  let end = wikitext.length;
+  const next3 = wikitext.indexOf('\n===', after);
+  const next2 = wikitext.indexOf('\n==', after);
+  if (next3 !== -1) end = Math.min(end, next3);
+  if (next2 !== -1) end = Math.min(end, next2);
+  const section = wikitext.slice(after, end);
+  const quote = section.match(/\{\{Quote\|([\s\S]*?)(?:\|[^\|]*?)?\}\}/);
+  const desc = quote ? cleanQuote(quote[1]) : cleanQuote(section.split('\n')[0] || '');
+  return extractNumbersFromDesc(desc);
 }
 
 async function parseHero(enName, cookie) {
@@ -195,20 +231,63 @@ async function parseHero(enName, cookie) {
   const superL11 = levels.Super?.[11] || params.Super;
 
   const gadgetCooldowns = {};
+  const gadgetValues = {};
   for (let i = 1; i <= 3; i++) {
     const name = params[`Gadget${i}Name`];
+    if (!name) continue;
     const cd = params[`Gadget${i}Cooldown`];
-    if (name) gadgetCooldowns[name] = cd || '';
+    gadgetCooldowns[name] = cd || '';
+
+    const values = [];
+    const mainVal = params[`Gadget${i}`];
+    const mainLabel = params[`Gadget${i}Label`];
+    if (mainVal !== undefined && String(mainVal).toLowerCase() !== 'x') values.push({ value: mainVal, label: mainLabel || '' });
+    for (let j = 2; j <= 5; j++) {
+      const v = params[`Gadget${i}${j}`];
+      const l = params[`Gadget${i}Label${j}`];
+      if (v !== undefined && String(v).toLowerCase() !== 'x') values.push({ value: v, label: l || '' });
+    }
+    // 合并 infobox 数值与 Quote 描述中的数字，以覆盖多个 x 占位符
+    const quoteNums = extractAbilityNumbers(wikitext, name);
+    const seen = new Set(values.map(v => String(v.value)));
+    for (const n of quoteNums) {
+      if (!seen.has(n)) values.push({ value: n, label: '' });
+    }
+    if (values.length) {
+      gadgetValues[name] = { values, cooldown: cd || '', range: params[`Gadget${i}Range`] || '' };
+    }
   }
 
   const starPowerValues = {};
   for (let i = 1; i <= 3; i++) {
     const name = params[`StarPower${i}Name`];
     if (!name) continue;
-    starPowerValues[name] = {
-      value: params[`StarPower${i}`] || '',
-      label: params[`StarPower${i}Label`] || '',
-    };
+
+    const values = [];
+    const mainVal = params[`StarPower${i}`];
+    const mainLabel = params[`StarPower${i}Label`];
+    if (mainVal !== undefined && String(mainVal).toLowerCase() !== 'x') values.push({ value: mainVal, label: mainLabel || '' });
+    for (let j = 2; j <= 5; j++) {
+      const v = params[`StarPower${i}${j}`];
+      const l = params[`StarPower${i}Label${j}`];
+      if (v !== undefined && String(v).toLowerCase() !== 'x') values.push({ value: v, label: l || '' });
+    }
+    const quoteNums = extractAbilityNumbers(wikitext, name);
+    const seen = new Set(values.map(v => String(v.value)));
+    for (const n of quoteNums) {
+      if (!seen.has(n)) values.push({ value: n, label: '' });
+    }
+    if (values.length) {
+      starPowerValues[name] = { values };
+    }
+  }
+
+  // 从所有能力标题（gadget/star power）的 Quote 描述中提取数字，用于名称不在 infobox 中的情况
+  const abilityDescNumbers = {};
+  const headings = [...wikitext.matchAll(/===\s*([^=]+?)\s*===/g)].map(m => m[1].trim());
+  for (const h of [...new Set(headings)]) {
+    const nums = extractAbilityNumbers(wikitext, h);
+    if (nums.length) abilityDescNumbers[h] = nums;
   }
 
   // 极充描述在 infobox 外，取 {{Hypercharge}} 后第一个非模板文本
@@ -224,12 +303,16 @@ async function parseHero(enName, cookie) {
   return {
     health: firstNum(healthL11),
     damage: firstNum(attackL11),
+    attackMin: params.Attack2 ? firstNum(params.Attack) : undefined,
+    attackMax: params.Attack2 ? firstNum(params.Attack2) : firstNum(attackL11),
     superDamage: firstNum(superL11),
     range: params.AttackRange ? firstToken(params.AttackRange) : '-',
     reload: params.Reload || '-',
     speed: params.MovementSpeed ? firstToken(params.MovementSpeed) : '-',
     gadgetCooldowns,
+    gadgetValues,
     starPowerValues,
+    abilityDescNumbers,
     hypercharge: {
       multiplier: params.HyperchargeMultiplier || '',
       desc: hyperDesc,

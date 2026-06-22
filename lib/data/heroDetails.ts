@@ -75,7 +75,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 600,
       "range": "7.67 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "大口径散弹枪",
@@ -97,7 +97,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000135,
         "name": "快速包扎",
-        "desc": "雪莉的生命值降至40%以下时，将立即恢复一定生命值。快速包扎触发间隔为15秒 Heal：2106",
+        "desc": "雪莉的生命值降至40%以下时，将立即恢复一定生命值。快速包扎触发间隔为15秒",
         "icon": "/starpowers/Shelly/shelly_starpower_02.png"
       }
     ],
@@ -213,7 +213,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 720,
       "range": "9 (远)",
       "reload": "1.3 秒 (极快) 1.4 秒 (while Hyper Buffie is active)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "双枪连射",
@@ -341,7 +341,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1060,
       "range": "9 (远)",
       "reload": "1.8 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "电磁脉冲",
@@ -357,7 +357,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000083,
         "name": "炮台充能",
-        "desc": "炮台攻击敌人时，可为杰西积攒超级技能能量 Heal：954",
+        "desc": "炮台攻击敌人时，可为杰西积攒超级技能能量",
         "icon": "/starpowers/Jessie/jessie_starpower_01.png"
       },
       {
@@ -377,7 +377,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000295,
         "name": "反冲弹簧",
-        "desc": "Scrappy 的攻击速度加倍，持续 x 秒。（冷却：11 秒）",
+        "desc": "Scrappy 的攻击速度加倍，持续 5 秒。（冷却：11 秒）",
         "icon": "/gadgets/Jessie/jessie_gadget_02.png"
       }
     ],
@@ -458,7 +458,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 880,
       "range": "5.33 (普通)",
       "reload": "1.6 秒 (普通) 0.8 秒 (with Berserker)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "霰弹轰击",
@@ -596,7 +596,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1160,
       "range": "9 (远)",
       "reload": "2.1 秒 (慢) 1.785 秒 (with Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "火箭弹",
@@ -626,7 +626,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000245,
         "name": "火箭鞋带",
-        "desc": "布洛克炸开下方的地面，将自己推到空中。爆炸对附近的敌人造成 x 点伤害。（冷却：15 秒）",
+        "desc": "布洛克炸开下方的地面，将自己推到空中。爆炸对附近的敌人造成 464 点伤害。（冷却：15 秒）",
         "icon": "/gadgets/Brock/brock_gadget_01.png"
       },
       {
@@ -712,8 +712,8 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 4800,
       "damage": 1360,
       "range": "8.67 (远)",
-      "reload": "2.4 秒 (Very 慢) 2.18 秒 (with Automa-Tick Reload)",
-      "speed": "720"
+      "reload": "2.4 秒 (极慢) 2.18 秒 (with Automa-Tick Reload)",
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "遥控地雷",
@@ -743,13 +743,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000253,
         "name": "矿山狂热",
-        "desc": "蜱虫的下一次攻击会发射 x 枚地雷。（冷却：15 秒）",
+        "desc": "蜱虫的下一次攻击会发射 6 枚地雷。（冷却：15 秒）",
         "icon": "/gadgets/Tick/tick_gadget_01.png"
       },
       {
         "id": 23000355,
         "name": "最后的万岁",
-        "desc": "蜱虫获得 x% 护盾，持续 x 秒。之后，它会爆发 x 点伤害。（冷却：15 秒）",
+        "desc": "蜱虫获得 50% 护盾，持续 1088 秒。之后，它会爆发 1 点伤害。（冷却：15 秒）",
         "icon": "/gadgets/Tick/tick_gadget_02.png"
       }
     ],
@@ -828,9 +828,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 10400,
       "damage": 680,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "1.5 秒 (普通) 1.275 秒 (with Reload Gear)",
-      "speed": "580"
+      "speed": "580 (极慢)"
     },
     "attack": {
       "name": "像素激光",
@@ -866,7 +866,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000318,
         "name": "额外学分",
-        "desc": "8-Bit的下一次攻击射弹数量增加到x。（冷却：11 秒）",
+        "desc": "8-Bit的下一次攻击射弹数量增加到8。（冷却：11 秒）",
         "icon": "/gadgets/8-Bit/8bit_gadget_02.png"
       }
     ],
@@ -947,7 +947,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1120,
       "range": "6.67 (普通)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "魅惑音波",
@@ -969,7 +969,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000199,
         "name": "魅力护盾",
-        "desc": "释放超级技能后获得护盾，提升生存能力 Heal per second：562",
+        "desc": "释放超级技能后获得护盾，提升生存能力",
         "icon": "/starpowers/Emz/emz_starpower_02.png"
       }
     ],
@@ -1085,7 +1085,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1600,
       "range": "7.33 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "灼热原浆",
@@ -1101,7 +1101,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000082,
         "name": "生命之源",
-        "desc": "灼烧伤害提升，对残血敌人压制效果更强 Heal：486",
+        "desc": "灼烧伤害提升，对残血敌人压制效果更强",
         "icon": "/starpowers/Barley/barley_starpower_01.png"
       },
       {
@@ -1121,7 +1121,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000293,
         "name": "草本补品",
-        "desc": "巴利向附近的盟友投掷治疗药水，创建一个每秒可治疗 x 生命值的区域。（冷却：17 秒）",
+        "desc": "巴利向附近的盟友投掷治疗药水，创建一个每秒可治疗 648 生命值的区域。（冷却：17 秒）",
         "icon": "/gadgets/Barley/barley_gadget_02.png"
       }
     ],
@@ -1202,7 +1202,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1520,
       "range": "7 (远)",
       "reload": "1.6 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "治愈音波",
@@ -1224,7 +1224,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000144,
         "name": "持续回响",
-        "desc": "超级技能释放后，短时间内持续为队友少量回血 Damage：1368",
+        "desc": "超级技能释放后，短时间内持续为队友少量回血",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000144.png"
       }
     ],
@@ -1232,13 +1232,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000267,
         "name": "音叉",
-        "desc": "波科和所有附近的盟友每秒恢复 x 生命值，持续 x 秒。（冷却：20 秒）",
+        "desc": "波科和所有附近的盟友每秒恢复 640 生命值，持续 800 秒。（冷却：20 秒）",
         "icon": "/gadgets/Poco/poco_gadget_01.png"
       },
       {
         "id": 23000350,
         "name": "保护曲",
-        "desc": "消除大范围内友方乱斗者的主动不利影响，并提供 x 秒免疫力。（冷却：18 秒）",
+        "desc": "消除大范围内友方乱斗者的主动不利影响，并提供 4 秒免疫力。（冷却：18 秒）",
         "icon": "/gadgets/Poco/poco_gadget_02.png"
       }
     ],
@@ -1319,7 +1319,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1000,
       "range": "3.67 (近)",
       "reload": "1 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "藤蔓打击",
@@ -1335,13 +1335,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000124,
         "name": "植物护甲",
-        "desc": "受到的远程伤害降低，提升对射手的抗性 Heal per second：389",
+        "desc": "受到的远程伤害降低，提升对射手的抗性",
         "icon": "/starpowers/Rosa/rosa_starpower_01.png"
       },
       {
         "id": 23000147,
         "name": "草丛滋养",
-        "desc": "在草丛中时，缓慢回复自身血量 Damage Increase：270",
+        "desc": "在草丛中时，缓慢回复自身血量",
         "icon": "/starpowers/Rosa/rosa_starpower_02.png"
       }
     ],
@@ -1436,7 +1436,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1600,
       "range": "7.33 (远)",
       "reload": "1.6 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "反弹炸弹",
@@ -1458,7 +1458,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000155,
         "name": "连锁爆炸",
-        "desc": "炸弹爆炸有概率触发小型二次爆炸 Damage Increase：1440",
+        "desc": "炸弹爆炸有概率触发小型二次爆炸",
         "icon": "/starpowers/Dynamike/dynamike_starpower_02.png"
       }
     ],
@@ -1466,13 +1466,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000258,
         "name": "指尖陀螺",
-        "desc": "迪纳麦克以更快的移动速度猛烈旋转，并向自己周围扔出多根炸药。每个炸药对敌人造成 x 点伤害。（冷却：12 秒）",
+        "desc": "迪纳麦克以更快的移动速度猛烈旋转，并向自己周围扔出多根炸药。每个炸药对敌人造成 1920 点伤害。（冷却：12 秒）",
         "icon": "/gadgets/Dynamike/dynamike_gadget_01.png"
       },
       {
         "id": 23000294,
         "name": "书包充电",
-        "desc": "一旦激活，下一次主要攻击也会使敌人昏迷 x 秒。（冷却：23 秒）",
+        "desc": "一旦激活，下一次主要攻击也会使敌人昏迷 1.5 秒。（冷却：23 秒）",
         "icon": "/gadgets/Dynamike/dynamike_gadget_02.png"
       }
     ],
@@ -1553,7 +1553,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1920,
       "range": "6 (普通)",
       "reload": "1.1 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "熊灵之力",
@@ -1691,7 +1691,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 980,
       "range": "8.67 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "海盗炮弹",
@@ -1713,7 +1713,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000142,
         "name": "炮台耐久",
-        "desc": "海盗船炮台血量提升，存活时间更长 Damage：1235",
+        "desc": "海盗船炮台血量提升，存活时间更长",
         "icon": "/starpowers/Penny/penny_starpower_02.png"
       }
     ],
@@ -1804,9 +1804,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 5000,
       "damage": 340,
-      "range": "10 (Very",
-      "reload": "2.3 秒 (Very 慢)",
-      "speed": "720"
+      "range": "10 (极远)",
+      "reload": "2.3 秒 (极慢)",
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "精准狙击",
@@ -1822,7 +1822,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000091,
         "name": "优雅走位",
-        "desc": "攻击后短时间提升移动速度，便于调整狙击位置 Damage Increase：1071",
+        "desc": "攻击后短时间提升移动速度，便于调整狙击位置",
         "icon": "/starpowers/Piper/piper_starpower_01.png"
       },
       {
@@ -1836,7 +1836,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000268,
         "name": "自动瞄准器",
-        "desc": "派珀向最近的敌人发出防御射击，造成 x 点伤害，同时还将他们击退。（冷却：18 秒）",
+        "desc": "派珀向最近的敌人发出防御射击，造成 136 点伤害，同时还将他们击退。（冷却：18 秒）",
         "icon": "/gadgets/Piper/piper_gadget_01.png"
       },
       {
@@ -1921,9 +1921,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6000,
       "damage": 600,
-      "range": "9.67 (Very",
+      "range": "9.67 (极远)",
       "reload": "1.2 秒 (极快) 1.02 秒 (with Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "弹射弹珠",
@@ -1939,7 +1939,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000080,
         "name": "弹珠加速",
-        "desc": "弹珠飞行速度提升，更易命中移动中的敌人 Damage Increase：216",
+        "desc": "弹珠飞行速度提升，更易命中移动中的敌人",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000080.png"
       },
       {
@@ -1959,7 +1959,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000409,
         "name": "充气城堡",
-        "desc": "里科的下一次基本攻击将从每次射弹反弹中治愈他 x 生命值。（冷却：17 秒）",
+        "desc": "里科的下一次基本攻击将从每次射弹反弹中治愈他 192 生命值。（冷却：17 秒）",
         "icon": "/gadgets/Rico/rico_gadget_02.png"
       }
     ],
@@ -2040,7 +2040,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 980,
       "range": "7.67 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "尖刺射击",
@@ -2178,7 +2178,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1280,
       "range": "8.67 (远)",
       "reload": "1.7 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "穿透箭",
@@ -2214,7 +2214,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000289,
         "name": "绊线",
-        "desc": "Bo 在 x 秒后触发他所有的地雷。在延迟期间，对手完全无法发现地雷。（冷却：8 秒）",
+        "desc": "Bo 在 1440 秒后触发他所有的地雷。在延迟期间，对手完全无法发现地雷。（冷却：8 秒）",
         "icon": "/gadgets/Bo/bo_gadget_02.png"
       }
     ],
@@ -2316,7 +2316,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 760,
       "range": "3 (近)",
       "reload": "0.8 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "摔跤重拳",
@@ -2332,7 +2332,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000086,
         "name": "摔跤韧性",
-        "desc": "受到的伤害降低，提升整体坦度 Total damage：1620",
+        "desc": "受到的伤害降低，提升整体坦度",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000086.png"
       },
       {
@@ -2352,7 +2352,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000292,
         "name": "小行星带",
-        "desc": "El Primo 召唤一颗小流星攻击最近的敌人。它造成 x 点伤害并摧毁墙壁。（冷却：13 秒）",
+        "desc": "El Primo 召唤一颗小流星攻击最近的敌人。它造成 2432 点伤害并摧毁墙壁。（冷却：13 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000292.png"
       }
     ],
@@ -2420,7 +2420,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 480,
       "range": "6 (普通)",
       "reload": "1.8 秒 (普通) 0.9 秒 (with Rolling Reload)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "双管霰弹",
@@ -2450,13 +2450,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000260,
         "name": "反卷旋转器",
-        "desc": "达里尔转身向各个方向发射一连串子弹。每次射击都会造成 x 点伤害，如果击中敌人，他的 超级技能 会恢复 x%！（冷却：12 秒）",
+        "desc": "达里尔转身向各个方向发射一连串子弹。每次射击都会造成 480 点伤害，如果击中敌人，他的 超级技能 会恢复 25%！（冷却：12 秒）",
         "icon": "/gadgets/Darryl/darryl_gadget_01.png"
       },
       {
         "id": 23000313,
         "name": "焦油桶",
-        "desc": "达里尔在自己周围创建一个减速区域，持续 x 秒。（冷却：15 秒）",
+        "desc": "达里尔在自己周围创建一个减速区域，持续 5 秒。（冷却：15 秒）",
         "icon": "/gadgets/Darryl/darryl_gadget_02.png"
       }
     ],
@@ -2537,7 +2537,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1480,
       "range": "8.33 (远)",
       "reload": "-",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "回旋铲",
@@ -2567,7 +2567,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000262,
         "name": "热喷射器",
-        "desc": "卡尔扔出的下一个鹤嘴锄会在它后面留下一串滚烫的岩石！接触它们的对手会被点燃并每秒受到 x 点伤害。（冷却：17 秒）",
+        "desc": "卡尔扔出的下一个鹤嘴锄会在它后面留下一串滚烫的岩石！接触它们的对手会被点燃并每秒受到 480 点伤害。（冷却：17 秒）",
         "icon": "/gadgets/Carl/carl_gadget_01.png"
       },
       {
@@ -2654,7 +2654,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2480,
       "range": "3.33 (近)",
       "reload": "1.8 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "动力电钻",
@@ -2684,7 +2684,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000256,
         "name": "气动助力器",
-        "desc": "Jacky 获得了能量爆发，移动速度提高了 x%，持续 x 秒。（冷却：15 秒）",
+        "desc": "Jacky 获得了能量爆发，移动速度提高了 25%，持续 4 秒。（冷却：15 秒）",
         "icon": "/gadgets/Jacky/jacky_gadget_01.png"
       },
       {
@@ -2771,7 +2771,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 600,
       "range": "9 (远)",
       "reload": "1.3 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "重型机枪",
@@ -2801,13 +2801,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000257,
         "name": "脉冲调制器",
-        "desc": "帕姆触发她的炮塔发射脉冲，治疗炮塔范围内的盟友，包括她自己，以获得 x 生命值。（冷却：12 秒）",
+        "desc": "帕姆触发她的炮塔发射脉冲，治疗炮塔范围内的盟友，包括她自己，以获得 1600 生命值。（冷却：12 秒）",
         "icon": "/gadgets/Pam/pam_gadget_01.png"
       },
       {
         "id": 23000404,
         "name": "吸废者",
-        "desc": "帕姆的下一次攻击每次命中都会消除对方乱斗者最大弹药的 x%。帕姆为自己回收了 x% 的弹药。（冷却：17 秒）",
+        "desc": "帕姆的下一次攻击每次命中都会消除对方乱斗者最大弹药的 25%。帕姆为自己回收了 50% 的弹药。（冷却：17 秒）",
         "icon": "/gadgets/Pam/pam_gadget_02.png"
       }
     ],
@@ -2888,7 +2888,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2320,
       "range": "6 (普通)",
       "reload": "0.8 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "巨锤重击",
@@ -2910,7 +2910,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000153,
         "name": "电击延长",
-        "desc": "电击波眩晕时间延长，控场效果更强 Health Increase：1224",
+        "desc": "电击波眩晕时间延长，控场效果更强",
         "icon": "/starpowers/Frank/frank_starpower_02.png"
       }
     ],
@@ -3026,7 +3026,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2800,
       "range": "3.67 (近)",
       "reload": "0.8 秒 (极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "曲棍球棍",
@@ -3162,9 +3162,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 5600,
       "damage": 800,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "0.9 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "毒刺射击",
@@ -3200,7 +3200,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000312,
         "name": "Rattled Hive",
-        "desc": "Bea unleashes x angry bees that circle away from her, dealing more damage the further they go (up to x damage).（冷却：24 秒）",
+        "desc": "Bea unleashes 320 angry bees that circle away from her, dealing more damage the further they go (up to 960 damage).（冷却：24 秒）",
         "icon": "/gadgets/Bea/bea_gadget_02.png"
       }
     ],
@@ -3280,8 +3280,8 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 8000,
       "damage": 2000,
       "range": "2.67 (近)",
-      "reload": "2.4 秒 (Very 慢)",
-      "speed": "820"
+      "reload": "2.4 秒 (极慢)",
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "蝙蝠突袭",
@@ -3317,7 +3317,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000290,
         "name": "夜间生物",
-        "desc": "莫蒂斯变成一群蝙蝠并前往目标地点。",
+        "desc": "莫蒂斯变成一群蝙蝠并前往目标地点。（冷却：24 秒）",
         "icon": "/gadgets/Mortis/mortis_gadget_02.png"
       }
     ],
@@ -3419,7 +3419,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 960,
       "range": "8 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "命运卡牌",
@@ -3449,13 +3449,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000266,
         "name": "心灵强化剂",
-        "desc": "塔拉和她的盟友能够看到所有敌人，即使是在灌木丛中，持续 x 秒。（冷却：20 秒）",
+        "desc": "塔拉和她的盟友能够看到所有敌人，即使是在灌木丛中，持续 4 秒。（冷却：20 秒）",
         "icon": "/gadgets/Tara/tara_gadget_01.png"
       },
       {
         "id": 23000356,
         "name": "来自超越的支持",
-        "desc": "塔拉用三个微弱的暗影包围自己，这些暗影会攻击对手并在 x 秒后消失。",
+        "desc": "塔拉用三个微弱的暗影包围自己，这些暗影会攻击对手并在 864 秒后消失。（冷却：17 秒）",
         "icon": "/gadgets/Tara/tara_gadget_02.png"
       }
     ],
@@ -3534,9 +3534,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7600,
       "damage": 1000,
-      "range": "5.67 (close",
+      "range": "5.67 (close range; 普通)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "魔法弹",
@@ -3552,13 +3552,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000109,
         "name": "魔法强化",
-        "desc": "魔法弹伤害提升，穿透敌人时伤害衰减降低 Heal per second：548",
+        "desc": "魔法弹伤害提升，穿透敌人时伤害衰减降低",
         "icon": "/starpowers/Gene/gene_starpower_01.png"
       },
       {
         "id": 23000159,
         "name": "漩涡增幅",
-        "desc": "魔法漩涡吸扯力增强，控场效果更强 Damage：1800",
+        "desc": "魔法漩涡吸扯力增强，控场效果更强",
         "icon": "/starpowers/Gene/gene_starpower_02.png"
       }
     ],
@@ -3566,13 +3566,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000252,
         "name": "灯管吹坏",
-        "desc": "所有靠近吉恩的敌人都会立即被击退。如果至少有一名敌方斗士在范围内，吉恩还将恢复他最大生命值的 x%。（冷却：20 秒）",
+        "desc": "所有靠近吉恩的敌人都会立即被击退。如果至少有一名敌方斗士在范围内，吉恩还将恢复他最大生命值的 10%。（冷却：20 秒）",
         "icon": "/gadgets/Gene/gene_gadget_01.png"
       },
       {
         "id": 23000352,
         "name": "复仇之魂",
-        "desc": "吉恩向大范围内所有可见的对手发射一枚寻的导弹，根据距离造成最多 x 点伤害。（冷却：20 秒）",
+        "desc": "吉恩向大范围内所有可见的对手发射一枚寻的导弹，根据距离造成最多 320 点伤害。（冷却：20 秒）",
         "icon": "/gadgets/Gene/gene_gadget_02.png"
       }
     ],
@@ -3653,7 +3653,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 640,
       "range": "8.33 (远)",
       "reload": "1.3 秒 (极快) 1.1 秒 (with Run n' Gun)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "极速能量弹",
@@ -3689,7 +3689,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000311,
         "name": "偷偷摸摸的运动鞋",
-        "desc": "延迟 x 秒后，麦克斯会眨眼回到她选择的地方，恢复她在此期间受到的所有伤害。（冷却：8 秒）",
+        "desc": "延迟 3 秒后，麦克斯会眨眼回到她选择的地方，恢复她在此期间受到的所有伤害。（冷却：8 秒）",
         "icon": "/gadgets/Max/max_gadget_02.png"
       }
     ],
@@ -3770,7 +3770,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1520,
       "range": "7 (远)",
       "reload": "1.6 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "泡泡弹",
@@ -3800,7 +3800,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000269,
         "name": "服务铃",
-        "desc": "P 先生通过将其伤害增加 x 并将生命值增加 x 来增强他当前的搬运工。（冷却：17 秒）",
+        "desc": "P 先生通过将其伤害增加 1184 并将生命值增加 183 来增强他当前的搬运工。（冷却：17 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000269.png"
       },
       {
@@ -3872,9 +3872,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6400,
       "damage": 2080,
-      "range": "5 (throw;",
+      "range": "5 (throw; 普通)",
       "reload": "1.7 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "种子屏障",
@@ -3904,7 +3904,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000244,
         "name": "花园覆盖机",
-        "desc": "新芽消耗灌木丛来恢复 x 生命值。（冷却：9 秒）",
+        "desc": "新芽消耗灌木丛来恢复 1536 生命值。（冷却：9 秒）",
         "icon": "/gadgets/Sprout/sprout_gadget_01.png"
       },
       {
@@ -3984,7 +3984,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 320,
       "range": "8.67 (远)",
       "reload": "1.4 秒 (快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "剧毒羽毛",
@@ -4120,9 +4120,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6600,
       "damage": 480,
-      "range": "9.67 (Very",
+      "range": "9.67 (极远)",
       "reload": "1.9 秒 (普通)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "忍者飞镖",
@@ -4144,7 +4144,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000141,
         "name": "隐形延长",
-        "desc": "隐形状态持续时间延长，偷袭窗口更大 Heal per second：1188",
+        "desc": "隐形状态持续时间延长，偷袭窗口更大",
         "icon": "/starpowers/Leon/leon_starpower_02.png"
       }
     ],
@@ -4260,7 +4260,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1800,
       "range": "6 (普通)",
       "reload": "1.8 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "沙粒射击",
@@ -4276,13 +4276,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000186,
         "name": "沙粒强化",
-        "desc": "沙粒伤害提升，范围扩大 Damage per second：195",
+        "desc": "沙粒伤害提升，范围扩大",
         "icon": "/starpowers/Sandy/sandy_starpower_01.png"
       },
       {
         "id": 23000187,
         "name": "沙尘延长",
-        "desc": "沙尘暴持续时间延长，控场效果更强 Heal per second：369",
+        "desc": "沙尘暴持续时间延长，控场效果更强",
         "icon": "/starpowers/Sandy/sandy_starpower_02.png"
       }
     ],
@@ -4290,13 +4290,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000270,
         "name": "睡眠刺激器",
-        "desc": "桑迪睡了 x 秒，他的生命值完全恢复。（冷却：11 秒）",
+        "desc": "桑迪睡了 1.5 秒，他的生命值完全恢复。（冷却：11 秒）",
         "icon": "/gadgets/Sandy/sandy_gadget_01.png"
       },
       {
         "id": 23000405,
         "name": "甜蜜的梦",
-        "desc": "桑迪的下一次攻击会让对手陷入沉睡 x 秒。然而，他们会从任何伤害中醒来。（冷却：18 秒）",
+        "desc": "桑迪的下一次攻击会让对手陷入沉睡 1 秒。然而，他们会从任何伤害中醒来。（冷却：18 秒）",
         "icon": "/gadgets/Sandy/sandy_gadget_02.png"
       }
     ],
@@ -4377,7 +4377,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 600,
       "range": "8.33 (远)",
       "reload": "1.2 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "雪球攻击",
@@ -4494,7 +4494,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1600,
       "range": "8.67 (远)",
       "reload": "1.8 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -4510,13 +4510,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000234,
         "name": "自动对焦",
-        "desc": "根据行进距离，窥视最多可造成 <span style=\"color:#00cc00;\">x</span> 点额外伤害。 Damage Increase：1800",
+        "desc": "根据行进距离，窥视最多可造成 1800 点额外伤害。",
         "icon": "/starpowers/Nani/nani_starpower_01.png"
       },
       {
         "id": 23000235,
         "name": "调质钢",
-        "desc": "当纳尼的超级激活时，受到的伤害减少 <span style=\"color:#00cc00;\">x</span>%。",
+        "desc": "当纳尼的超级激活时，受到的伤害减少 80%。",
         "icon": "/starpowers/Nani/nani_starpower_02.png"
       }
     ],
@@ -4524,13 +4524,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000278,
         "name": "翘曲时间",
-        "desc": "纳尼传送到皮普最后已知的位置并结束她的超级。",
+        "desc": "纳尼传送到皮普最后已知的位置并结束她的超级。（冷却：13 秒）",
         "icon": "/gadgets/Nani/nani_gadget_01.png"
       },
       {
         "id": 23000353,
         "name": "返回发件人",
-        "desc": "在接下来的 x 秒内，纳尼第一次受到敌人伤害时，x% 的伤害会返还给敌人。",
+        "desc": "在接下来的 2 秒内，纳尼第一次受到敌人伤害时，80% 的伤害会返还给敌人。（冷却：17 秒）",
         "icon": "/gadgets/Nani/nani_gadget_02.png"
       }
     ],
@@ -4611,7 +4611,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1180,
       "range": "6.67 (普通)",
       "reload": "2 秒 (慢)",
-      "speed": "650"
+      "speed": "650 (慢)"
     },
     "attack": {
       "name": "普通攻击",
@@ -4641,13 +4641,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000285,
         "name": "电涌",
-        "desc": "瑟奇 使他的电路超载，并将他的升级阶段增加 x，持续 x 秒。（冷却：13 秒）",
+        "desc": "瑟奇 使他的电路超载，并将他的升级阶段增加 1，持续 10 秒。（冷却：13 秒）",
         "icon": "/gadgets/Surge/surge_gadget_01.png"
       },
       {
         "id": 23000485,
         "name": "电源盾",
-        "desc": "在接下来的 x 秒内，瑟奇 会消耗下一次攻击造成的 x% 伤害，并使用能量重新装填 x 弹药。（冷却：17 秒）",
+        "desc": "在接下来的 2 秒内，瑟奇 会消耗下一次攻击造成的 50% 伤害，并使用能量重新装填 2 弹药。（冷却：17 秒）",
         "icon": "/gadgets/Surge/surge_gadget_02.png"
       }
     ],
@@ -4728,7 +4728,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 500,
       "range": "8.67 (远)",
       "reload": "1.6 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -4744,13 +4744,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000300,
         "name": "推它",
-        "desc": "所有被科莱特冲锋击中的敌方斗士都会被带到攻击的最远点！在最大距离处，他们会被眩晕 <span style=\"color:#00cc00;\"><!card.value2.ticksAsSeconds> 秒</span>。",
+        "desc": "所有被科莱特冲锋击中的敌方斗士都会被带到攻击的最远点！在最大距离处，他们会被眩晕 秒。",
         "icon": "/starpowers/Colette/colette_starpower_01.png"
       },
       {
         "id": 23000301,
         "name": "大众税",
-        "desc": "科莱特在超级期间受到的伤害减少 <span style=\"color:#00cc00;\"><!card.trait.statuseffect.shieldpercent>%</span>，如果击中格斗者，她会获得 <span style=\"color:#00cc00;\">30%</span> 护盾，持续 <span style=\"color:#00cc00;\">3 秒</span>。",
+        "desc": "科莱特在超级期间受到的伤害减少 %，如果击中格斗者，她会获得 30% 护盾，持续 3 秒。",
         "icon": "/starpowers/Colette/colette_starpower_02.png"
       }
     ],
@@ -4758,13 +4758,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000302,
         "name": "钠-Ah",
-        "desc": "科莱特发射一枚射弹，使一名斗士迷惑数秒。使用弹药。",
+        "desc": "科莱特发射一枚射弹，使一名斗士迷惑数秒。使用弹药。（冷却：17 秒）",
         "icon": "/gadgets/Colette/buddy_icon_colette_gadget.png"
       },
       {
         "id": 23000457,
         "name": "陷阱",
-        "desc": "科莱特发射一枚射弹，其治疗量相当于所造成伤害的%。使用弹药并在冷却前可发射 3 次。",
+        "desc": "科莱特发射一枚射弹，其治疗量相当于所造成伤害的%。使用弹药并在冷却前可发射 3 次。（冷却：17 秒）",
         "icon": "/gadgets/Colette/colette_gadget_01.png"
       }
     ],
@@ -4845,7 +4845,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 210,
       "range": "8.33 (远)",
       "reload": "0.22 秒 (8.8 秒 max; 极快) 0.187 秒 (7.48 秒 max; with Reload Gear) 0.146 秒 (5.86 秒 max; with Scorchin' Siphon) 0.124 秒 (4.96 秒 max; with Scorchin' Siphon and Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -4867,7 +4867,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000308,
         "name": "焦金虹吸管",
-        "desc": "当靠近一滩火液时，安珀用它来加快喷火速度 <span style=\"color:#00cc00;\">x%</span> 速度。",
+        "desc": "当靠近一滩火液时，安珀用它来加快喷火速度 50% 速度。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000308.png"
       }
     ],
@@ -4875,13 +4875,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000309,
         "name": "点火器",
-        "desc": "琥珀快速奔跑 x 秒，同时溢出她的火液，然后她可以点燃火液。（冷却：15 秒）",
+        "desc": "琥珀快速奔跑 3 秒，同时溢出她的火液，然后她可以点燃火液。（冷却：15 秒）",
         "icon": "/gadgets/Amber/amber_gadget_01.png"
       },
       {
         "id": 23000488,
         "name": "舞动的火焰",
-        "desc": "琥珀在她周围产生 x 条轨道火焰，持续 x 秒，击中时造成 x 点伤害。（冷却：14 秒）",
+        "desc": "琥珀在她周围产生 1512 条轨道火焰，持续 3 秒，击中时造成 5 点伤害。（冷却：14 秒）",
         "icon": "/gadgets/Amber/amber_gadget_02.png"
       }
     ],
@@ -4960,9 +4960,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7000,
       "damage": 880,
-      "range": "9.33 (Very",
+      "range": "9.33 (极远)",
       "reload": "1.1 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -4978,13 +4978,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000324,
         "name": "超酷",
-        "desc": "站在卢超级区域的对手被冻结的速度会加快 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "站在卢超级区域的对手被冻结的速度会加快 14%。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000324.png"
       },
       {
         "id": 23000325,
         "name": "低温",
-        "desc": "对手会损失高达 <span style=\"color:#00cc00;\">x%</span> 的伤害，具体取决于他们在卢的攻击中被冻结的程度。",
+        "desc": "对手会损失高达 50% 的伤害，具体取决于他们在卢的攻击中被冻结的程度。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000325.png"
       }
     ],
@@ -4992,13 +4992,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000326,
         "name": "冰块",
-        "desc": "小罗用冰块保护自己，在x秒内变得无敌。（冷却：18 秒）",
+        "desc": "小罗用冰块保护自己，在1秒内变得无敌。（冷却：18 秒）",
         "icon": "/gadgets/Lou/lou_gadget_01.png"
       },
       {
         "id": 23000400,
         "name": "冷冻糖浆",
-        "desc": "立即为 小罗 超级内的对手添加 x% 冻结计。（冷却：18 秒）",
+        "desc": "立即为 小罗 超级内的对手添加 50% 冻结计。（冷却：18 秒）",
         "icon": "/gadgets/Lou/lou_gadget_02.png"
       }
     ],
@@ -5077,9 +5077,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 5200,
       "damage": 760,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "1.45 秒 (快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5095,13 +5095,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000331,
         "name": "不适",
-        "desc": "拜伦的超级技能还会导致对手从任何来源获得的治疗量减少 <span style=\"color:#00cc00;\">x%</span> ，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "拜伦的超级技能还会导致对手从任何来源获得的治疗量减少 75% ，持续 9 秒。",
         "icon": "/starpowers/Byron/byron_starpower_01.png"
       },
       {
         "id": 23000332,
         "name": "注射",
-        "desc": "每隔 <span style=\"color:#00cc00;\">x</span> 秒，下一次基本攻击就会刺穿目标。",
+        "desc": "每隔 3.5 秒，下一次基本攻击就会刺穿目标。",
         "icon": "/starpowers/Byron/byron_starpower_02.png"
       }
     ],
@@ -5109,13 +5109,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000333,
         "name": "手臂中弹",
-        "desc": "拜伦使用他的一次射击每秒治愈自己 x 次，持续 x 秒。（冷却：17 秒）",
+        "desc": "拜伦使用他的一次射击每秒治愈自己 1040 次，持续 1300 秒。（冷却：17 秒）",
         "icon": "/gadgets/Byron/byron_gadget_01.png"
       },
       {
         "id": 23000461,
         "name": "助推器射击",
-        "desc": "拜伦的下一次攻击会射出 x 支飞镖，而不是一支，每支飞镖造成的伤害减少 x%，治疗效果减少 x%。（冷却：18 秒）",
+        "desc": "拜伦的下一次攻击会射出 3 支飞镖，而不是一支，每支飞镖造成的伤害减少 20%，治疗效果减少 40%。（冷却：18 秒）",
         "icon": "/gadgets/Byron/byron_gadget_02.png"
       }
     ],
@@ -5196,7 +5196,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 540,
       "range": "2 (近)",
       "reload": "0.7 秒 (极快) 0.467 秒 (with Hypercharge)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5212,13 +5212,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000338,
         "name": "硬着陆",
-        "desc": "埃德加的超级和Let's Fly 随身妙具也会在着陆时对附近的敌人造成<span style=\"color:#00cc00;\"><!card.areaeffect.damage.scaleweapondamagelevel></span>伤害，或在直接命中时造成<span style=\"color:#00cc00;\"><!card.areaeffect.innerradiusdamage.scaleweapondamagelevel></span>伤害。 Damage：1341",
+        "desc": "埃德加的超级和Let's Fly 随身妙具也会在着陆时对附近的敌人造成伤害，或在直接命中时造成伤害。",
         "icon": "/starpowers/Edgar/edgar_starpower_01.png"
       },
       {
         "id": 23000339,
         "name": "拳脚相加",
-        "desc": "埃德加造成的伤害可增加 <span style=\"color:#00cc00;\"><!card.value1>%</span> 治疗效果。",
+        "desc": "埃德加造成的伤害可增加 % 治疗效果。",
         "icon": "/starpowers/Edgar/edgar_starpower_02.png"
       }
     ],
@@ -5226,7 +5226,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000340,
         "name": "让我们飞吧",
-        "desc": "埃德加的围巾抓住了最近的斗殴者，他跳到了他们后面。他的围巾也会把他拉向墙壁。",
+        "desc": "埃德加的围巾抓住了最近的斗殴者，他跳到了他们后面。他的围巾也会把他拉向墙壁。（冷却：14 秒）",
         "icon": "/gadgets/Edgar/buddy_icon_edgar_gadget.png"
       },
       {
@@ -5313,7 +5313,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1200,
       "range": "9 (远)",
       "reload": "1.4 秒 (快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5329,13 +5329,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000345,
         "name": "空中优势",
-        "desc": "空投补给现在包含一枚炸弹，可以为空投增加 <span style=\"color:#00cc00;\">x%</span> 伤害，并允许其摧毁墙壁。",
+        "desc": "空投补给现在包含一枚炸弹，可以为空投增加 120% 伤害，并允许其摧毁墙壁。",
         "icon": "/starpowers/Ruffs/ruffs_starpower_01.png"
       },
       {
         "id": 23000346,
         "name": "现场推广",
-        "desc": "当友好的争斗者处于该能力的范围内时，其最大生命值每秒增加 <span style=\"color:#00cc00;\">x</span> 。",
+        "desc": "当友好的争斗者处于该能力的范围内时，其最大生命值每秒增加 40 。",
         "icon": "/starpowers/Ruffs/ruffs_starpower_02.png"
       }
     ],
@@ -5343,13 +5343,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000347,
         "name": "隐蔽",
-        "desc": "拉夫上校 扔下 x 个沙袋作为掩护。每一个都有 拉夫上校 最大生命值的 x%。（冷却：16 秒）",
+        "desc": "拉夫上校 扔下 1920 个沙袋作为掩护。每一个都有 拉夫上校 最大生命值的 40%。（冷却：16 秒）",
         "icon": "/gadgets/Ruffs/ruffs_gadget_01.png"
       },
       {
         "id": 23000402,
         "name": "空中支援",
-        "desc": "拉夫斯在最近的对手周围发起弹幕攻击，每次攻击都会造成 x 点伤害。（冷却：15 秒）",
+        "desc": "拉夫斯在最近的对手周围发起弹幕攻击，每次攻击都会造成 960 点伤害。（冷却：15 秒）",
         "icon": "/gadgets/Ruffs/ruffs_gadget_02.png"
       }
     ],
@@ -5430,7 +5430,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1080,
       "range": "7.67 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5446,13 +5446,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000362,
         "name": "零阻力",
-        "desc": "斯图 的 Nitro Boost 超级冲刺距离增加 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "斯图 的 Nitro Boost 超级冲刺距离增加 71%。",
         "icon": "/starpowers/Stu/stu_starpower_01.png"
       },
       {
         "id": 23000363,
         "name": "气体疗愈",
-        "desc": "使用他的 Nitro Boost 超级技能 可以恢复 斯图 的 <span style=\"color:#00cc00;\">x</span> 生命值。 Heal：504",
+        "desc": "使用他的 Nitro Boost 超级技能 可以恢复 斯图 的 504 生命值。",
         "icon": "/starpowers/Stu/stu_starpower_02.png"
       }
     ],
@@ -5466,7 +5466,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000401,
         "name": "突破",
-        "desc": "斯图的下一个超级英雄可以冲破障碍物，使碎片向前飞扬。每块碎片都会对其击中的任何对手造成 x 点伤害。（冷却：16 秒）",
+        "desc": "斯图的下一个超级英雄可以冲破障碍物，使碎片向前飞扬。每块碎片都会对其击中的任何对手造成 173 点伤害。（冷却：16 秒）",
         "icon": "/gadgets/Stu/stu_gadget_02.png"
       }
     ],
@@ -5545,9 +5545,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 5800,
       "damage": 1040,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "1.4 秒 (快) 1.19 秒 (with Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5563,13 +5563,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000369,
         "name": "积极的反馈",
-        "desc": "每当贝儿的电弹击中目标时，她都会获得 <span style=\"color:#00cc00;\">x%</span> 护盾。",
+        "desc": "每当贝儿的电弹击中目标时，她都会获得 20% 护盾。",
         "icon": "/starpowers/Belle/belle_starpower_01.png"
       },
       {
         "id": 23000370,
         "name": "接地",
-        "desc": "被贝尔的超级标记后，对手将无法在 <span style=\"color:#00cc00;\">x</span> 秒内重新加载攻击。",
+        "desc": "被贝尔的超级标记后，对手将无法在 5 秒内重新加载攻击。",
         "icon": "/starpowers/Belle/belle_starpower_02.png"
       }
     ],
@@ -5664,7 +5664,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2320,
       "range": "7.67 (远)",
       "reload": "2.1 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5680,13 +5680,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000376,
         "name": "连锁反应",
-        "desc": "粘性球体爆炸区域内的每个对手都会使粘性球体的伤害增加 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "粘性球体爆炸区域内的每个对手都会使粘性球体的伤害增加 15%。",
         "icon": "/starpowers/Squeak/squeak_starpower_01.png"
       },
       {
         "id": 23000377,
         "name": "超级粘",
-        "desc": "史魁克's 超级技能 的二次粘性炸弹爆炸也会使对手减速 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "史魁克's 超级技能 的二次粘性炸弹爆炸也会使对手减速 4 秒。",
         "icon": "/starpowers/Squeak/squeak_starpower_02.png"
       }
     ],
@@ -5694,13 +5694,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000378,
         "name": "发条",
-        "desc": "吱吱的下一个粘性球造成的伤害增加 x%，射程延长 x%。（冷却：14 秒）",
+        "desc": "吱吱的下一个粘性球造成的伤害增加 50%，射程延长 100%。（冷却：14 秒）",
         "icon": "/gadgets/Squeak/squeak_gadget_01.png"
       },
       {
         "id": 23000462,
         "name": "残留物",
-        "desc": "吱吱的下一个粘性球体爆炸后会留下一个残留区域，减慢敌人的速度，并使盟友能够看到灌木丛 x 秒。（冷却：20 秒）",
+        "desc": "吱吱的下一个粘性球体爆炸后会留下一个残留区域，减慢敌人的速度，并使盟友能够看到灌木丛 6 秒。（冷却：20 秒）",
         "icon": "/gadgets/Squeak/squeak_gadget_02.png"
       }
     ],
@@ -5781,7 +5781,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2080,
       "range": "7.67 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5797,13 +5797,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000383,
         "name": "徒步巡逻",
-        "desc": "当格罗姆的超级充满电后，他的移动速度将加快 <span style=\"color:#00cc00;\">+x%</span>！",
+        "desc": "当格罗姆的超级充满电后，他的移动速度将加快 +15%！",
         "icon": "/starpowers/Grom/grom_starpower_01.png"
       },
       {
         "id": 23000384,
         "name": "X因素",
-        "desc": "格罗姆主要攻击的分裂在最大距离内造成高达 <span style=\"color:#00cc00;\">+x%</span> 的额外伤害。",
+        "desc": "格罗姆主要攻击的分裂在最大距离内造成高达 +35% 的额外伤害。",
         "icon": "/starpowers/Grom/grom_starpower_02.png"
       }
     ],
@@ -5817,7 +5817,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000460,
         "name": "无线电检查",
-        "desc": "格罗姆的下一次攻击会快速连续抛出 x 个芽。",
+        "desc": "格罗姆的下一次攻击会快速连续抛出 3 个芽。（冷却：15 秒）",
         "icon": "/gadgets/Grom/grom_gadget_02.png"
       }
     ],
@@ -5898,7 +5898,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 840,
       "range": "2.67 (近)",
       "reload": "1 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -5914,13 +5914,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000390,
         "name": "更强韧的鱼雷",
-        "desc": "巴斯的超级眩晕最短持续时间增加 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "巴斯的超级眩晕最短持续时间增加 0.5 秒。",
         "icon": "/starpowers/Buzz/buzz_starpower_01.png"
       },
       {
         "id": 23000391,
         "name": "目光锐利",
-        "desc": "巴兹 的超级充电区域增加了 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "巴兹 的超级充电区域增加了 33%。",
         "icon": "/starpowers/Buzz/buzz_starpower_02.png"
       }
     ],
@@ -5934,7 +5934,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000490,
         "name": "X 射线遮光罩",
-        "desc": "巴兹可以看到超级充电区域内的所有灌木丛 x 秒。（冷却：20 秒）",
+        "desc": "巴兹可以看到超级充电区域内的所有灌木丛 12 秒。（冷却：20 秒）",
         "icon": "/gadgets/Buzz/buzz_gadget_02.png"
       }
     ],
@@ -6015,7 +6015,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 560,
       "range": "8.33 (远)",
       "reload": "1.6 秒 (普通) 1.7 秒 (while Hyper Buffie is active)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6037,7 +6037,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000398,
         "name": "业务弹性",
-        "desc": "每 <span style=\"color:#00cc00;\"><!card.value2.ticksasseconds></span> 秒，格里夫 就会恢复高达 <span style=\"color:#00cc00;\"><!card.value1>%</span> 的缺失生命值。",
+        "desc": "每 秒，格里夫 就会恢复高达 % 的缺失生命值。",
         "icon": "/starpowers/Griff/griff_starpower_02.png"
       }
     ],
@@ -6132,7 +6132,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 800,
       "range": "4.67 (普通)",
       "reload": "1.4 秒 (快) 1 秒 (with full Rage and Mad As Heck)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6148,13 +6148,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000414,
         "name": "第一次狂欢",
-        "desc": "当攻击力已满的情况下击中对手时，小智会变得更加愤怒。他的怒气上升 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "当攻击力已满的情况下击中对手时，小智会变得更加愤怒。他的怒气上升 200%。",
         "icon": "/starpowers/Ash/ash_starpower_01.png"
       },
       {
         "id": 23000415,
         "name": "疯狂如赫克",
-        "desc": "小智的装弹速度逐渐提高 <span style=\"color:#00cc00;\">x%</span>，这与他的愤怒程度相同。",
+        "desc": "小智的装弹速度逐渐提高 40%，这与他的愤怒程度相同。",
         "icon": "/starpowers/Ash/ash_starpower_02.png"
       }
     ],
@@ -6162,13 +6162,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000416,
         "name": "寒凉丸",
-        "desc": "尽管愤怒，阿什还是必须冷静下来。当这个小工具弹出时，满怒气计将恢复 x 生命值 - 怒气越少，恢复就越少。（冷却：13 秒）",
+        "desc": "尽管愤怒，阿什还是必须冷静下来。当这个小工具弹出时，满怒气计将恢复 2832 生命值 - 怒气越少，恢复就越少。（冷却：13 秒）",
         "icon": "/gadgets/Ash/ash_gadget_01.png"
       },
       {
         "id": 23000465,
         "name": "烂香蕉",
-        "desc": "小智失去 x% 生命值并立即获得 x% 怒气。（冷却：8 秒）",
+        "desc": "小智失去 5% 生命值并立即获得 40% 怒气。（冷却：8 秒）",
         "icon": "/gadgets/Ash/ash_gadget_02.png"
       }
     ],
@@ -6249,7 +6249,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 300,
       "range": "9 (远)",
       "reload": "1.3 秒 (极快) 0.845 秒 (with Toolbox) 1.1 秒 (Mecha; 极快) 0.715 秒 (Mecha; with Toolbox)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6265,13 +6265,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000421,
         "name": "力场",
-        "desc": "当梅格的机甲被摧毁时，她会受到 <span style=\"color:#00cc00;\">x%</span> 护盾的保护，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "当梅格的机甲被摧毁时，她会受到 30% 护盾的保护，持续 10 秒。",
         "icon": "/starpowers/Meg/meg_starpower_01.png"
       },
       {
         "id": 23000422,
         "name": "重金属",
-        "desc": "过期后，机甲套装会爆炸，对附近的对手造成 <span style=\"color:#00cc00;\">x</span> 点伤害并将他们推开。 Damage：2160",
+        "desc": "过期后，机甲套装会爆炸，对附近的对手造成 2160 点伤害并将他们推开。",
         "icon": "/starpowers/Meg/meg_starpower_02.png"
       }
     ],
@@ -6279,13 +6279,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000423,
         "name": "震动电压",
-        "desc": "每秒为机甲治疗 x 点生命值，持续 x 秒。（冷却：17 秒）",
+        "desc": "每秒为机甲治疗 414.4 点生命值，持续 490 秒。（冷却：17 秒）",
         "icon": "/gadgets/Meg/meg_gadget_01.png"
       },
       {
         "id": 23000489,
         "name": "工具箱",
-        "desc": "梅格掉落了她的工具箱，这使附近盟友的装弹速度提高了 x%，直到它被摧毁。（冷却：19 秒）",
+        "desc": "梅格掉落了她的工具箱，这使附近盟友的装弹速度提高了 35%，直到它被摧毁。（冷却：19 秒）",
         "icon": "/gadgets/Meg/meg_gadget_02.png"
       }
     ],
@@ -6366,7 +6366,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 560,
       "range": "9 (远)",
       "reload": "1.7 秒 (普通) 1.445 秒 (with Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6382,13 +6382,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000431,
         "name": "凑合",
-        "desc": "当最后一轮时，萝拉会造成额外的 <span style=\"color:#00cc00;\">x%</span> 伤害。",
+        "desc": "当最后一轮时，萝拉会造成额外的 30% 伤害。",
         "icon": "/starpowers/Lola/lola_starpower_01.png"
       },
       {
         "id": 23000432,
         "name": "以吻封印",
-        "desc": "劳拉自我的射弹将治疗生命值 <span style=\"color:#00cc00;\">x</span> 挡在其路径上的盟友。",
+        "desc": "劳拉自我的射弹将治疗生命值 202 挡在其路径上的盟友。",
         "icon": "/starpowers/Lola/lola_starpower_02.png"
       }
     ],
@@ -6396,13 +6396,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000433,
         "name": "冻结帧",
-        "desc": "萝拉的自我停止移动来摆姿势！获得 x% 护盾，持续 x 秒。（冷却：11 秒）",
+        "desc": "萝拉的自我停止移动来摆姿势！获得 50% 护盾，持续 4 秒。（冷却：11 秒）",
         "icon": "/gadgets/Lola/lola_gadget_01.png"
       },
       {
         "id": 23000456,
         "name": "特技双人",
-        "desc": "萝拉和她的自我交换了位置，都恢复了 x 生命值。（冷却：17 秒）",
+        "desc": "萝拉和她的自我交换了位置，都恢复了 1280 生命值。（冷却：17 秒）",
         "icon": "/gadgets/Lola/lola_gadget_02.png"
       }
     ],
@@ -6481,9 +6481,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 9600,
       "damage": 1360,
-      "range": "2.67 (kick;",
+      "range": "2.67 (kick; 近)",
       "reload": "1 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6505,7 +6505,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000439,
         "name": "神圣鞋底",
-        "desc": "每 <span style=\"color:#00cc00;\">x</span> 秒减少一次传入攻击造成的 <span style=\"color:#00cc00;\">x</span> 伤害。最大减少量为传入伤害的 <span style=\"color:#00cc00;\">x%</span>。 Maximum Damage Reduction：810",
+        "desc": "每 810 秒减少一次传入攻击造成的 960 伤害。最大减少量为传入伤害的 90%。",
         "icon": "/starpowers/Fang/fang_starpower_02.png"
       }
     ],
@@ -6513,13 +6513,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000440,
         "name": "玉米赋",
-        "desc": "方把一把玉米粒抛向空中，下起了爆米花雨！每个内核弹出都会造成 x 伤害。（冷却：15 秒）",
+        "desc": "方把一把玉米粒抛向空中，下起了爆米花雨！每个内核弹出都会造成 871 伤害。（冷却：15 秒）",
         "icon": "/gadgets/Fang/fang_gadget_01.png"
       },
       {
         "id": 23000464,
         "name": "Roundhouse Kick",
-        "desc": "阿方 spins and hits all enemies around him, stunning them for x seconds.（冷却：15 秒）",
+        "desc": "阿方 spins and hits all enemies around him, stunning them for 0.5 seconds.（冷却：15 秒）",
         "icon": "/gadgets/Fang/fang_gadget_02.png"
       }
     ],
@@ -6598,9 +6598,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6200,
       "damage": 400,
-      "range": "9.33 (Very",
+      "range": "9.33 (极远)",
       "reload": "1.6 秒 (普通)   1.36 秒 (with Reload Gear)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6622,7 +6622,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000453,
         "name": "快乐惊喜",
-        "desc": "每隔 <span style=\"color:#00cc00;\">x</span> 秒，下一个最大的蛋击中蛋射手的敌人就会生成一只幼体。",
+        "desc": "每隔 5 秒，下一个最大的蛋击中蛋射手的敌人就会生成一只幼体。",
         "icon": "/starpowers/Eve/eve_starpower_02.png"
       }
     ],
@@ -6630,7 +6630,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000454,
         "name": "得走了",
-        "desc": "夏娃跳开了，留下了一只刚孵化的小宝宝。",
+        "desc": "夏娃跳开了，留下了一只刚孵化的小宝宝。（冷却：17 秒）",
         "icon": "/gadgets/Eve/eve_gadget_01.png"
       },
       {
@@ -6715,9 +6715,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6800,
       "damage": 2000,
-      "range": "4 (min",
+      "range": "4 (min range; 普通)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6739,7 +6739,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000471,
         "name": "声乐热身",
-        "desc": "珍妮特的攻击聚焦速度更快 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "珍妮特的攻击聚焦速度更快 30%。",
         "icon": "/starpowers/Janet/janet_starpower_02.png"
       }
     ],
@@ -6747,7 +6747,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000472,
         "name": "放下低音",
-        "desc": "珍妮特部署一个扬声器，每秒对区域内的所有敌人造成 x 点伤害，直到其被摧毁。（冷却：18 秒）",
+        "desc": "珍妮特部署一个扬声器，每秒对区域内的所有敌人造成 160 点伤害，直到其被摧毁。（冷却：18 秒）",
         "icon": "/gadgets/Janet/janet_gadget_01.png"
       },
       {
@@ -6832,9 +6832,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 10000,
       "damage": 1120,
-      "range": "9 (Clyde;",
+      "range": "9 (Clyde; 远)",
       "reload": "1 秒 (Clyde; 极快) 0.769 秒 (with Sugar Rush) 2 秒 (Bonnie; 慢)",
-      "speed": "620"
+      "speed": "620 (Clyde; 慢)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6850,13 +6850,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000478,
         "name": "黑火药",
-        "desc": "邦妮的星星发射器的射程增加了 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "邦妮的星星发射器的射程增加了 36%。",
         "icon": "/starpowers/Bonnie/bonnie_starpower_01.png"
       },
       {
         "id": 23000479,
         "name": "智齿",
-        "desc": "松动的牙齿击中时会碎裂，对附近的敌人造成 <span style=\"color:#00cc00;\">x%</span> 额外伤害。",
+        "desc": "松动的牙齿击中时会碎裂，对附近的敌人造成 25% 额外伤害。",
         "icon": "/starpowers/Bonnie/bonnie_starpower_02.png"
       }
     ],
@@ -6864,13 +6864,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000480,
         "name": "糖热",
-        "desc": "克莱德的移动和装弹速度提高 x%，持续 x 秒。（冷却：16 秒）",
+        "desc": "克莱德的移动和装弹速度提高 30%，持续 5 秒。（冷却：16 秒）",
         "icon": "/gadgets/Bonnie/bonnie_gadget_01.png"
       },
       {
         "id": 23000481,
         "name": "碰撞测试",
-        "desc": "邦妮向前冲刺，击退敌人并造成 x 点伤害。（冷却：10 秒）",
+        "desc": "邦妮向前冲刺，击退敌人并造成 1856 点伤害。（冷却：10 秒）",
         "icon": "/gadgets/Bonnie/bonnie_gadget_02.png"
       }
     ],
@@ -6951,7 +6951,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1000,
       "range": "9 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -6967,13 +6967,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000495,
         "name": "模板胶",
-        "desc": "希尔全力压制敌人。阻止他们攻击 <span style=\"color:#00cc00;\">x%</span> 时间。",
+        "desc": "希尔全力压制敌人。阻止他们攻击 33% 时间。",
         "icon": "/starpowers/Otis/otis_starpower_01.png"
       },
       {
         "id": 23000496,
         "name": "墨水笔芯",
-        "desc": "奥蒂斯现在可以喷射 <span style=\"color:#00cc00;\">x%</span> 多的墨滴。",
+        "desc": "奥蒂斯现在可以喷射 33% 多的墨滴。",
         "icon": "/starpowers/Otis/otis_starpower_02.png"
       }
     ],
@@ -6987,7 +6987,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000498,
         "name": "泼溅物",
-        "desc": "奥蒂斯的下一次攻击会射出一个巨大的墨球，留下一个水坑，在 x 秒内造成 x 点伤害。（冷却：17 秒）",
+        "desc": "奥蒂斯的下一次攻击会射出一个巨大的墨球，留下一个水坑，在 1000 秒内造成 1250 点伤害。（冷却：17 秒）",
         "icon": "/gadgets/Otis/otis_gadget_02.png"
       }
     ],
@@ -7068,7 +7068,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 800,
       "range": "3 (近)",
       "reload": "1.6 秒 (with Knuckle Busters; 普通)  0.9 秒 (without Knuckle Busters; 极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7084,7 +7084,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000503,
         "name": "丰盛的康复",
-        "desc": "在召回他的指关节克星后，山姆立即恢复了他缺失的 <span style=\"color:#00cc00;\">x%</span> 生命值。",
+        "desc": "在召回他的指关节克星后，山姆立即恢复了他缺失的 20% 生命值。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000503.png"
       },
       {
@@ -7175,9 +7175,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6600,
       "damage": 1080,
-      "range": "9.33 (Very",
+      "range": "9.33 (极远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7193,13 +7193,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000511,
         "name": "健康富矿",
-        "desc": "从灵魂获得的治疗效果提高 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "从灵魂获得的治疗效果提高 100%。",
         "icon": "/starpowers/Gus/gus_starpower_01.png"
       },
       {
         "id": 23000512,
         "name": "灵兽",
-        "desc": "幽灵使队友的伤害提高 <span style=\"color:#00cc00;\">x%</span>，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "幽灵使队友的伤害提高 25%，持续 5 秒。",
         "icon": "/starpowers/Gus/gus_starpower_02.png"
       }
     ],
@@ -7207,13 +7207,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000513,
         "name": "古怪的波普尔",
-        "desc": "引爆所有未收集的灵魂，对附近的敌人造成 x 点伤害。（冷却：16 秒）",
+        "desc": "引爆所有未收集的灵魂，对附近的敌人造成 1728 点伤害。（冷却：16 秒）",
         "icon": "/gadgets/Gus/gus_gadget_01.png"
       },
       {
         "id": 23000514,
         "name": "灵魂切换者",
-        "desc": "格斯失去 x% 生命值，但立即获得 x% 精神。（冷却：10 秒）",
+        "desc": "格斯失去 5% 生命值，但立即获得 100% 精神。（冷却：10 秒）",
         "icon": "/gadgets/Gus/gus_gadget_02.png"
       }
     ],
@@ -7294,7 +7294,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1380,
       "range": "5.33 (普通)",
       "reload": "1.8 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7310,13 +7310,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000519,
         "name": "百视达",
-        "desc": "巴斯特的镜头光晕对其超级冲锋区域内的每个盟友造成 <span style=\"color:#00cc00;\">x%</span> 点伤害。",
+        "desc": "巴斯特的镜头光晕对其超级冲锋区域内的每个盟友造成 15% 点伤害。",
         "icon": "/starpowers/Buster/buster_starpower_01.png"
       },
       {
         "id": 23000520,
         "name": "凯夫拉背心",
-        "desc": "当蒙太奇处于活动状态时，巴斯特受到的伤害减少 <span style=\"color:#00cc00;\">x%</span>，并且免疫击退、减速和眩晕。",
+        "desc": "当蒙太奇处于活动状态时，巴斯特受到的伤害减少 10%，并且免疫击退、减速和眩晕。",
         "icon": "/starpowers/Buster/buster_starpower_02.png"
       }
     ],
@@ -7324,7 +7324,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000521,
         "name": "实用腰带",
-        "desc": "巴斯特为他的超级冲锋区域内的每个盟友治疗自己和附近所有盟友的 x 生命值。（冷却：16 秒）",
+        "desc": "巴斯特为他的超级冲锋区域内的每个盟友治疗自己和附近所有盟友的 720 生命值。（冷却：16 秒）",
         "icon": "/gadgets/Buster/buster_gadget_01.png"
       },
       {
@@ -7409,9 +7409,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7600,
       "damage": 1340,
-      "range": "Range\n\t\n\t8.33 (远)",
+      "range": "8.33 (远)",
       "reload": "Reload\n\t\n\t1.9 秒 (普通)0.633 秒 (with Candy Beans)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7427,7 +7427,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000527,
         "name": "单身狂",
-        "desc": "切斯特攻击序列的第一个钟声会造成 <span style=\"color:#00cc00;\">x%</span> 伤害。",
+        "desc": "切斯特攻击序列的第一个钟声会造成 150% 伤害。",
         "icon": "/starpowers/Chester/chester_starpower_01.png"
       },
       {
@@ -7447,7 +7447,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000530,
         "name": "糖豆",
-        "desc": "切斯特从帽子里吃了一颗神秘口味​​的糖豆，获得了 x 秒的随机增益。",
+        "desc": "切斯特从帽子里吃了一颗神秘口味​​的糖豆，获得了 5 秒的随机增益。",
         "icon": "/gadgets/Chester/chester_gadget_02.png"
       }
     ],
@@ -7528,7 +7528,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2320,
       "range": "9 (远)",
       "reload": "1.4 秒 (快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7544,13 +7544,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000535,
         "name": "假伤",
-        "desc": "当格雷拥有完整生命值时，下一次受到的伤害会减少 <span style=\"color:#00cc00;\"><VALUE>%</span>。",
+        "desc": "当格雷拥有完整生命值时，下一次受到的伤害会减少 %。",
         "icon": "/starpowers/Gray/gray_starpower_01.png"
       },
       {
         "id": 23000536,
         "name": "新视角",
-        "desc": "当格雷或他的盟友使用门时，他们会恢复最大生命值的<span style=\"color:#00cc00;\"><VALUE>%</span>。",
+        "desc": "当格雷或他的盟友使用门时，他们会恢复最大生命值的%。",
         "icon": "/starpowers/Gray/gray_starpower_02.png"
       }
     ],
@@ -7645,7 +7645,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2600,
       "range": "9 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7661,13 +7661,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000543,
         "name": "在我的视野中",
-        "desc": "曼迪在专注时以 <span style=\"color:#00cc00;\">x%</span> 的速度射出糖果。",
+        "desc": "曼迪在专注时以 15% 的速度射出糖果。",
         "icon": "/starpowers/Mandy/mandy_starpower_01.png"
       },
       {
         "id": 23000544,
         "name": "硬糖",
-        "desc": "曼迪在专注时获得 <span style=\"color:#00cc00;\">x%</span> 护盾。",
+        "desc": "曼迪在专注时获得 40% 护盾。",
         "icon": "/starpowers/Mandy/mandy_starpower_02.png"
       }
     ],
@@ -7760,9 +7760,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 8200,
       "damage": 700,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "1.5 秒 (普通) 1.8 秒 (split; 普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7778,13 +7778,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000553,
         "name": "快速数学",
-        "desc": "最后 <span style=\"color:#00cc00;\">x</span> 秒创建的标记。",
+        "desc": "最后 3 秒创建的标记。",
         "icon": "/starpowers/R-T/rt_starpower_01.png"
       },
       {
         "id": 23000554,
         "name": "记录",
-        "desc": "阿尔缇 和他的腿在分裂时受到的伤害减少 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "阿尔缇 和他的腿在分裂时受到的伤害减少 20%。",
         "icon": "/starpowers/R-T/rt_starpower_02.png"
       }
     ],
@@ -7792,13 +7792,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000555,
         "name": "不合时宜",
-        "desc": "立即为 阿尔缇 的 超级技能 充电。",
+        "desc": "立即为 阿尔缇 的 超级技能 充电。（冷却：20 秒）",
         "icon": "/gadgets/R-T/rt_gadget_02.png"
       },
       {
         "id": 23000556,
         "name": "黑客",
-        "desc": "立即触发所有敌方斗士身上的所有活动标记，对其造成伤害。",
+        "desc": "立即触发所有敌方斗士身上的所有活动标记，对其造成伤害。（冷却：15 秒）",
         "icon": "/gadgets/R-T/rt_gadget_02.png"
       }
     ],
@@ -7879,7 +7879,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 800,
       "range": "7.33 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -7895,13 +7895,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000561,
         "name": "爱情是盲目的",
-        "desc": "灯笼的诅咒还会使受影响的英雄的装填速度降低 <span style=\"color:#00cc00;\">x%</span>，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "灯笼的诅咒还会使受影响的英雄的装填速度降低 30%，持续 3 秒。",
         "icon": "/starpowers/Willow/willow_starpower_01.png"
       },
       {
         "id": 23000562,
         "name": "痴迷",
-        "desc": "被施咒的敌人在精神控制时获得 <span style=\"color:#00cc00;\">x%</span> 移动速度。",
+        "desc": "被施咒的敌人在精神控制时获得 33% 移动速度。",
         "icon": "/starpowers/Willow/willow_starpower_02.png"
       }
     ],
@@ -7915,7 +7915,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000564,
         "name": "潜水",
-        "desc": "薇洛 潜入 x 秒，变得无法瞄准，但在此期间无法采取任何行动。（冷却：16 秒）",
+        "desc": "薇洛 潜入 2 秒，变得无法瞄准，但在此期间无法采取任何行动。（冷却：16 秒）",
         "icon": "/gadgets/Willow/willow_gadget_02.png"
       }
     ],
@@ -7996,7 +7996,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 3000,
       "range": "8.67 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8012,13 +8012,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000569,
         "name": "精确定位",
-        "desc": "压力火箭在最大距离内造成 <span style=\"color:#00cc00;\">x%</span> 伤害。",
+        "desc": "压力火箭在最大距离内造成 25% 伤害。",
         "icon": "/starpowers/Maisie/maisie_starpower_01.png"
       },
       {
         "id": 23000570,
         "name": "震颤",
-        "desc": "被冲击波击中的敌人也会减速 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "被冲击波击中的敌人也会减速 2 秒。",
         "icon": "/starpowers/Maisie/maisie_starpower_02.png"
       }
     ],
@@ -8026,13 +8026,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000571,
         "name": "脱离",
-        "desc": "梅西向前冲刺时会爆炸地面，击晕敌人 x 秒。",
+        "desc": "梅西向前冲刺时会爆炸地面，击晕敌人 0.5 秒。（冷却：16 秒）",
         "icon": "/gadgets/Maisie/maisie_gadget_01.png"
       },
       {
         "id": 23000572,
         "name": "完成他们",
-        "desc": "麦茜 立即重新装填 x 弹药，并使下一次压力火箭伤害增加目标损失生命值的 x%。",
+        "desc": "麦茜 立即重新装填 1 弹药，并使下一次压力火箭伤害增加目标损失生命值的 30%。（冷却：10 秒）",
         "icon": "/gadgets/Maisie/maisie_gadget_02.png"
       }
     ],
@@ -8111,9 +8111,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 10400,
       "damage": 525,
-      "range": "1.67 (min.",
+      "range": "1.67 (min. range)",
       "reload": "0.25 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8129,13 +8129,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000577,
         "name": "它会吹",
-        "desc": "当气球爆炸蓄力超过 <span style=\"color:#00cc00;\">x%</span> 时，汉克将获得 <span style=\"color:#00cc00;\">x%</span> 额外移动速度。",
+        "desc": "当气球爆炸蓄力超过 80% 时，汉克将获得 10% 额外移动速度。",
         "icon": "/starpowers/Hank/hank_starpower_01.png"
       },
       {
         "id": 23000578,
         "name": "隐蔽",
-        "desc": "靠近墙壁时，汉克受到的伤害减少 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "靠近墙壁时，汉克受到的伤害减少 20%。",
         "icon": "/starpowers/Hank/hank_starpower_02.png"
       }
     ],
@@ -8143,13 +8143,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000579,
         "name": "水气球",
-        "desc": "下一次气球爆炸还会使敌人减速 x 秒。（冷却：11 秒）",
+        "desc": "下一次气球爆炸还会使敌人减速 3 秒。（冷却：11 秒）",
         "icon": "/gadgets/Hank/hank_gadget_01.png"
       },
       {
         "id": 23000580,
         "name": "路障",
-        "desc": "汉克受到的伤害降低 x%，持续 x 秒。（冷却：18 秒）",
+        "desc": "汉克受到的伤害降低 40%，持续 3 秒。（冷却：18 秒）",
         "icon": "/gadgets/Hank/hank_gadget_02.png"
       }
     ],
@@ -8230,7 +8230,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1600,
       "range": "5.33 (普通)",
       "reload": "1.2 秒 (极快) 0.96 秒 (with Super)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8246,13 +8246,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000585,
         "name": "组合蘑菇",
-        "desc": "将第二个蘑菇击中与第一个蘑菇相同的目标，会造成 <span style=\"color:#00cc00;\">x%</span> 额外伤害。",
+        "desc": "将第二个蘑菇击中与第一个蘑菇相同的目标，会造成 20% 额外伤害。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000585.png"
       },
       {
         "id": 23000586,
         "name": "蘑菇王国",
-        "desc": "科迪琉斯 在使用他的超级后会在暗影领域生成 <span style=\"color:#00cc00;\">x</span> 个蘑菇，在拾取时治疗盟友并伤害敌人，获得 <span style=\"color:#00cc00;\">x</span> 生命值。 Damage per mushroom：1296",
+        "desc": "科迪琉斯 在使用他的超级后会在暗影领域生成 1296 个蘑菇，在拾取时治疗盟友并伤害敌人，获得 1269 生命值。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000586.png"
       }
     ],
@@ -8266,7 +8266,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000588,
         "name": "毒蘑菇",
-        "desc": "科迪利厄斯的下一次主要攻击会射出毒蘑菇，使敌人在 x 秒内无法攻击。（冷却：18 秒）",
+        "desc": "科迪利厄斯的下一次主要攻击会射出毒蘑菇，使敌人在 1 秒内无法攻击。（冷却：18 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000588.png"
       }
     ],
@@ -8347,7 +8347,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1200,
       "range": "3.33 (近)",
       "reload": "1.5 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8363,13 +8363,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000593,
         "name": "快餐",
-        "desc": "当道格成功复活盟友时，他将恢复最大生命值的 <span style=\"color:#00cc00;\">x%</span> 生命值。",
+        "desc": "当道格成功复活盟友时，他将恢复最大生命值的 100% 生命值。",
         "icon": "/starpowers/Doug/doug_starpower_01.png"
       },
       {
         "id": 23000594,
         "name": "自助服务",
-        "desc": "零食攻击还可以治愈道格<span style=\"color:#00cc00;\">x</span>。 Heal：432",
+        "desc": "零食攻击还可以治愈道格432。",
         "icon": "/starpowers/Doug/doug_starpower_02.png"
       }
     ],
@@ -8462,7 +8462,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 280,
       "range": "9 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8478,13 +8478,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000601,
         "name": "保温性",
-        "desc": "使用 超级技能 时，消耗的热量会减少 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "使用 超级技能 时，消耗的热量会减少 50%。",
         "icon": "/starpowers/Pearl/pearl_starpower_01.png"
       },
       {
         "id": 23000602,
         "name": "隔热罩",
-        "desc": "当热火结束<span style=\"color:#00cc00;\">x%</span>时，减少<span style=\"color:#00cc00;\">x%</span>受到的伤害。",
+        "desc": "当热火结束80%时，减少20%受到的伤害。",
         "icon": "/starpowers/Pearl/pearl_starpower_02.png"
       }
     ],
@@ -8492,13 +8492,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000603,
         "name": "煮过头了",
-        "desc": "下一次基本攻击会发射燃烧的饼干，随着时间的推移造成 x 额外伤害。（冷却：15 秒）",
+        "desc": "下一次基本攻击会发射燃烧的饼干，随着时间的推移造成 832 额外伤害。（冷却：15 秒）",
         "icon": "/gadgets/Pearl/pearl_gadget_01.png"
       },
       {
         "id": 23000604,
         "name": "用爱制造",
-        "desc": "接下来的基本攻击会射出完美烘烤的饼干，忽略敌人并随着时间的推移治愈盟友 x 点。（冷却：11 秒）",
+        "desc": "接下来的基本攻击会射出完美烘烤的饼干，忽略敌人并随着时间的推移治愈盟友 2240 点。（冷却：11 秒）",
         "icon": "/gadgets/Pearl/pearl_gadget_02.png"
       }
     ],
@@ -8579,7 +8579,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 540,
       "range": "6.67 (普通)",
       "reload": "2 秒 (慢)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8595,13 +8595,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000609,
         "name": "进站",
-        "desc": "将最大帖子数量增加 <span style=\"color:#00cc00;\">x</span>。",
+        "desc": "将最大帖子数量增加 1.。",
         "icon": "/starpowers/Chuck/chuck_starpower_01.png"
       },
       {
         "id": 23000610,
         "name": "请购票",
-        "desc": "用他的超级冲刺敌人也会偷走他们的 <span style=\"color:#00cc00;\"><!card.trait.value>%</span> 弹药。",
+        "desc": "用他的超级冲刺敌人也会偷走他们的 % 弹药。",
         "icon": "/starpowers/Chuck/chuck_starpower_02.png"
       }
     ],
@@ -8696,7 +8696,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1600,
       "range": "9 (远)",
       "reload": "-",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8712,13 +8712,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000623,
         "name": "消化",
-        "desc": "被困住的敌人在被困住时会失去 <span style=\"color:#00cc00;\">x%</span> 的生命值。",
+        "desc": "被困住的敌人在被困住时会失去 25% 的生命值。",
         "icon": "/starpowers/Charlie/charlie_starpower_01.png"
       },
       {
         "id": 23000624,
         "name": "粘糊糊的",
-        "desc": "茧会在其身后留下一条持续 <span style=\"color:#00cc00;\">x</span> 秒的粘糊糊的痕迹，减缓敌人在其上行走的速度。",
+        "desc": "茧会在其身后留下一条持续 5 秒的粘糊糊的痕迹，减缓敌人在其上行走的速度。",
         "icon": "/starpowers/Charlie/charlie_starpower_02.png"
       }
     ],
@@ -8726,13 +8726,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000625,
         "name": "蜘蛛",
-        "desc": "查理释放了 x 只蜘蛛，它们会寻找并攻击最近的敌人。（冷却：20 秒）",
+        "desc": "查理释放了 1120 只蜘蛛，它们会寻找并攻击最近的敌人。（冷却：20 秒）",
         "icon": "/gadgets/Charlie/charlie_gadget_01.png"
       },
       {
         "id": 23000626,
         "name": "个人空间",
-        "desc": "查理将自己包裹起来，治愈了她总生命值的 x%。（冷却：15 秒）",
+        "desc": "查理将自己包裹起来，治愈了她总生命值的 50%。（冷却：15 秒）",
         "icon": "/gadgets/Charlie/charlie_gadget_02.png"
       }
     ],
@@ -8812,8 +8812,8 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 7000,
       "damage": 2280,
       "range": "4 (普通)",
-      "reload": "2.4 秒 (Very 慢)",
-      "speed": "820"
+      "reload": "2.4 秒 (极慢)",
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8829,13 +8829,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000637,
         "name": "胡闹",
-        "desc": "每隔 <span style=\"color:#00cc00;\">x</span> 秒，米科 的基本攻击会在击中敌人后窃取他们的弹药。",
+        "desc": "每隔 5 秒，米科 的基本攻击会在击中敌人后窃取他们的弹药。",
         "icon": "/starpowers/Mico/mico_starpower_01.png"
       },
       {
         "id": 23000638,
         "name": "打破纪录",
-        "desc": "米科对非争斗者造成 <span style=\"color:#00cc00;\">x%</span> 额外伤害。",
+        "desc": "米科对非争斗者造成 100% 额外伤害。",
         "icon": "/starpowers/Mico/mico_starpower_02.png"
       }
     ],
@@ -8849,7 +8849,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000640,
         "name": "急板",
-        "desc": "米科的下一次跳跃范围扩大了 x%。（冷却：14 秒）",
+        "desc": "米科的下一次跳跃范围扩大了 34%。（冷却：14 秒）",
         "icon": "/gadgets/Mico/mico_gadget_02.png"
       }
     ],
@@ -8930,7 +8930,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1000,
       "range": "3.67 (近)",
       "reload": "0.8 秒 (极快) 2 秒 (attached; 慢)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -8946,13 +8946,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000646,
         "name": "耗电",
-        "desc": "套件从每个能量立方体中获得 <span style=\"color:#00cc00;\">x%</span> 能量。",
+        "desc": "套件从每个能量立方体中获得 150% 能量。",
         "icon": "/starpowers/Kit/kit_starpower_01.png"
       },
       {
         "id": 23000647,
         "name": "过度依恋",
-        "desc": "套件附着在友好的争吵者上的时间延长了 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "套件附着在友好的争吵者上的时间延长了 5 秒。",
         "icon": "/starpowers/Kit/kit_starpower_02.png"
       }
     ],
@@ -8960,13 +8960,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000648,
         "name": "纸板箱",
-        "desc": "隐藏在纸板箱中，隐形 x 秒。静止时 超级技能 x 充电速度更快。（冷却：23 秒）",
+        "desc": "隐藏在纸板箱中，隐形 3 秒。静止时 超级技能 100% 充电速度更快。（冷却：23 秒）",
         "icon": "/gadgets/Kit/kit_gadget_01.png"
       },
       {
         "id": 23000649,
         "name": "芝士汉堡",
-        "desc": "治愈他自己和他所依附的友好的争斗者 x。（冷却：15 秒）",
+        "desc": "治愈他自己和他所依附的友好的争斗者 30%。（冷却：15 秒）",
         "icon": "/gadgets/Kit/kit_gadget_02.png"
       }
     ],
@@ -9046,8 +9046,8 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 6000,
       "damage": 1400,
       "range": "7.33 (远)",
-      "reload": "2.2 秒 (Very 慢)",
-      "speed": "770"
+      "reload": "2.2 秒 (极慢)",
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9063,13 +9063,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000659,
         "name": "协议保护",
-        "desc": "当 Lawrie 在范围内时，将 <span style=\"color:#00cc00;\">x%</span> 受到的伤害转移到自己身上。",
+        "desc": "当 Lawrie 在范围内时，将 30% 受到的伤害转移到自己身上。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000659.png"
       },
       {
         "id": 23000660,
         "name": "协议协助",
-        "desc": "当 Lawrie 在射程内时，只要他对敌人造成伤害，就重新装填 <span style=\"color:#00cc00;\">x%</span> 的弹药。",
+        "desc": "当 Lawrie 在射程内时，只要他对敌人造成伤害，就重新装填 30% 的弹药。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000660.png"
       }
     ],
@@ -9077,13 +9077,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000661,
         "name": "订单互换",
-        "desc": "与劳里交换武器。",
+        "desc": "与劳里交换武器。（冷却：12 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000661.png"
       },
       {
         "id": 23000662,
         "name": "订单回退",
-        "desc": "冲向 Lawrie，同时 Lawrie 冲向你，治疗双方最大生命值的 x%。",
+        "desc": "冲向 Lawrie，同时 Lawrie 冲向你，治疗双方最大生命值的 25%。（冷却：17 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000662.png"
       }
     ],
@@ -9151,7 +9151,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 460,
       "range": "8 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9167,13 +9167,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000667,
         "name": "快节奏",
-        "desc": "麦乐迪 的移动速度因每个围绕她旋转的音符而增加 <span style=\"color:#00cc00;\">x%</span> 。",
+        "desc": "麦乐迪 的移动速度因每个围绕她旋转的音符而增加 6% 。",
         "icon": "/starpowers/Melodie/melodie_starpower_01.png"
       },
       {
         "id": 23000668,
         "name": "扩展混合",
-        "desc": "麦乐迪 的音符会持续 <span style=\"color:#00cc00;\">x%</span> 时间然后消失。",
+        "desc": "麦乐迪 的音符会持续 25% 时间然后消失。",
         "icon": "/starpowers/Melodie/melodie_starpower_02.png"
       }
     ],
@@ -9181,13 +9181,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000669,
         "name": "完美音调",
-        "desc": "麦乐迪 的音符移动速度增加 x%，轨道扩大 x%，持续 x 秒。（冷却：14 秒）",
+        "desc": "麦乐迪 的音符移动速度增加 25%，轨道扩大 60%，持续 5 秒。（冷却：14 秒）",
         "icon": "/gadgets/Melodie/melodie_gadget_01.png"
       },
       {
         "id": 23000670,
         "name": "插曲",
-        "desc": "旋律从围绕她旋转的每个音符中获得 x% 护盾。（冷却：19 秒）",
+        "desc": "旋律从围绕她旋转的每个音符中获得 10% 护盾。（冷却：19 秒）",
         "icon": "/gadgets/Melodie/melodie_gadget_02.png"
       }
     ],
@@ -9266,9 +9266,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6200,
       "damage": 200,
-      "range": "10 (Very",
+      "range": "10 (极远)",
       "reload": "0.1 秒 (极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9284,13 +9284,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000675,
         "name": "赋能",
-        "desc": "留在超级舱内每秒可以治疗安杰洛 <span style=\"color:#00cc00;\">x</span> 的生命。 Heal per second：558",
+        "desc": "留在超级舱内每秒可以治疗安杰洛 558 的生命。",
         "icon": "/starpowers/Angelo/angelo_starpower_01.png"
       },
       {
         "id": 23000676,
         "name": "流动",
-        "desc": "安吉洛入水后移动速度提高 <span style=\"color:#00cc00;\">x%</span> 。",
+        "desc": "安吉洛入水后移动速度提高 25% 。",
         "icon": "/starpowers/Angelo/angelo_starpower_02.png"
       }
     ],
@@ -9298,7 +9298,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000677,
         "name": "刺痛飞行",
-        "desc": "飞到空中 x 秒。起飞时消耗附近敌人的 x 生命值。（冷却：18 秒）",
+        "desc": "飞到空中 528 秒。起飞时消耗附近敌人的 1 生命值。（冷却：18 秒）",
         "icon": "/gadgets/Angelo/angelo_gadget_01.png"
       },
       {
@@ -9385,7 +9385,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 700,
       "range": "4 (普通)",
       "reload": "1 秒 (极快)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9401,13 +9401,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000734,
         "name": "暴露",
-        "desc": "每隔 <span style=\"color:#00cc00;\">x</span> 秒，下一次长矛刺击会暴露击中的敌人。暴露在外的敌人受到的伤害提高 <span style=\"color:#00cc00;\">x%</span>，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "每隔 5 秒，下一次长矛刺击会暴露击中的敌人。暴露在外的敌人受到的伤害提高 35%，持续 5 秒。",
         "icon": "/starpowers/Draco/draco_starpower_01.png"
       },
       {
         "id": 23000735,
         "name": "粉碎",
-        "desc": "龙独奏现在在激活时还可以治疗 <span style=\"color:#00cc00;\">x</span> 。 Heal：2520",
+        "desc": "龙独奏现在在激活时还可以治疗 2520 。",
         "icon": "/starpowers/Draco/draco_starpower_02.png"
       }
     ],
@@ -9421,7 +9421,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000737,
         "name": "最后一站",
-        "desc": "德拉科 在 x 秒内无法陷入单一生命值。（冷却：22 秒）",
+        "desc": "德拉科 在 2 秒内无法陷入单一生命值。（冷却：22 秒）",
         "icon": "/gadgets/Draco/draco_gadget_02.png"
       }
     ],
@@ -9502,7 +9502,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2120,
       "range": "2 (近)",
       "reload": "0.8 秒 (极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9518,13 +9518,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000752,
         "name": "尖刺",
-        "desc": "传送到敌人身边后，莉莉的下一次攻击会造成 <span style=\"color:#00cc00;\">x</span> 点额外伤害 Damage Increase：954",
+        "desc": "传送到敌人身边后，莉莉的下一次攻击会造成 954 点额外伤害",
         "icon": "/starpowers/Lily/lily_starpower_01.png"
       },
       {
         "id": 23000753,
         "name": "警觉",
-        "desc": "当敌人在她的超级冲锋半径内时获得 <span style=\"color:#00cc00;\">x%</span> 移动速度",
+        "desc": "当敌人在她的超级冲锋半径内时获得 15% 移动速度",
         "icon": "/starpowers/Lily/lily_starpower_02.png"
       }
     ],
@@ -9532,7 +9532,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000754,
         "name": "消失",
-        "desc": "莉莉进入暗影领域x秒（冷却：22 秒）",
+        "desc": "莉莉进入暗影领域3秒（冷却：22 秒）",
         "icon": "/gadgets/Lily/lily_gadget_01.png"
       },
       {
@@ -9617,8 +9617,8 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 5200,
       "damage": 660,
       "range": "6.33 (普通)",
-      "reload": "2.4 秒 (Very 慢) 1.6 秒 (With Floor is Fine; 普通)",
-      "speed": "720"
+      "reload": "2.4 秒 (极慢) 1.6 秒 (With Floor is Fine; 普通)",
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9634,13 +9634,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000764,
         "name": "地板很好",
-        "desc": "贝瑞站在自己融化的冰淇淋上时，装弹速度提高 <span style=\"color:#00cc00;\">x%</span> 。",
+        "desc": "贝瑞站在自己融化的冰淇淋上时，装弹速度提高 50% 。",
         "icon": "/starpowers/Berry/berry_starpower_01.png"
       },
       {
         "id": 23000765,
         "name": "弄得一团糟",
-        "desc": "贝瑞的基本攻击在撞击没有冰淇淋的区域时会获得 <span style=\"color:#00cc00;\">x%</span> 额外伤害。",
+        "desc": "贝瑞的基本攻击在撞击没有冰淇淋的区域时会获得 20% 额外伤害。",
         "icon": "/starpowers/Berry/berry_starpower_02.png"
       }
     ],
@@ -9648,13 +9648,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000766,
         "name": "友谊真伟大",
-        "desc": "贝瑞挥动尾巴，击退敌人并治疗附近盟友的 x 生命值。",
+        "desc": "贝瑞挥动尾巴，击退敌人并治疗附近盟友的 832 生命值。（冷却：17 秒）",
         "icon": "/gadgets/Berry/berry_gadget_01.png"
       },
       {
         "id": 23000767,
         "name": "健康添加剂",
-        "desc": "贝里的下一个主要攻击区域的持续时间延长 x%。（冷却：12 秒）",
+        "desc": "贝里的下一个主要攻击区域的持续时间延长 100%。（冷却：12 秒）",
         "icon": "/gadgets/Berry/berry_gadget_02.png"
       }
     ],
@@ -9735,7 +9735,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 700,
       "range": "7.67 (远)",
       "reload": "2 秒 (慢)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9751,7 +9751,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000772,
         "name": "侦察",
-        "desc": "克兰西 使用 <span style=\"color:#00cc00;\">x</span> 标记开始比赛。",
+        "desc": "克兰西 使用 2 标记开始比赛。",
         "icon": "/starpowers/Clancy/clancy_starpower_01.png"
       },
       {
@@ -9765,13 +9765,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000774,
         "name": "敏捷的射击",
-        "desc": "克兰西获得双倍标记，持续 x 秒。（冷却：12 秒）",
+        "desc": "克兰西获得双倍标记，持续 5 秒。（冷却：12 秒）",
         "icon": "/gadgets/Clancy/clancy_gadget_01.png"
       },
       {
         "id": 23000775,
         "name": "战术撤退",
-        "desc": "克兰西冲刺并重新装填 x 弹药（冷却：13 秒）",
+        "desc": "克兰西冲刺并重新装填 1 弹药（冷却：13 秒）",
         "icon": "/gadgets/Clancy/clancy_gadget_02.png"
       }
     ],
@@ -9850,7 +9850,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 500,
       "range": "7.67 (远)",
       "reload": "1.5 秒 (普通) 0.22 秒 (Driller; 极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9964,9 +9964,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 8000,
       "damage": 750,
-      "range": "2.67 (dash;",
+      "range": "2.67 (dash; 近)",
       "reload": "1 秒 (极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -9982,13 +9982,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000815,
         "name": "研究了刀锋",
-        "desc": "Slashimi 的切片具有 <span style=\"color:#00cc00;\">x%</span> 更长的射程",
+        "desc": "Slashimi 的切片具有 30% 更长的射程",
         "icon": "/starpowers/Kenji/kenji_starpower_1.png"
       },
       {
         "id": 23000816,
         "name": "握寿司复仇者",
-        "desc": "避免伤害 <span style=\"color:#00cc00;\">x</span> 秒后，下次敌人攻击时获得 <span style=\"color:#00cc00;\">x%</span> 伤害减免。",
+        "desc": "避免伤害 5 秒后，下次敌人攻击时获得 60% 伤害减免。",
         "icon": "/starpowers/Kenji/kenji_starpower_2.png"
       }
     ],
@@ -9996,13 +9996,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000817,
         "name": "大石冲刺",
-        "desc": "健次 的基本攻击仅在接下来的 x 秒内使用冲刺。（冷却：15 秒）",
+        "desc": "健次 的基本攻击仅在接下来的 3 秒内使用冲刺。（冷却：15 秒）",
         "icon": "/gadgets/Kenji/kenji_gadget_1.png"
       },
       {
         "id": 23000818,
         "name": "细卷疗愈",
-        "desc": "健次 立即治疗过去 x 秒内受到的 x% 伤害。（冷却：17 秒）",
+        "desc": "健次 立即治疗过去 3 秒内受到的 50% 伤害。（冷却：17 秒）",
         "icon": "/gadgets/Kenji/kenji_gadget_2.png"
       }
     ],
@@ -10083,7 +10083,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 800,
       "range": "3.67 (近)",
       "reload": "0.8 秒 (极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10105,7 +10105,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000833,
         "name": "硬化连帽衫",
-        "desc": "阴影在虚体形态下获得 <span style=\"color:#00cc00;\">x%</span> 伤害减免。",
+        "desc": "阴影在虚体形态下获得 30% 伤害减免。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000833.png"
       }
     ],
@@ -10113,13 +10113,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000834,
         "name": "长臂",
-        "desc": "下一次主要攻击的射程更长 x%。（冷却：15 秒）",
+        "desc": "下一次主要攻击的射程更长 50%。（冷却：15 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000834.png"
       },
       {
         "id": 23000835,
         "name": "跳跃惊吓",
-        "desc": "阴影会惊吓附近的敌人，使其减速 x 秒。（冷却：9 秒）",
+        "desc": "阴影会惊吓附近的敌人，使其减速 4 秒。（冷却：9 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000835.png"
       }
     ],
@@ -10198,7 +10198,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 800,
       "range": "6.33 (普通)",
       "reload": "1.6 秒 (普通) 2 秒 (while Voodoo Chile is active)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10214,13 +10214,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000848,
         "name": "守卫的格里斯-格里斯",
-        "desc": "格里斯-格里斯被召唤时带有防护罩。 Health：1944",
+        "desc": "格里斯-格里斯被召唤时带有防护罩。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000848.png"
       },
       {
         "id": 23000849,
         "name": "麻针",
-        "desc": "Gris-Gris 的攻击现在还会使敌人减速 <span style=\"color:#00cc00;\"><!card.projectile.statuseffectenemy.duration.ticksasseconds></span> 秒",
+        "desc": "Gris-Gris 的攻击现在还会使敌人减速 秒",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23000849.png"
       }
     ],
@@ -10314,7 +10314,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 0,
       "range": "-",
       "reload": "-",
-      "speed": "720"
+      "speed": "720 (Laser Mode; 普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10418,7 +10418,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 2520,
       "range": "7.67 (远)",
       "reload": "1.7 秒 (普通)  1.417 秒 (with Rule Bending) 2 秒 (while Mansions of Meeple is active) 1.667 秒 (with Rule Bending and while Mansions of Meeple is active)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10434,13 +10434,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000875,
         "name": "请勿通过 前往",
-        "desc": "当您射击环境时，会造成 <span style=\"color:#00cc00;\">x</span> 点更多伤害。 Damage Bonus：540",
+        "desc": "当您射击环境时，会造成 540 点更多伤害。",
         "icon": "/starpowers/Meeple/meeple_starpower_1.png"
       },
       {
         "id": 23000876,
         "name": "规则弯曲",
-        "desc": "关键成功还会使该区域内的盟友装填速度提高 <span style=\"color:#00cc00;\"><VALUE>%</span>。",
+        "desc": "关键成功还会使该区域内的盟友装填速度提高 %。",
         "icon": "/starpowers/Meeple/meeple_starpower_2.png"
       }
     ],
@@ -10448,7 +10448,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000877,
         "name": "米普尔豪宅",
-        "desc": "米普尔的下一次攻击会在撞击区域周围创建骰子塔并造成 x 点伤害。",
+        "desc": "米普尔的下一次攻击会在撞击区域周围创建骰子塔并造成 800 点伤害。（冷却：22 秒）",
         "icon": "/gadgets/Meeple/meeple_gadget_1.png"
       },
       {
@@ -10534,7 +10534,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1800,
       "range": "6.33 (普通)",
       "reload": "1.8 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10550,13 +10550,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000883,
         "name": "踢推",
-        "desc": "当靠近墙壁时，奥利会启动气垫板并获得 <span style=\"color:#00cc00;\">x%</span> 额外移动速度。",
+        "desc": "当靠近墙壁时，奥利会启动气垫板并获得 20% 额外移动速度。",
         "icon": "/starpowers/Ollie/ollie_starpower_1.png"
       },
       {
         "id": 23000884,
         "name": "叛徒",
-        "desc": "带着他的超级冲锋后，奥利在 <span style=\"color:#00cc00;\">x</span> 秒内获得了 <span style=\"color:#00cc00;\">x</span> 个腐烂护盾。",
+        "desc": "带着他的超级冲锋后，奥利在 3000 秒内获得了 4 个腐烂护盾。",
         "icon": "/starpowers/Ollie/ollie_starpower_2.png"
       }
     ],
@@ -10564,13 +10564,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000885,
         "name": "调节",
-        "desc": "奥利跳跃并进行猛烈的踢腿翻转，催眠他落地处的所有敌人 x 秒。（冷却：20 秒）",
+        "desc": "奥利跳跃并进行猛烈的踢腿翻转，催眠他落地处的所有敌人 1 秒。（冷却：20 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000885.png"
       },
       {
         "id": 23000886,
         "name": "所有人都注视着我",
-        "desc": "奥利的下一次攻击将催眠任何击中的敌人 x 秒。（冷却：15 秒）",
+        "desc": "奥利的下一次攻击将催眠任何击中的敌人 1 秒。（冷却：15 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23000886.png"
       }
     ],
@@ -10650,7 +10650,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 600,
       "range": "8 (远)",
       "reload": "-",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10666,13 +10666,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000905,
         "name": "42% 烧毁",
-        "desc": "露米 的 Blast Beat 产生的爆炸也使该区域着火了 <span style=\"color:#00cc00;\">x</span> 秒。火灾伤害也会随着爆炸伤害而增加。最大爆炸每秒造成的伤害：<span style=\"color:#00cc00;\">x</span> 1st Fire per second：360",
+        "desc": "露米 的 Blast Beat 产生的爆炸也使该区域着火了 360 秒。火灾伤害也会随着爆炸伤害而增加。最大爆炸每秒造成的伤害：432",
         "icon": "/starpowers/Lumi/lumi_starpower_1.png"
       },
       {
         "id": 23000906,
         "name": "半场",
-        "desc": "卢米可以使被她召回的晨星击中的敌人减速 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "卢米可以使被她召回的晨星击中的敌人减速 1 秒。",
         "icon": "/starpowers/Lumi/lumi_starpower_2.png"
       }
     ],
@@ -10680,13 +10680,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000907,
         "name": "打灯",
-        "desc": "卢米点燃地面上的晨星，产生火焰，对附近的敌人造成 x 秒伤害。每秒伤害：x",
+        "desc": "卢米点燃地面上的晨星，产生火焰，对附近的敌人造成 288 秒伤害。每秒伤害：3.9（冷却：14 秒）",
         "icon": "/gadgets/Lumi/lumi_gadget_1.png"
       },
       {
         "id": 23000908,
         "name": "严酷和冻伤",
-        "desc": "露米 在地面上的晨星周围产生冰冷的风，在 x 秒内形成光滑的表面。",
+        "desc": "露米 在地面上的晨星周围产生冰冷的风，在 3.9 秒内形成光滑的表面。（冷却：23 秒）",
         "icon": "/gadgets/Lumi/lumi_gadget_2.png"
       }
     ],
@@ -10763,9 +10763,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7400,
       "damage": 900,
-      "range": "8.33 (middle;",
+      "range": "8.33 (middle; 远)",
       "reload": "1.3 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10781,13 +10781,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000915,
         "name": "象形文字停止",
-        "desc": "芬克斯将主要攻击击中的所有敌方乱斗者的装填速度降低 <span style=\"color:#00cc00;\">x%</span>，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "芬克斯将主要攻击击中的所有敌方乱斗者的装填速度降低 25%，持续 3 秒。",
         "icon": "/starpowers/Finx/finx_starpower_1.png"
       },
       {
         "id": 23000916,
         "name": "底漆",
-        "desc": "仅芬克斯的射弹造成的伤害会因时间扭曲而加速，每次都会使超级持续时间增加 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "仅芬克斯的射弹造成的伤害会因时间扭曲而加速，每次都会使超级持续时间增加 0.25 秒。",
         "icon": "/starpowers/Finx/finx_starpower_2.png"
       }
     ],
@@ -10795,13 +10795,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000917,
         "name": "回到夹具",
-        "desc": "芬克斯 及时后退，回到 x 秒前的位置和弹药。",
+        "desc": "芬克斯 及时后退，回到 3 秒前的位置和弹药。（冷却：18 秒）",
         "icon": "/gadgets/Finx/finx_gadget_1.png"
       },
       {
         "id": 23000918,
         "name": "无处可逃",
-        "desc": "芬克斯主要攻击的下一个投射物会及时冻结敌人 x 秒，使他们在这段时间内无法采取行动，但也使他们免受任何伤害。（冷却：17 秒）",
+        "desc": "芬克斯主要攻击的下一个投射物会及时冻结敌人 2 秒，使他们在这段时间内无法采取行动，但也使他们免受任何伤害。（冷却：17 秒）",
         "icon": "/gadgets/Finx/finx_gadget_2.png"
       }
     ],
@@ -10880,7 +10880,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 750,
       "range": "8.33 (远)",
       "reload": "1.5 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -10896,13 +10896,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000929,
         "name": "人群变得温和",
-        "desc": "靠近队友可以让 Jae-yong 在范围内为每个队友提供 <span style=\"color:#00cc00;\">x%</span> 的速度提升。",
+        "desc": "靠近队友可以让 Jae-yong 在范围内为每个队友提供 10% 的速度提升。",
         "icon": "/starpowers/Jae-Yong/Jae-Yong_starpower_1.png"
       },
       {
         "id": 23000930,
         "name": "超高音",
-        "desc": "主要攻击现在对每个被刺穿的目标造成额外的 <span style=\"color:#00cc00;\">x%</span> 伤害。",
+        "desc": "主要攻击现在对每个被刺穿的目标造成额外的 20% 伤害。",
         "icon": "/starpowers/Jae-Yong/Jae-Yong_starpower_2.png"
       }
     ],
@@ -10910,13 +10910,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000931,
         "name": "周末勇士",
-        "desc": "造成区域伤害并增加主要攻击伤害，持续 x 秒。（冷却：15 秒）",
+        "desc": "造成区域伤害并增加主要攻击伤害，持续 1680 秒。（冷却：15 秒）",
         "icon": "/gadgets/Jae-Yong/Jae-Yong_gadget_1.png"
       },
       {
         "id": 23000932,
         "name": "是时候唱一首慢歌了",
-        "desc": "Jae-yong 减慢了他周围的敌人的速度，他的攻击会留下减缓文件速度 x 秒的痕迹。",
+        "desc": "Jae-yong 减慢了他周围的敌人的速度，他的攻击会留下减缓文件速度 5 秒的痕迹。（冷却：12 秒）",
         "icon": "/gadgets/Jae-Yong/Jae-Yong_gadget_2.png"
       }
     ],
@@ -10984,7 +10984,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 0,
       "range": "-",
       "reload": "-",
-      "speed": "820"
+      "speed": "820 (geisha; 极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11000,13 +11000,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000938,
         "name": "先进技术",
-        "desc": "在攻击点击中敌人还会使他们减速 <span style=\"color:#00cc00;\">x%</span>，持续 <span style=\"color:#00cc00;\">x</span> 秒",
+        "desc": "在攻击点击中敌人还会使他们减速 30%，持续 2.5 秒",
         "icon": "/starpowers/Kaze/kaze_starpower_1.png"
       },
       {
         "id": 23000939,
         "name": "包含小费",
-        "desc": "移除最初陷入风扇风暴的斗士的 <span style=\"color:#00cc00;\">x%</span> 弹药",
+        "desc": "移除最初陷入风扇风暴的斗士的 34% 弹药",
         "icon": "/starpowers/Kaze/kaze_starpower_2.png"
       }
     ],
@@ -11014,7 +11014,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000940,
         "name": "亲切的主人",
-        "desc": "切换到忍者形态并获得 x% 移动速度，持续 x 秒",
+        "desc": "切换到忍者形态并获得 30% 移动速度，持续 2.5 秒",
         "icon": "/gadgets/Kaze/kaze_gadget_1.png"
       },
       {
@@ -11086,9 +11086,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7800,
       "damage": 2600,
-      "range": "2.33 (dash;",
-      "reload": "2.1 秒 (dash; 慢) 2.8 秒 (jump; Very 慢) 1.68 秒 (dash; with You Better Run, You Better Take Cover) 2.24 秒 (jump; with You Better Run, You Better Take Cover)",
-      "speed": "770"
+      "range": "2.33 (dash; 近)",
+      "reload": "2.1 秒 (dash; 慢) 2.8 秒 (jump; 极慢) 1.68 秒 (dash; with You Better Run, You Better Take Cover) 2.24 秒 (jump; with You Better Run, You Better Take Cover)",
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11104,13 +11104,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000989,
         "name": "蜥蜴四肢",
-        "desc": "愤怒时，阿里在脱离战斗后仅 <span style=\"color:#00cc00;\">x</span> 秒后就能更快地恢复生命值。",
+        "desc": "愤怒时，阿里在脱离战斗后仅 1.5 秒后就能更快地恢复生命值。",
         "icon": "/starpowers/Alli/alli_starpower_1.png"
       },
       {
         "id": 23000990,
         "name": "你最好跑，最好躲起来",
-        "desc": "愤怒时，阿利 的重新装弹速度会加快 <span style=\"color:#00cc00;\">x%</span> 速度。",
+        "desc": "愤怒时，阿利 的重新装弹速度会加快 25% 速度。",
         "icon": "/starpowers/Alli/alli_starpower_2.png"
       }
     ],
@@ -11118,13 +11118,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000991,
         "name": "喂鳄鱼",
-        "desc": "下一次主要攻击会治疗阿里所造成伤害的 x%。",
+        "desc": "下一次主要攻击会治疗阿里所造成伤害的 100%。（冷却：10 秒）",
         "icon": "/gadgets/Alli/alli_gadget_1.png"
       },
       {
         "id": 23000992,
         "name": "冷血",
-        "desc": "阿利 在接下来的 x 秒内变得愤怒。仅当敌人可见时才能激活。（冷却：17 秒）",
+        "desc": "阿利 在接下来的 4 秒内变得愤怒。仅当敌人可见时才能激活。（冷却：17 秒）",
         "icon": "/gadgets/Alli/alli_gadget_2.png"
       }
     ],
@@ -11192,7 +11192,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1050,
       "range": "3.33 (近)",
       "reload": "1.5 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11208,7 +11208,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000998,
         "name": "新昆虫霸主",
-        "desc": "蚂蚁还会减少敌人 <span style=\"color:#00cc00;\">x%</span> 的伤害",
+        "desc": "蚂蚁还会减少敌人 15% 的伤害",
         "icon": "/starpowers/Trunk/trunk_starpower_1.png"
       },
       {
@@ -11222,13 +11222,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001000,
         "name": "为了女王",
-        "desc": "树干瞬间将蚂蚁散布到大片区域。",
+        "desc": "树干瞬间将蚂蚁散布到大片区域。（冷却：7 秒）",
         "icon": "/gadgets/Trunk/trunk_gadget_1.png"
       },
       {
         "id": 23001001,
         "name": "工蚁",
-        "desc": "躯干在接下来的 x 秒内从受到的第一个伤害源中恢复。（冷却：16 秒）",
+        "desc": "躯干在接下来的 2 秒内从受到的第一个伤害源中恢复。（冷却：16 秒）",
         "icon": "/gadgets/Trunk/trunk_gadget_2.png"
       }
     ],
@@ -11294,9 +11294,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 7200,
       "damage": 800,
-      "range": "8 (first",
+      "range": "8 (first sequence; 远)",
       "reload": "1.4 秒 (快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11312,7 +11312,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001039,
         "name": "祖姆祖姆祖姆",
-        "desc": "米娜的连击攻击 3 还可以治疗所造成伤害的 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "米娜的连击攻击 3 还可以治疗所造成伤害的 50%。",
         "icon": "/starpowers/Mina/mina_starpower_1.png"
       },
       {
@@ -11326,7 +11326,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001041,
         "name": "风车",
-        "desc": "创建风墙，阻挡射弹 x 秒。（冷却：22 秒）",
+        "desc": "创建风墙，阻挡射弹 1.5 秒。（冷却：22 秒）",
         "icon": "/gadgets/Mina/mina_gadget_1.png"
       },
       {
@@ -11400,7 +11400,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1900,
       "range": "7.33 (远)",
       "reload": "1.8 秒 (普通)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11416,13 +11416,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001047,
         "name": "雷霆万钧",
-        "desc": "被 兹奇 的 超级技能 伤害的英雄会被减速 <span style=\"color:#00cc00;\">x%</span> ，持续 <span style=\"color:#00cc00;\">x</span> 秒。",
+        "desc": "被 兹奇 的 超级技能 伤害的英雄会被减速 20% ，持续 1 秒。",
         "icon": "/starpowers/Ziggy/ziggy_starpower_1.png"
       },
       {
         "id": 23001048,
         "name": "伟大的齐吉尼",
-        "desc": "用雷击击中下一次主攻击的伤害会增加 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "用雷击击中下一次主攻击的伤害会增加 18%。",
         "icon": "/starpowers/Ziggy/ziggy_starpower_2.png"
       }
     ],
@@ -11430,7 +11430,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001049,
         "name": "电动洗牌",
-        "desc": "兹奇 每秒用闪电击中最近的敌人，持续 x 秒。这些攻击不需要弹药。（冷却：17 秒）",
+        "desc": "兹奇 每秒用闪电击中最近的敌人，持续 5 秒。这些攻击不需要弹药。（冷却：17 秒）",
         "icon": "/gadgets/Ziggy/ziggy_gadget_1.png"
       },
       {
@@ -11502,9 +11502,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6000,
       "damage": 950,
-      "range": "10 (Very",
-      "reload": "3 秒 (full ammo bar; Very 慢)",
-      "speed": "720"
+      "range": "10 (极远)",
+      "reload": "3 秒 (full ammo bar; 极慢)",
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11520,13 +11520,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001060,
         "name": "使命游泳",
-        "desc": "皮尔斯的最后弹药也会使敌人减速 <span style=\"color:#00cc00;\">x%</span>。",
+        "desc": "皮尔斯的最后弹药也会使敌人减速 25%。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23001060.png"
       },
       {
         "id": 23001061,
         "name": "滑动 N 狙击",
-        "desc": "收集炮弹时，皮尔斯会获得短暂的移动速度爆发 (<span style=\"color:#00cc00;\">x%</span>)。",
+        "desc": "收集炮弹时，皮尔斯会获得短暂的移动速度爆发 (15%)。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23001061.png"
       }
     ],
@@ -11534,13 +11534,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001062,
         "name": "无底弹匣",
-        "desc": "重新装填 x 弹药并在皮尔斯旁边扔下一枚炮弹。（冷却：18 秒）",
+        "desc": "重新装填 1 弹药并在皮尔斯旁边扔下一枚炮弹。（冷却：18 秒）",
         "icon": "/gadgets/Pierce/pierce_gadget_01.png"
       },
       {
         "id": 23001063,
         "name": "你们只吵架两次",
-        "desc": "皮尔斯将吸收所有炮弹并为每一枚炮弹获得 x 护盾，同时还会击退附近的敌人。（冷却：13 秒）",
+        "desc": "皮尔斯将吸收所有炮弹并为每一枚炮弹获得 1200 护盾，同时还会击退附近的敌人。（冷却：13 秒）",
         "icon": "/gadgets/Pierce/pierce_gadget_02.png"
       }
     ],
@@ -11608,7 +11608,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1200,
       "range": "2.33 (近)",
       "reload": "0.22 秒 (2.2 秒 max; 极快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11624,13 +11624,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001068,
         "name": "帘布层保护",
-        "desc": "如果 <span style=\"color:#00cc00;\">x</span> 秒内没有受到任何伤害，则超级充能率提高 <span style=\"color:#00cc00;\">x%</span>",
+        "desc": "如果 2 秒内没有受到任何伤害，则超级充能率提高 30%",
         "icon": "/starpowers/Gigi/gigi_starpower_1.png"
       },
       {
         "id": 23001069,
         "name": "伸出援助之手",
-        "desc": "影子木偶现在在充电后可以恢复 <span style=\"color:#00cc00;\">x</span> 的生命值。 Heal：2160",
+        "desc": "影子木偶现在在充电后可以恢复 2160 的生命值。",
         "icon": "/starpowers/Gigi/gigi_starpower_2.png"
       }
     ],
@@ -11644,7 +11644,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001071,
         "name": "失踪法",
-        "desc": "吉吉创造了一个区域，让自己和盟友在里面隐形。持续 x 秒。（冷却：15 秒）",
+        "desc": "吉吉创造了一个区域，让自己和盟友在里面隐形。持续 3 秒。（冷却：15 秒）",
         "icon": "/gadgets/Gigi/gigi_gadget_2.png"
       }
     ],
@@ -11712,7 +11712,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 600,
       "range": "7.33 (远)",
       "reload": "1.6 秒 (普通)",
-      "speed": "720"
+      "speed": "720 (普通)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11728,7 +11728,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001189,
         "name": "黄昏奔跑者",
-        "desc": "阴影具有 <span style=\"color:#00cc00;\">+<!card.statusEffect.speedBoostPercent>%</span> 移动速度。",
+        "desc": "阴影具有 +% 移动速度。",
         "icon": "/starpowers/Sirius/sirius_starpower_01.png"
       },
       {
@@ -11742,13 +11742,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001191,
         "name": "斯塔尔诞生",
-        "desc": "天狼星发射一枚射弹，击中时召唤暗影，同时使击中目标减速 % 秒。",
+        "desc": "天狼星发射一枚射弹，击中时召唤暗影，同时使击中目标减速 % 秒。（冷却：20 秒）",
         "icon": "/gadgets/Sirius/sirius_gadget_01.png"
       },
       {
         "id": 23001192,
         "name": "阴影大师",
-        "desc": "召唤的暗影回到小天狼星身边，小天狼星治愈了他们 % 的生命值。",
+        "desc": "召唤的暗影回到小天狼星身边，小天狼星治愈了他们 % 的生命值。（冷却：13 秒）",
         "icon": "/gadgets/Sirius/sirius_gadget_02.png"
       }
     ],
@@ -11814,9 +11814,9 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "stats": {
       "health": 6800,
       "damage": 300,
-      "range": "6 (jar;",
+      "range": "6 (jar; 普通)",
       "reload": "0.8 秒 (极快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11838,7 +11838,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001217,
         "name": "有毒",
-        "desc": "毒药伤害会随着目标格斗者当前的生命值百分比而变化，当目标生命值达到 100% 时，最多会造成额外 <span style=\"color:#00cc00;\"><!card.character.component.trait[1].statusEffect.damage.scaleToLevel></span> 伤害。 Max Bonus Damage：180",
+        "desc": "毒药伤害会随着目标格斗者当前的生命值百分比而变化，当目标生命值达到 100% 时，最多会造成额外 伤害。",
         "icon": "/starpowers/Najia/Najia_StarPower2.png"
       }
     ],
@@ -11920,7 +11920,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 700,
       "range": "2.67 (近)",
       "reload": "1.2 秒 (快)",
-      "speed": "770"
+      "speed": "770 (快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -11936,7 +11936,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001245,
         "name": "群杀",
-        "desc": "将目标撞到墙上会使他们昏迷 <span style=\"color:#00cc00;\"><!card.value1.ticksasseconds></span> 秒。",
+        "desc": "将目标撞到墙上会使他们昏迷 秒。",
         "icon": "/starpowers/Damian/damian_starpower_firepower.png"
       },
       {
@@ -11956,7 +11956,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001248,
         "name": "音墙",
-        "desc": "达米安召唤出一面坚不可摧的安培临时墙！",
+        "desc": "达米安召唤出一面坚不可摧的安培临时墙！（冷却：20 秒）",
         "icon": "/gadgets/Damian/damian_gadget_builder.png"
       }
     ],
@@ -12024,7 +12024,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "damage": 1080,
       "range": "5.67 (普通)",
       "reload": "1.4 秒 (快)",
-      "speed": "820"
+      "speed": "820 (极快)"
     },
     "attack": {
       "name": "普通攻击",
@@ -12040,13 +12040,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001253,
         "name": "最大功率水平",
-        "desc": "在变形状态下击中敌方格斗家，你的伤害会增加 <span style=\"color:#00cc00;\"><!card.statuseffect.damageboostpercent>%</span>，最高可达 <span style=\"color:#00cc00;\"><!card.statuseffect.damageboostpercent.scalecardvalue2>%</span>。",
+        "desc": "在变形状态下击中敌方格斗家，你的伤害会增加 %，最高可达 %。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23001253.png"
       },
       {
         "id": 23001254,
         "name": "神秘的斯塔尔技术",
-        "desc": "斯塔尔·诺瓦的主要攻击还会为队友治疗 <span style=\"color:#00cc00;\"><!card.character.weaponSkill.damage.scaleStatToLevel.scaleByCardProjectileHealOwnPercent></span>。",
+        "desc": "斯塔尔·诺瓦的主要攻击还会为队友治疗 。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23001254.png"
       }
     ],
@@ -12060,7 +12060,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001256,
         "name": "友谊与正义的光辉斯塔尔",
-        "desc": "斯塔尔新星发射能量球，对敌人造成伤害并治愈队友 。这个能量球还可以在击中目标之前传送到！",
+        "desc": "斯塔尔新星发射能量球，对敌人造成伤害并治愈队友 。这个能量球还可以在击中目标之前传送到！（冷却：20 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23001256.png"
       }
     ],
@@ -12108,16 +12108,16 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
   "105": {
     "id": "105",
     "apiId": 16000106,
-    "name": "波尔特",
+    "name": "博尔特",
     "enName": "Bolt",
     "slug": "bolt",
-    "role": "输出",
+    "role": "坦克",
     "class": "Unknown",
     "rarity": {
       "name": "史诗",
       "color": "#d850ff"
     },
-    "desc": "波尔特 是 Battle Bumperz 系列的一款玩具，旨在通过滚入物体来造成伤害！他生来就是为了战斗，但一直想成为一辆赛车，所以他达到了危险的速度来实现他的梦想。不要妨碍他！",
+    "desc": "博尔特 是 Battle Bumperz 系列的一款玩具，旨在通过滚入物体来造成伤害！他生来就是为了战斗，但一直想成为一辆赛车，所以他达到了危险的速度来实现他的梦想。不要妨碍他！",
     "story": "",
     "avatar": "/HeroAvatars/16000106.png",
     "image": "https://cdn.brawlify.com/brawlers/model/16000106.png",
@@ -12127,17 +12127,17 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       "health": 10800,
       "damage": 540,
       "range": "-",
-      "reload": "2.2 秒 (Very 慢)",
-      "speed": "540"
+      "reload": "2.2 秒 (极慢)",
+      "speed": "540 (极慢)"
     },
     "attack": {
-      "name": "普通攻击",
-      "desc": "",
+      "name": "滚动撞击",
+      "desc": "博尔特向前滚动撞击敌人，移动速度越快造成的伤害越高，最低 540，最高 900。消耗弹药可让本次伤害翻倍。",
       "icon": "/Usedinheroes/skills/skill0.png"
     },
     "super": {
-      "name": "超级技能",
-      "desc": "",
+      "name": "超速过载",
+      "desc": "博尔特进入超速状态，获得移速提升与减伤护盾，并在身后留下闪电轨迹，对触碰的敌人每秒造成 1100 伤害。",
       "icon": "/Usedinheroes/skills/skill01.png"
     },
     "starPowers": [
@@ -12150,27 +12150,15 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23001280,
         "name": "永不停歇的球",
-        "desc": "博尔特不受群体控制的影响，并在超级期间获得 <span style=\"color:#00cc00;\">x%</span> 最高速度。",
+        "desc": "博尔特不受群体控制的影响，并在超级期间获得 15% 最高速度。",
         "icon": "https://cdn.brawlify.com/star-powers/regular/23001280.png"
       }
     ],
     "gadgets": [
       {
-        "id": 23000245,
-        "name": "火箭鞋带",
-        "desc": "布洛克炸开下方的地面，将自己推到空中。爆炸对附近的敌人造成 x 点伤害。",
-        "icon": "https://cdn.brawlify.com/gadgets/regular/23000245.png"
-      },
-      {
-        "id": 23000316,
-        "name": "火箭燃料",
-        "desc": "布洛克的下一次攻击是一枚更大、更猛、更快并能摧毁墙壁的巨型火箭。",
-        "icon": "https://cdn.brawlify.com/gadgets/regular/23000316.png"
-      },
-      {
         "id": 23001281,
         "name": "换油",
-        "desc": "博尔特根据他当前的速度获得 x - x 生命护盾。（冷却：15 秒）",
+        "desc": "博尔特根据他当前的速度获得 1600 - 3200 生命护盾。（冷却：15 秒）",
         "icon": "https://cdn.brawlify.com/gadgets/regular/23001281.png"
       },
       {
@@ -12213,7 +12201,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       }
     ],
     "hypercharge": {
-      "name": "波尔特·极限充能",
+      "name": "博尔特·极限充能",
       "desc": "",
       "icon": ""
     },
