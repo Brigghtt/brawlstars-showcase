@@ -6,9 +6,7 @@ const items = [
   { id: 'starpowers', label: '星辉之力' },
   { id: 'hypercharge', label: '极限充能' },
   { id: 'gears', label: '随身秒具' },
-  { id: 'skins', label: '皮肤' },
   { id: 'pins', label: '表情' },
-  { id: 'performance', label: '表现' },
 ];
 
 export default function HeroDetailTOC() {
