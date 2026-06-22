@@ -1352,9 +1352,9 @@ export const modeData: Record<string, GameMode> = {
     banner: "/mode-banner/brawlarena.jpg",
     color: "#1278f1",
     sections: [
-      { img: "/Usedinmode/mdimg/arena11.jpg", text: "乱斗竞技场是1v1车轮战模式，双方各选3名英雄依次对决，率先击败对方全部英雄即可获胜。", align: "right" },
-      { img: "/Usedinmode/mdimg/arena12.jpg", text: "每回合都会随机切换地图，熟悉地形、根据地图特点选择英雄是取胜关键。", align: "left" },
-      { img: "/Usedinmode/mdimg/arena13.jpg", text: "英雄克制关系与个人操作缺一不可，灵活调整出战顺序才能赢下整场对决。", align: "right" }
+      { img: "/Usedinmode/mdimg/arena11.jpg", text: "3v3摧毁敌方基地，击败野怪获取经验升级。", align: "right" },
+      { img: "/Usedinmode/mdimg/arena12.jpg", text: "英雄最高升至15级，伤害和生命值大幅提升。", align: "left" },
+      { img: "/Usedinmode/mdimg/arena13.jpg", text: "合理出装、团队协作，集中火力推塔拆家。", align: "right" }
     ]
   },
   heist: {
