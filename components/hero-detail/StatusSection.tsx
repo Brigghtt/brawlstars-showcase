@@ -45,7 +45,9 @@ export default function StatusSection({ hero }: StatusSectionProps) {
   const formatStat = (value: string | number) => {
     if (typeof value !== 'string') return value;
     return cleanHeroText(localizeHeroText(value))
-      .replace(/\s*([（(])/g, '\n$1')
+      // 只在“非括号文本 + 空格 + 左括号”处换行，连续左括号不额外分隔
+      .replace(/\s+([（(])/g, '\n$1')
+      // 右括号后跟空格与下一个数字/左括号时换行，连续右括号不额外分隔
       .replace(/([)）])\s+(?=[\d（(])/g, '$1\n');
   };
 

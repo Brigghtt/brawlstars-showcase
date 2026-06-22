@@ -345,7 +345,7 @@ body {
 /* ============================================================
    CSS Scroll Snap — 仅首页生效
    ============================================================ */
-body.is-home {
+html:has(body.is-home) {
   /* 垂直方向强制吸附（注意：scroll-behavior: smooth 与 mandatory scroll-snap
      同时启用会产生冲突，手动滚动由 scrollToSection 的 behavior:'smooth' 处理） */
   scroll-snap-type: y mandatory;
@@ -476,7 +476,7 @@ body.is-home footer {
    优雅降级：不支持 scroll-snap 的浏览器
    ============================================================ */
 @supports not (scroll-snap-type: y mandatory) {
-  body.is-home {
+  html:has(body.is-home) {
     scroll-behavior: smooth;
     scroll-snap-type: none;
   }
@@ -519,7 +519,7 @@ body.is-home footer {
    无障碍：减少动效时
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
-  body.is-home {
+  html:has(body.is-home) {
     scroll-snap-type: none;
     scroll-behavior: auto;
   }
