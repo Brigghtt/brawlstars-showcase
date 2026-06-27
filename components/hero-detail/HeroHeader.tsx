@@ -1,13 +1,15 @@
 'use client';
 
 import Image from 'next/image';
+import HeroFavoriteButton from '@/components/auth/HeroFavoriteButton';
 import type { HeroDetailV2 } from '@/lib/data';
 
 interface HeroHeaderProps {
   hero: HeroDetailV2;
+  favorited?: boolean;
 }
 
-export default function HeroHeader({ hero }: HeroHeaderProps) {
+export default function HeroHeader({ hero, favorited = false }: HeroHeaderProps) {
   return (
     <div className="relative h-[90vh] w-full overflow-visible">
       {/* 背景图 */}
@@ -50,6 +52,7 @@ export default function HeroHeader({ hero }: HeroHeaderProps) {
           <span className="bg-[#FFD500] text-black px-4 py-1.5 text-base md:text-xl font-bold rounded-md inline-block border-2 border-black/20 shadow-md">
             {hero.role}
           </span>
+          <HeroFavoriteButton heroId={hero.id} initialFavorited={favorited} size="lg" />
         </div>
       </div>
 

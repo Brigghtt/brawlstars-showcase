@@ -5,11 +5,15 @@ import { teams, players } from '@/lib/data/esports';
 import Link from 'next/link';
 import Breadcrumb from '@/components/esports/Breadcrumb';
 import TeamLogo from '@/components/esports/TeamLogo';
+import FollowButton from '@/components/esports/FollowButton';
+import EventFavoriteButton from '@/components/esports/EventFavoriteButton';
+import { useRecordView } from '@/hooks/useRecordView';
 
 
 export default function TeamDetailPage() {
   const { id } = useParams();
   const team = teams.find(t => t.id === id);
+  useRecordView('team', team?.id, team?.name, team?.logo);
 
   if (!team) {
     return (
@@ -52,9 +56,19 @@ export default function TeamDetailPage() {
             <TeamLogo src={team.logo} alt={team.name} size="xl" className="flex-shrink-0" />
             <div className="min-w-0">
               <h1 className="text-2xl md:text-4xl font-black text-white mb-1.5">{team.name}</h1>
-              <p className="text-white/45 font-bold text-sm mb-3">
+              <p className="text-white/45 font-bold text-sm mb-4">
                 {team.nameEn} · {team.region || '未知赛区'}
               </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <FollowButton type="team" id={team.id} />
+                <EventFavoriteButton
+                  itemType="team"
+                  itemId={team.id}
+                  title={team.name}
+                  imageUrl={team.logo}
+                  showLabel
+                />
+              </div>
             </div>
           </div>
 

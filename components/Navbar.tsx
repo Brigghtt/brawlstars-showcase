@@ -4,10 +4,13 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { navMenus } from '@/lib/data';
+import UserMenu from '@/components/auth/UserMenu';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { data: session } = useSession();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('/');
@@ -96,6 +99,9 @@ export default function Navbar() {
   if (path === '/#map') return pathname.startsWith('/maps');
   // 新增：赛事中心及其所有子页面都高亮
   if (path === '/events') return pathname.startsWith('/events');
+  // 新增：我的地图 / 我的英雄页面高亮
+  if (path === '/favorites') return pathname === '/favorites';
+  if (path === '/heroes/favorites') return pathname === '/heroes/favorites';
   return pathname === path;
 };
 
@@ -172,7 +178,15 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* ===== 右侧占位 ===== */}
+          {/* ===== 右侧用户菜单 ===== */}
+          <div className="hidden md:flex items-center justify-end flex-shrink-0 gap-3">
+            {session?.user && (
+              <span className="text-sm font-bold text-[#1A3A8A]/80 truncate max-w-[120px]">
+                欢迎，{session.user.nickname || session.user.name || session.user.email}
+              </span>
+            )}
+            <UserMenu />
+          </div>
           <div className="md:hidden ml-auto" />
 
           {/* ===== 移动端汉堡按钮 ===== */}

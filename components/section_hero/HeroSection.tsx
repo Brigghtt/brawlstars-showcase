@@ -1,10 +1,22 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useSession } from 'next-auth/react';
 import { heroList } from '@/lib/data';
+import HeroFavoriteButton from '@/components/auth/HeroFavoriteButton';
 
 // 英雄卡片组件
-function HeroCard({ name, avatarUrl }: { name: string; avatarUrl: string }) {
+function HeroCard({
+  heroId,
+  name,
+  avatarUrl,
+  favorited,
+}: {
+  heroId: string;
+  name: string;
+  avatarUrl: string;
+  favorited: boolean;
+}) {
   // 雪莉、柯尔特替换为高清 portrait 图，需要放大裁剪以匹配其他头像的展示区域
   const portraitClass =
     name === '雪莉'
@@ -27,14 +39,32 @@ function HeroCard({ name, avatarUrl }: { name: string; avatarUrl: string }) {
       >
         {name}
       </div>
+      <div className="absolute top-2 left-2 z-10">
+        <HeroFavoriteButton heroId={heroId} initialFavorited={favorited} size="sm" />
+      </div>
     </div>
   );
 }
 
 export default function HeroSection() {
+  const { data: session, status } = useSession();
+  const [favoriteHeroes, setFavoriteHeroes] = useState<string[]>([]);
   const [activeFilter, setActiveFilter] = useState('全部');
   const roles = ['全部', '输出', '射手', '投弹手', '坦克', '辅助', '控场', '刺客'];
-  const filteredHeroes = activeFilter === '全部' ? heroList : heroList.filter(h => h.role === activeFilter);
+
+  useEffect(() => {
+    if (status === 'loading' || !session?.user) return;
+    fetch('/api/user/heroes')
+      .then((res) => (res.ok ? res.json() : { favorites: [] }))
+      .then((data: { favorites?: string[] }) => setFavoriteHeroes(data.favorites || []))
+      .catch((error) => console.error('获取英雄收藏失败:', error));
+  }, [session, status]);
+
+  const filteredHeroes = useMemo(() => {
+    if (activeFilter === '收藏') return heroList.filter((h) => favoriteHeroes.includes(h.id));
+    if (activeFilter === '全部') return heroList;
+    return heroList.filter((h) => h.role === activeFilter);
+  }, [activeFilter, favoriteHeroes]);
 
   return (
     <section className="h-screen" id="hero">
@@ -104,7 +134,7 @@ export default function HeroSection() {
         <div className="flex-1 p-8 overflow-y-auto hide-scrollbar bg-[#1a1a2e]/70 rounded-2xl backdrop-blur-md border border-white/10" style={{ paddingTop: 'calc(50px + 32px)' }}>
           {/* 筛选栏 */}
           <div className="flex gap-3 flex-wrap mb-6">
-            {roles.map((role) => (
+            {['收藏', ...roles].map((role) => (
               <button
                 key={role}
                 onClick={() => setActiveFilter(role)}
@@ -114,7 +144,7 @@ export default function HeroSection() {
                     : 'bg-[#2D2A52] text-white font-bold hover:bg-gradient-to-r hover:from-[#FFD500] hover:to-[#FFC300] hover:text-black transition-all duration-300'
                 }`}
               >
-                {role}
+                {role === '收藏' ? `⭐ 收藏 (${favoriteHeroes.length})` : role}
               </button>
             ))}
           </div>
@@ -123,8 +153,10 @@ export default function HeroSection() {
             {filteredHeroes.map((hero) => (
               <Link href={`/heroes/${hero.slug}`} key={hero.id}>
                 <HeroCard
+                  heroId={hero.id}
                   name={hero.name}
                   avatarUrl={hero.image}
+                  favorited={favoriteHeroes.includes(hero.id)}
                 />
               </Link>
             ))}

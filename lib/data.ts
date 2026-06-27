@@ -18,7 +18,7 @@ export const navMenus: NavMenu[] = [
   { name: '游戏模式', path: '/#mode' },
   { name: '对战地图', path: '/#map' },
   { name: '赛事', path: '/events' },
-
+  { name: '我的地图', path: '/favorites' },
 ];
 
 // -------------------- 2. 英雄列表 --------------------

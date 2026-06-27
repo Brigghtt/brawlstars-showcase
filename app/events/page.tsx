@@ -40,7 +40,7 @@ export default function EventsPage() {
     { key: '月赛', label: '月赛' },
   ];
 
-  const regions: RegionFilter[] = ['全部', '欧洲', '东亚', '大陆'];
+  const regions: RegionFilter[] = ['全部', '欧洲', '东亚', '大陆', '北美', '南美'];
   const subs: SubFilter[] = ['全部', '小组赛', '淘汰赛'];
   const rounds: RoundFilter[] = ['全部', '八强赛', '半决赛', '总决赛'];
   const months: MonthFilter[] = ['全部', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06'];
@@ -83,12 +83,13 @@ export default function EventsPage() {
         <h1 className="text-4xl md:text-5xl font-black text-[#FFD500] mb-8 drop-shadow-lg">赛事中心</h1>
         
         {/* 子分类入口 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
           {[
             { href: '/events/players', label: '选手档案', icon: '👤' },
             { href: '/events/teams', label: '战队档案', icon: '🛡️' },
             { href: '/events/stats', label: '数据洞察', icon: '📊' },
             { href: '/events/schedule', label: '赛程日历', icon: '📅' },
+            { href: '/events/my', label: '我的赛事', icon: '🏆' },
           ].map(item => (
             <Link
               key={item.href}

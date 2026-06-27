@@ -7,6 +7,9 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import Breadcrumb from '@/components/esports/Breadcrumb';
 import TeamLogo from '@/components/esports/TeamLogo';
+import EventFavoriteButton from '@/components/esports/EventFavoriteButton';
+import PredictionWidget from '@/components/esports/PredictionWidget';
+import { useRecordView } from '@/hooks/useRecordView';
 
 const MAP_FAVORITES_KEY = 'brawl-map-favorites';
 
@@ -91,6 +94,7 @@ export default function EventDetailPage() {
   }
 
   const t = tournaments.find(x => x.id === id);
+  useRecordView('match', id as string | undefined, t?.name, t?.teamA?.logo);
 
   // 同赛事的其它场次，用于生成淘汰赛树状图
   const eventTournaments = useMemo(() => {
@@ -180,6 +184,16 @@ export default function EventDetailPage() {
               {t.format}
             </span>
             <span className="text-xs text-white/40 font-mono tracking-wider">{t.version}</span>
+            <div className="ml-auto">
+              <EventFavoriteButton
+                itemType="match"
+                itemId={t.id}
+                title={t.name}
+                imageUrl={t.teamA.logo}
+                showLabel
+                className="px-3 py-1.5 rounded-lg bg-white/[0.06] border border-white/[0.08]"
+              />
+            </div>
           </div>
 
           {/* 赛事名称 */}
@@ -238,6 +252,14 @@ export default function EventDetailPage() {
               )}
             </div>
           </div>
+
+          <PredictionWidget
+            matchId={t.id}
+            teamA={{ name: t.teamA.name, logo: t.teamA.logo }}
+            teamB={{ name: t.teamB.name, logo: t.teamB.logo }}
+            winner={t.winner}
+            className="mt-6"
+          />
         </div>
 
         {/* 淘汰赛进程树状图 */}

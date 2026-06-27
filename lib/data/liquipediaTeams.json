@@ -89,7 +89,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Lukii",
+      "BosS",
+      "Symantec"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -105,7 +109,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Engine",
+      "TOC",
+      "OU"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -121,7 +129,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Lxffy",
+      "RBM",
+      "Diegogamer"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -137,7 +149,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Edinho",
+      "FireCrow",
+      "KaioDog"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -173,7 +189,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Maru",
+      "Maury",
+      "Joker"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -189,7 +209,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Doin",
+      "Memen",
+      "Snoiy"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -205,7 +229,12 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Doritos",
+      "Mohtep",
+      "Pekka",
+      "Jubileu"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -241,7 +270,9 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Salty"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -257,7 +288,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Drage",
+      "GeRo",
+      "Enraged"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -273,7 +308,9 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Alec26"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -289,7 +326,11 @@
     "founded": "",
     "style": [],
     "history": [],
-    "players": [],
+    "players": [
+      "Angelboy",
+      "Guesti",
+      "Nob?"
+    ],
     "stats": {
       "totalKills": 0,
       "avgDamage": 0,
@@ -433,6 +474,196 @@
     "nameEn": "BIG",
     "logo": "/teams/big.png",
     "region": "欧洲",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "ninguem-segura",
+    "name": "Ninguem Segura",
+    "nameEn": "Ninguem Segura",
+    "logo": "/teams/ninguem-segura.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "olimpo-squad",
+    "name": "Olimpo Squad",
+    "nameEn": "Olimpo Squad",
+    "logo": "/teams/olimpo-squad.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "eternal-esports",
+    "name": "Eternal Esports",
+    "nameEn": "Eternal Esports",
+    "logo": "/teams/eternal-esports.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "skcalalas",
+    "name": "SKCalalas",
+    "nameEn": "SKCalalas",
+    "logo": "/teams/skcalalas.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "sonhadores",
+    "name": "Sonhadores",
+    "nameEn": "Sonhadores",
+    "logo": "/teams/sonhadores.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "bounty-hunters-esports",
+    "name": "Bounty Hunters Esports",
+    "nameEn": "Bounty Hunters Esports",
+    "logo": "/teams/bounty-hunters-esports.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [
+      "Portox",
+      "Prozy",
+      "Wesley"
+    ],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "new-heights-gaming",
+    "name": "New Heights Gaming",
+    "nameEn": "New Heights Gaming",
+    "logo": "/teams/new-heights-gaming.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "vatic-esports",
+    "name": "Vatic Esports",
+    "nameEn": "Vatic Esports",
+    "logo": "/teams/vatic-esports.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "kds-esports",
+    "name": "KDS Esports",
+    "nameEn": "KDS Esports",
+    "logo": "/teams/kds-esports.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "only-realm",
+    "name": "Only Realm",
+    "nameEn": "Only Realm",
+    "logo": "/teams/only-realm.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [
+      "bobby",
+      "Patchy",
+      "sans",
+      "Adrii",
+      "Bogdan",
+      "Dompe",
+      "David",
+      "Ducky",
+      "Razuen"
+    ],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "crows-nest-esports",
+    "name": "Crows Nest Esports",
+    "nameEn": "Crows Nest Esports",
+    "logo": "/teams/crows-nest-esports.png",
+    "region": "北美",
     "founded": "",
     "style": [],
     "history": [],
@@ -636,6 +867,22 @@
     }
   },
   {
+    "id": "acre-lovers",
+    "name": "Acre Lovers",
+    "nameEn": "Acre Lovers",
+    "logo": "/teams/acre-lovers.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
     "id": "esf",
     "name": "ESF",
     "nameEn": "ESF",
@@ -657,6 +904,86 @@
     "nameEn": "吴水水俱乐部",
     "logo": "/teams/吴水水俱乐部.png",
     "region": "大陆",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "enosis-esports",
+    "name": "Enosis eSports",
+    "nameEn": "Enosis eSports",
+    "logo": "/teams/enosis-esports.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "only-realm-na",
+    "name": "Only Realm NA",
+    "nameEn": "Only Realm NA",
+    "logo": "/teams/only-realm-na.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "legacy-esports",
+    "name": "Legacy Esports",
+    "nameEn": "Legacy Esports",
+    "logo": "/teams/legacy-esports.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "vic-day",
+    "name": "Vic Day",
+    "nameEn": "Vic Day",
+    "logo": "/teams/vic-day.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "zoos-esports",
+    "name": "ZOOS Esports",
+    "nameEn": "ZOOS Esports",
+    "logo": "/teams/zoos-esports.png",
+    "region": "北美",
     "founded": "",
     "style": [],
     "history": [],
@@ -780,11 +1107,11 @@
     }
   },
   {
-    "id": "only-realm",
-    "name": "Only Realm",
-    "nameEn": "Only Realm",
-    "logo": "/teams/only-realm.png",
-    "region": "北美",
+    "id": "topa-tudo-por-dinheiro",
+    "name": "Topa Tudo Por Dinheiro",
+    "nameEn": "Topa Tudo Por Dinheiro",
+    "logo": "/teams/topa-tudo-por-dinheiro.png",
+    "region": "南美",
     "founded": "",
     "style": [],
     "history": [],
@@ -796,11 +1123,27 @@
     }
   },
   {
-    "id": "bounty-hunters-esports",
-    "name": "Bounty Hunters Esports",
-    "nameEn": "Bounty Hunters Esports",
-    "logo": "/teams/bounty-hunters-esports.png",
+    "id": "oddyssey",
+    "name": "Oddyssey",
+    "nameEn": "Oddyssey",
+    "logo": "/teams/oddyssey.png",
     "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "f-a-homeless",
+    "name": "F/A Homeless",
+    "nameEn": "F/A Homeless",
+    "logo": "/teams/f-a-homeless.png",
+    "region": "北美",
     "founded": "",
     "style": [],
     "history": [],
@@ -945,6 +1288,102 @@
     "nameEn": "Metizport",
     "logo": "/teams/metizport.png",
     "region": "欧洲",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "ocx-division",
+    "name": "OCX Division",
+    "nameEn": "OCX Division",
+    "logo": "/teams/ocx-division.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "glxy-gaming",
+    "name": "GLXY Gaming",
+    "nameEn": "GLXY Gaming",
+    "logo": "/teams/glxy-gaming.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "pizza-congelada-f-a",
+    "name": "Pizza Congelada F/A",
+    "nameEn": "Pizza Congelada F/A",
+    "logo": "/teams/pizza-congelada-f-a.png",
+    "region": "南美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "nova-esports-north-america-team",
+    "name": "Nova Esports (North America Team)",
+    "nameEn": "Nova Esports (North America Team)",
+    "logo": "/teams/nova-esports-north-america-team.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "f-a-bobby",
+    "name": "F/A Bobby",
+    "nameEn": "F/A Bobby",
+    "logo": "/teams/f-a-bobby.png",
+    "region": "北美",
+    "founded": "",
+    "style": [],
+    "history": [],
+    "players": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0
+    }
+  },
+  {
+    "id": "utopia",
+    "name": "Utopia",
+    "nameEn": "Utopia",
+    "logo": "/teams/utopia.png",
+    "region": "北美",
     "founded": "",
     "style": [],
     "history": [],

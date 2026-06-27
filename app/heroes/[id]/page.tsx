@@ -1,8 +1,10 @@
 'use client';
 
-import { use } from 'react';
+import { use, useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
 import { heroDetailsData } from '@/lib/data';
+import { useRecordView } from '@/hooks/useRecordView';
 import HeroHeader from '@/components/hero-detail/HeroHeader';
 import HeroDetailTOC from '@/components/hero-detail/HeroDetailTOC';
 import GuideSection from '@/components/hero-detail/GuideSection';
@@ -24,12 +26,25 @@ function slugify(enName: string) {
 export default function HeroDetail({ params }: Props) {
   const { id } = use(params);
   const decodedId = decodeURIComponent(id);
+  const { data: session, status } = useSession();
+  const [favoriteHeroes, setFavoriteHeroes] = useState<string[]>([]);
+
   const hero = Object.values(heroDetailsData).find((h) =>
     h.id === decodedId ||
     String(h.apiId) === decodedId ||
     h.enName.toLowerCase() === decodedId.toLowerCase() ||
     slugify(h.enName) === decodedId
   );
+
+  useEffect(() => {
+    if (status === 'loading' || !session?.user) return;
+    fetch('/api/user/heroes')
+      .then((res) => (res.ok ? res.json() : { favorites: [] }))
+      .then((data: { favorites?: string[] }) => setFavoriteHeroes(data.favorites || []))
+      .catch((error) => console.error('获取英雄收藏失败:', error));
+  }, [session, status]);
+
+  useRecordView('hero', hero?.id, hero?.name, hero?.image);
 
   if (!hero) {
     return (
@@ -47,7 +62,7 @@ export default function HeroDetail({ params }: Props) {
         style={{ background: 'radial-gradient(circle at center, rgba(255,213,0,0.25) 0%, rgba(255,255,255,0.15) 40%, transparent 70%)' }}
       />
 
-      <HeroHeader hero={hero} />
+      <HeroHeader hero={hero} favorited={favoriteHeroes.includes(hero.id)} />
 
       {/* 下方内容区 */}
       <div className="px-6 md:px-12 lg:px-20 pt-28 pb-16 bg-gradient-to-b from-[#1547a8] via-[#0d3a8f] to-[#0a2d73]">

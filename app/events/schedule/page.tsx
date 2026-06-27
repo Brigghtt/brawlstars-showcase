@@ -1,10 +1,11 @@
 'use client';
 
-import { schedules, type TournamentCategory, type TournamentRegion } from '@/lib/data/esports';
-import { useState, useMemo } from 'react';
+import { schedules, teams, type TournamentCategory, type TournamentRegion } from '@/lib/data/esports';
+import { useState, useMemo, useEffect } from 'react';
 import Breadcrumb from '@/components/esports/Breadcrumb';
 import PageHeader from '@/components/esports/PageHeader';
 import FilterPill from '@/components/esports/FilterPill';
+import EventFavoriteButton from '@/components/esports/EventFavoriteButton';
 
 type StatusFilter = 'all' | 'upcoming' | 'ended';
 type CategoryFilter = TournamentCategory | '全部';
@@ -51,6 +52,15 @@ export default function SchedulePage() {
   const [category, setCategory] = useState<CategoryFilter>('全部');
   const [region, setRegion] = useState<RegionFilter>('全部');
   const [month, setMonth] = useState<string>('全部');
+  const [followedTeams, setFollowedTeams] = useState<string[]>([]);
+  const [showOnlyFollowed, setShowOnlyFollowed] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/user/follows/teams')
+      .then(res => res.json())
+      .then(data => setFollowedTeams(data.follows || []))
+      .catch(() => {});
+  }, []);
 
   const categories: { key: CategoryFilter; label: string }[] = [
     { key: '全部', label: '全部' },
@@ -66,9 +76,13 @@ export default function SchedulePage() {
       if (category !== '全部' && s.category !== category) return false;
       if (region !== '全部' && s.region !== region) return false;
       if (month !== '全部' && s.month !== month) return false;
+      if (showOnlyFollowed) {
+        const teamIds = new Set(teams.filter(t => followedTeams.includes(t.id)).map(t => t.name));
+        if (!teamIds.has(s.teamA) && !teamIds.has(s.teamB)) return false;
+      }
       return true;
     });
-  }, [status, category, region, month]);
+  }, [status, category, region, month, showOnlyFollowed, followedTeams]);
 
   return (
     <main className="min-h-screen pt-28 pb-24">
@@ -102,6 +116,16 @@ export default function SchedulePage() {
                 onClick={() => setStatus(f.key as StatusFilter)}
               />
             ))}
+            <button
+              onClick={() => setShowOnlyFollowed(v => !v)}
+              className={`ml-auto inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+                showOnlyFollowed
+                  ? 'bg-[#FFD500] text-[#1A3A8A] shadow-lg shadow-[#FFD500]/20'
+                  : 'bg-white/[0.06] text-white/50 hover:bg-white/[0.12] hover:text-white/80 border border-white/[0.08]'
+              }`}
+            >
+              {showOnlyFollowed ? '★ 我的关注' : '☆ 我的关注'}
+            </button>
           </div>
 
           {/* 赛事类型 */}
@@ -121,7 +145,7 @@ export default function SchedulePage() {
           {/* 赛区选择 */}
           <div className="flex flex-wrap items-center gap-2.5">
             <span className="text-[10px] font-black text-[#FFD500]/60 uppercase tracking-[0.15em] min-w-[3em]">赛区</span>
-            {(['全部', '欧洲', '东亚', '大陆'] as RegionFilter[]).map(r => (
+            {(['全部', '欧洲', '东亚', '大陆', '北美', '南美'] as RegionFilter[]).map(r => (
               <FilterPill
                 key={r}
                 label={r}
@@ -246,18 +270,32 @@ export default function SchedulePage() {
                     </div>
                   </div>
 
-                  {/* 直播链接 */}
-                  {s.streamUrl && s.status !== 'ended' && (
-                    <a
-                      href={s.streamUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-[#FFD500] text-[#1A3A8A] text-sm font-black hover:shadow-[0_8px_30px_rgba(255,213,0,0.35)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
-                    >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                      观看直播
-                    </a>
-                  )}
+                  {/* 直播链接 & 操作 */}
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    {s.streamUrl && s.status !== 'ended' && (
+                      <a
+                        href={s.streamUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-[#FFD500] text-[#1A3A8A] text-sm font-black hover:shadow-[0_8px_30px_rgba(255,213,0,0.35)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                        观看直播
+                      </a>
+                    )}
+                    {(followedTeams.some(tid => teams.find(t => t.id === tid)?.name === s.teamA) ||
+                      followedTeams.some(tid => teams.find(t => t.id === tid)?.name === s.teamB)) && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#FFD500]/15 border border-[#FFD500]/25 text-[#FFD500] text-xs font-black">
+                        ★ 关注战队
+                      </span>
+                    )}
+                    <EventFavoriteButton
+                      itemType="match"
+                      itemId={s.id}
+                      title={s.tournamentName}
+                      className="ml-auto"
+                    />
+                  </div>
                 </div>
               </div>
             );

@@ -5,10 +5,14 @@ import { players, teams, getHeroAvatar } from '@/lib/data/esports';
 import Link from 'next/link';
 import Breadcrumb from '@/components/esports/Breadcrumb';
 import StatCard from '@/components/esports/StatCard';
+import FollowButton from '@/components/esports/FollowButton';
+import EventFavoriteButton from '@/components/esports/EventFavoriteButton';
+import { useRecordView } from '@/hooks/useRecordView';
 
 export default function PlayerDetailPage() {
   const { id } = useParams();
   const player = players.find(p => p.id === id);
+  useRecordView('player', player?.id, player?.name, player?.portrait);
 
   if (!player) {
     return (
@@ -64,9 +68,20 @@ export default function PlayerDetailPage() {
             {team?.name || player.currentTeam || '自由选手'}
             {player.role ? ` · ${player.role}` : ''}
           </p>
-          <p className="relative text-xs text-[#FFD500]/50 font-bold uppercase tracking-wider">
+          <p className="relative text-xs text-[#FFD500]/50 font-bold uppercase tracking-wider mb-5">
             {player.region} 赛区
           </p>
+
+          <div className="relative flex items-center justify-center gap-3">
+            <FollowButton type="player" id={player.id} />
+            <EventFavoriteButton
+              itemType="player"
+              itemId={player.id}
+              title={player.name}
+              imageUrl={player.portrait}
+              showLabel
+            />
+          </div>
 
           {/* 社交链接 */}
           {player.links && player.links.length > 0 && (

@@ -193,6 +193,92 @@ PAGES: list[dict[str, Any]] = [
         "month": "2025-05",
         "name_prefix": "2025 BrawlCup",
     },
+    # 北美赛区：2-8 月月赛
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_1/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-02",
+        "name_prefix": "2026 月赛 北美赛区 二月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_2/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-03",
+        "name_prefix": "2026 月赛 北美赛区 三月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_3/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-04",
+        "name_prefix": "2026 月赛 北美赛区 四月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_4/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-06",
+        "name_prefix": "2026 月赛 北美赛区 六月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_5/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-07",
+        "name_prefix": "2026 月赛 北美赛区 七月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_6/North_America/Monthly_Finals",
+        "region": "北美",
+        "category": "月赛",
+        "month": "2026-08",
+        "name_prefix": "2026 月赛 北美赛区 八月",
+    },
+    # 南美赛区：2-8 月月赛
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_1/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-02",
+        "name_prefix": "2026 月赛 南美赛区 二月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_2/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-03",
+        "name_prefix": "2026 月赛 南美赛区 三月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_3/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-04",
+        "name_prefix": "2026 月赛 南美赛区 四月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_4/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-06",
+        "name_prefix": "2026 月赛 南美赛区 六月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_5/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-07",
+        "name_prefix": "2026 月赛 南美赛区 七月",
+    },
+    {
+        "path": "Brawl_Stars_Championship/2026/Season_6/South_America/Monthly_Finals",
+        "region": "南美",
+        "category": "月赛",
+        "month": "2026-08",
+        "name_prefix": "2026 月赛 南美赛区 八月",
+    },
     # 2026 大型赛事
     {
         "path": "Brawl_Stars_Championship/2026/Brawl_Cup",
@@ -599,7 +685,7 @@ def translate_mode(name: str) -> str:
 
 
 def region_code(region: str | None) -> str:
-    return {"东亚": "ea", "欧洲": "eu", "大陆": "cn"}.get(region or "", "gl")
+    return {"东亚": "ea", "欧洲": "eu", "大陆": "cn", "北美": "na", "南美": "sa"}.get(region or "", "gl")
 
 
 def parse_group_stage(html: str, cfg: dict[str, Any]) -> list[dict[str, Any]] | None:

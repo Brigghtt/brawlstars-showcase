@@ -2,6 +2,7 @@
 
 import { useParams, useRouter } from 'next/navigation';
 import { modeData } from '@/lib/data';
+import { useRecordView } from '@/hooks/useRecordView';
 import ModeHero from '@/components/mode-detail/ModeHero';
 import ModeOverview from '@/components/mode-detail/ModeOverview';
 import ModeFeatureSections from '@/components/mode-detail/ModeFeatureSections';
@@ -11,6 +12,8 @@ export default function ModeDetailPage() {
   const { id } = useParams();
   const router = useRouter();
   const mode = modeData[id as keyof typeof modeData];
+
+  useRecordView('mode', id as string | undefined, mode?.title, mode?.banner);
 
   if (!mode) {
     return (

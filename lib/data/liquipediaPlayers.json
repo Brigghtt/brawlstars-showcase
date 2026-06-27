@@ -9,7 +9,7 @@
     "role": "",
     "currentTeam": "SK Gaming",
     "totalWinnings": "$197,076",
-    "portrait": "/players/yoshi.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/1/1e/SK_Yoshi_at_WF25.png/600px-SK_Yoshi_at_WF25.png",
     "teamHistory": [
       {
         "team": "Totem Esports",
@@ -57,7 +57,7 @@
     "role": "Player",
     "currentTeam": "SK Gaming",
     "totalWinnings": "$119,308",
-    "portrait": "/players/ope.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/f/f7/SK_Ope_at_WF25.png/600px-SK_Ope_at_WF25.png",
     "teamHistory": [
       {
         "team": "Mood Gaming",
@@ -125,7 +125,7 @@
     "role": "Player",
     "currentTeam": "SK Gaming",
     "totalWinnings": "$7,744",
-    "portrait": "/players/yoko.png",
+    "portrait": "https://liquipedia.net/commons/images/1/19/Infobox_player_NoImage.png",
     "teamHistory": [
       {
         "team": "Eclipsar Esport",
@@ -183,7 +183,7 @@
     "role": "Player",
     "currentTeam": "Revenant XSpark",
     "totalWinnings": "$92,193",
-    "portrait": "/players/sergeant-clash.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/1/1d/RNTX_Sergeant_at_WF25.png/600px-RNTX_Sergeant_at_WF25.png",
     "teamHistory": [
       {
         "team": "Stalwart Esports",
@@ -231,7 +231,7 @@
     "role": "Player",
     "currentTeam": "Revenant XSpark",
     "totalWinnings": "$9,816",
-    "portrait": "/players/walkthrough.png",
+    "portrait": "https://liquipedia.net/commons/images/1/19/Infobox_player_NoImage.png",
     "teamHistory": [
       {
         "team": "Monarchy",
@@ -264,7 +264,7 @@
     "role": "Player",
     "currentTeam": "Revenant XSpark",
     "totalWinnings": "$58,982",
-    "portrait": "/players/x9jay.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/3/39/RNTX_X9jay_at_WF25.png/600px-RNTX_X9jay_at_WF25.png",
     "teamHistory": [
       {
         "team": "Team Wood",
@@ -312,7 +312,7 @@
     "role": "Player",
     "currentTeam": "ZETA DIVISION",
     "totalWinnings": "$401,264",
-    "portrait": "/players/sitetampo.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/9/9b/ZETA_Site_at_WF25.png/600px-ZETA_Site_at_WF25.png",
     "teamHistory": [
       {
         "team": "JUPITER",
@@ -365,7 +365,7 @@
     "role": "Player",
     "currentTeam": "ZETA DIVISION",
     "totalWinnings": "$63,285",
-    "portrait": "/players/sizuku.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/8/8e/ZETA_Sizuku_at_WF25.png/600px-ZETA_Sizuku_at_WF25.png",
     "teamHistory": [
       {
         "team": "Okaaaay",
@@ -418,7 +418,7 @@
     "role": "Player",
     "currentTeam": "ZETA DIVISION",
     "totalWinnings": "$41,049",
-    "portrait": "/players/battoman.png",
+    "portrait": "https://liquipedia.net/commons/images/thumb/1/18/RC_Battoman_at_WF25.png/600px-RC_Battoman_at_WF25.png",
     "teamHistory": [
       {
         "team": "3R Gaming",
@@ -456,7 +456,7 @@
     "role": "Coach",
     "currentTeam": "Tribe Gaming",
     "totalWinnings": "$49,836",
-    "portrait": "/players/killer.png",
+    "portrait": "https://liquipedia.net/commons/images/5/58/TRB_Killer_Brawl_Cup_2025.png",
     "teamHistory": [
       {
         "team": "Vatra Helius",
@@ -523,6 +523,599 @@
     },
     "teamId": "elevate",
     "joinDate": "2024-06-18"
+  },
+  {
+    "id": "Lxffy",
+    "name": "Lxffy",
+    "nameEn": "Kevin Jomar Calderon Velez",
+    "nationality": "Puerto Rico",
+    "born": "March 12, 2001 (age 25)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Tribe Gaming",
+    "totalWinnings": "$89,412",
+    "portrait": "https://liquipedia.net/commons/images/thumb/5/53/TRB_Luffy_at_WF25.png/600px-TRB_Luffy_at_WF25.png",
+    "teamHistory": [
+      {
+        "team": "Vanguard Gaming",
+        "startDate": "2022-05-02",
+        "endDate": "2022-10-10"
+      },
+      {
+        "team": "Mystic Esports NA",
+        "startDate": "2022-12-14",
+        "endDate": "2023-03-15"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2023-03-15",
+        "endDate": "2023-07-19"
+      },
+      {
+        "team": "Remaining 7",
+        "startDate": "2023-07-19",
+        "endDate": "2023-08-18"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2023-12-27",
+        "endDate": "2024-01-13"
+      },
+      {
+        "team": "Remaining 7",
+        "startDate": "2024-01-13",
+        "endDate": "2024-05-09"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2024-05-09",
+        "endDate": "2024-06-18"
+      },
+      {
+        "team": "Elevate",
+        "startDate": "2024-06-18",
+        "endDate": "2024-12-11"
+      },
+      {
+        "team": "Tribe Gaming",
+        "startDate": "2025-01-30",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "elevate",
+    "joinDate": "2024-06-18"
+  },
+  {
+    "id": "RBM",
+    "name": "RBM",
+    "nameEn": "Baltazar Rodriguez Moreno",
+    "nationality": "Mexico",
+    "born": "December 29, 2004 (age 21)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Tribe Gaming",
+    "totalWinnings": "$95,463",
+    "portrait": "https://liquipedia.net/commons/images/thumb/a/a7/TRB_RBM_at_WF25.png/600px-TRB_RBM_at_WF25.png",
+    "teamHistory": [
+      {
+        "team": "Vatra Gaming",
+        "startDate": "2022-02-10",
+        "endDate": "2022-12-15"
+      },
+      {
+        "team": "Chasmac Gaming NA",
+        "startDate": "2022-12-15",
+        "endDate": "2023-12-01"
+      },
+      {
+        "team": "Spacestation",
+        "startDate": "2024-02-22",
+        "endDate": "2024-05-08"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2024-05-09",
+        "endDate": "2024-06-18"
+      },
+      {
+        "team": "Elevate",
+        "startDate": "2024-06-18",
+        "endDate": "2024-12-11"
+      },
+      {
+        "team": "Tribe Gaming",
+        "startDate": "2025-01-30",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "elevate",
+    "joinDate": "2024-06-18"
+  },
+  {
+    "id": "Zeus",
+    "name": "Zeus",
+    "nameEn": "",
+    "nationality": "Puerto Rico",
+    "born": "October  4, 2006 (age 19)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Legacy Esports",
+    "totalWinnings": "$69,245",
+    "portrait": "https://liquipedia.net/commons/images/thumb/5/5e/TRB_Zeus_at_WF25.png/600px-TRB_Zeus_at_WF25.png",
+    "teamHistory": [
+      {
+        "team": "Mystic Esports NA",
+        "startDate": "2022-12-14",
+        "endDate": "2023-03-15"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2023-03-15",
+        "endDate": "2023-07-19"
+      },
+      {
+        "team": "Remaining 7",
+        "startDate": "2023-07-19",
+        "endDate": "2023-08-18"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2023-12-27",
+        "endDate": "2024-01-13"
+      },
+      {
+        "team": "Remaining 7",
+        "startDate": "2024-01-13",
+        "endDate": "2024-05-09"
+      },
+      {
+        "team": "Motomamis F/A",
+        "startDate": "2024-05-09",
+        "endDate": "2024-06-18"
+      },
+      {
+        "team": "Elevate",
+        "startDate": "2024-06-18",
+        "endDate": "2024-12-11"
+      },
+      {
+        "team": "Tribe Gaming",
+        "startDate": "2025-01-30",
+        "endDate": "2025-12-28"
+      },
+      {
+        "team": "Legacy Esports",
+        "startDate": "2026-04-13",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "elevate",
+    "joinDate": "2024-06-18"
+  },
+  {
+    "id": "Lukii",
+    "name": "Lukii",
+    "nameEn": "Luke Pies",
+    "nationality": "Germany",
+    "born": "September  1, 2006 (age 19)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "HMBLE",
+    "totalWinnings": "$288,874",
+    "portrait": "https://liquipedia.net/commons/images/b/bb/HMB_Lukii_WF_2025.png",
+    "teamHistory": [
+      {
+        "team": "Dogster Lobster",
+        "startDate": "2023-01-23",
+        "endDate": "2023-02-11"
+      },
+      {
+        "team": "Now Or Never",
+        "startDate": "2023-02-11",
+        "endDate": "2023-04-05"
+      },
+      {
+        "team": "Dogster Lobster",
+        "startDate": "2023-05-11",
+        "endDate": "2023-06-09"
+      },
+      {
+        "team": "HMBLE",
+        "startDate": "2023-06-09",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "hmble",
+    "joinDate": "2023-06-09"
+  },
+  {
+    "id": "BosS",
+    "name": "BosS",
+    "nameEn": "Bartomeu Vadell Planisi",
+    "nationality": "Spain",
+    "born": "October  8, 2002 (age 23)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "HMBLE",
+    "totalWinnings": "$297,450",
+    "portrait": "https://liquipedia.net/commons/images/7/7a/HMB_BosS_WF_2025.png",
+    "teamHistory": [
+      {
+        "team": "S2V Esports",
+        "startDate": "2020-08-31",
+        "endDate": "2020-11-08"
+      },
+      {
+        "team": "Totem Esports",
+        "startDate": "2020-11-08",
+        "endDate": "2020-12-20"
+      },
+      {
+        "team": "BK ROG Esports",
+        "startDate": "2021-02-17",
+        "endDate": "2021-09-26"
+      },
+      {
+        "team": "HMBLE",
+        "startDate": "2022-02-17",
+        "endDate": "2022-06-25"
+      },
+      {
+        "team": "Team Queso",
+        "startDate": "2022-08-15",
+        "endDate": "2023-12-21"
+      },
+      {
+        "team": "HMBLE",
+        "startDate": "2024-03-08",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "hmble",
+    "joinDate": "2024-03-08"
+  },
+  {
+    "id": "Symantec",
+    "name": "Symantec",
+    "nameEn": "Bekri Tahiri",
+    "nationality": "Germany",
+    "born": "June  6, 2002 (age 24)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "HMBLE",
+    "totalWinnings": "$400,360",
+    "portrait": "https://liquipedia.net/commons/images/2/2e/HMB_Symantec_WF_2025.png",
+    "teamHistory": [
+      {
+        "team": "Tribe Gaming EU",
+        "startDate": "2020-04-08",
+        "endDate": "2021-01-12"
+      },
+      {
+        "team": "SK Gaming",
+        "startDate": "2021-02-07",
+        "endDate": "2023-01-07"
+      },
+      {
+        "team": "FUT Esports",
+        "startDate": "2023-01-31",
+        "endDate": "2024-01-24"
+      },
+      {
+        "team": "HMBLE",
+        "startDate": "2024-03-08",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "hmble",
+    "joinDate": "2024-03-08"
+  },
+  {
+    "id": "Engine",
+    "name": "Engine",
+    "nameEn": "唐文偈",
+    "nationality": "China",
+    "born": "October 26, 2004 (age 21)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Toxic Lotus",
+    "totalWinnings": "$25,451",
+    "portrait": "https://liquipedia.net/commons/images/thumb/3/33/Engine_at_LCQ25.png/600px-Engine_at_LCQ25.png",
+    "teamHistory": [
+      {
+        "team": "United TOC",
+        "startDate": "2023-09-04",
+        "endDate": null
+      },
+      {
+        "team": "BC* Gaming",
+        "startDate": "2023-09-04",
+        "endDate": "2024-02-07"
+      },
+      {
+        "team": "Toxic Lotus",
+        "startDate": null,
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "toxic-lotus",
+    "joinDate": null
+  },
+  {
+    "id": "TOC",
+    "name": "TOC",
+    "nameEn": "叶温利",
+    "nationality": "China",
+    "born": "December 26, 2001 (age 24)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Toxic Lotus",
+    "totalWinnings": "$42,809",
+    "portrait": "https://liquipedia.net/commons/images/thumb/3/37/TOC_at_LCQ25.png/600px-TOC_at_LCQ25.png",
+    "teamHistory": [
+      {
+        "team": "Trick of China",
+        "startDate": "2022-08-21",
+        "endDate": null
+      },
+      {
+        "team": "RCN TOC",
+        "startDate": "2022-08-21",
+        "endDate": "2022-12-14"
+      },
+      {
+        "team": "United TOC",
+        "startDate": "2023-09-04",
+        "endDate": null
+      },
+      {
+        "team": "BC* Gaming",
+        "startDate": "2023-09-04",
+        "endDate": "2024-02-07"
+      },
+      {
+        "team": "Toxic Lotus",
+        "startDate": null,
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "toxic-lotus",
+    "joinDate": null
+  },
+  {
+    "id": "OU",
+    "name": "OU",
+    "nameEn": "王伟",
+    "nationality": "China",
+    "born": "July 20, 1999 (age 26)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Toxic Lotus",
+    "totalWinnings": "$64,997",
+    "portrait": "https://liquipedia.net/commons/images/a/a7/OU_at_LCQ25.png",
+    "teamHistory": [
+      {
+        "team": "NOVA Esports",
+        "startDate": null,
+        "endDate": null
+      },
+      {
+        "team": "NOVA Esports China",
+        "startDate": null,
+        "endDate": null
+      },
+      {
+        "team": "NOVA Esports",
+        "startDate": null,
+        "endDate": null
+      },
+      {
+        "team": "United TOC",
+        "startDate": "2023-09-04",
+        "endDate": null
+      },
+      {
+        "team": "BC* Gaming",
+        "startDate": "2023-09-04",
+        "endDate": "2024-02-07"
+      },
+      {
+        "team": "Toxic Lotus",
+        "startDate": "2024-04-26",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "toxic-lotus",
+    "joinDate": "2024-04-26"
+  },
+  {
+    "id": "Diegogamer",
+    "name": "Diegogamer",
+    "nameEn": "",
+    "nationality": "Mexico",
+    "born": "December 12, 2006 (age 19)",
+    "status": "Active",
+    "role": "Player",
+    "currentTeam": "Tribe Gaming",
+    "totalWinnings": "$37,547",
+    "portrait": "https://liquipedia.net/commons/images/thumb/7/7e/TE_Diegogamer_LCQ25.png/600px-TE_Diegogamer_LCQ25.png",
+    "teamHistory": [
+      {
+        "team": "512",
+        "startDate": "2024-03-04",
+        "endDate": "2024-06-10"
+      },
+      {
+        "team": "Rival Esports NA",
+        "startDate": "2024-06-10",
+        "endDate": "2024-12-07"
+      },
+      {
+        "team": "Havoc",
+        "startDate": "2025-02-03",
+        "endDate": "2025-03-08"
+      },
+      {
+        "team": "BC* Gaming",
+        "startDate": "2025-03-08",
+        "endDate": "2025-05-14"
+      },
+      {
+        "team": "Elevate",
+        "startDate": "2025-05-15",
+        "endDate": "2025-10-01"
+      },
+      {
+        "team": "TE",
+        "startDate": "2025-10-05",
+        "endDate": "2025-10-12"
+      },
+      {
+        "team": "Tribe Gaming",
+        "startDate": "2026-01-23",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "tribe-gaming",
+    "joinDate": "2026-01-23"
+  },
+  {
+    "id": "Edinho",
+    "name": "Edinho",
+    "nameEn": "Edson Hideki Takahashi",
+    "nationality": "Brazil",
+    "born": "September 16, 2003 (age 22)",
+    "status": "Active",
+    "role": "",
+    "currentTeam": "LOUD",
+    "totalWinnings": "$125,075",
+    "portrait": "https://liquipedia.net/commons/images/thumb/2/2b/LOUD_Edinho_at_WF25.png/600px-LOUD_Edinho_at_WF25.png",
+    "teamHistory": [
+      {
+        "team": "B4 eSports",
+        "startDate": "2020-04-03",
+        "endDate": "2020-09-20"
+      },
+      {
+        "team": "INTZ",
+        "startDate": "2021-02-26",
+        "endDate": "2022-01-01"
+      },
+      {
+        "team": "Chasmac Gaming BR",
+        "startDate": "2022-01-22",
+        "endDate": "2023-01-10"
+      },
+      {
+        "team": "Bando De Loucos",
+        "startDate": "2023-01-11",
+        "endDate": "2023-05-10"
+      },
+      {
+        "team": "QLASH",
+        "startDate": "2023-06-13",
+        "endDate": "2023-12-13"
+      },
+      {
+        "team": "Calabresos F/A",
+        "startDate": "2023-12-13",
+        "endDate": "2024-05-13"
+      },
+      {
+        "team": "Spacestation",
+        "startDate": "2024-05-13",
+        "endDate": "2024-11-06"
+      },
+      {
+        "team": "Calabresos F/A",
+        "startDate": "2024-11-06",
+        "endDate": "2025-02-08"
+      },
+      {
+        "team": "LOUD",
+        "startDate": "2025-02-08",
+        "endDate": null
+      }
+    ],
+    "topHeroes": [],
+    "stats": {
+      "totalKills": 0,
+      "avgDamage": 0,
+      "winRate": 0,
+      "matches": 0
+    },
+    "teamId": "loud",
+    "joinDate": "2025-02-08"
   },
   {
     "id": "nob",

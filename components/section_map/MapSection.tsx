@@ -1,7 +1,9 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react';
+import { useSession, signIn } from 'next-auth/react';
 import { getMapNameCn } from '@/lib/data/mapTranslations';
+import { useRecordView } from '@/hooks/useRecordView';
 
 interface BrawlGameMode {
   name?: string;
@@ -144,10 +146,20 @@ export default function MapSection() {
   const [poolFilter, setPoolFilter] = useState<'all' | 'ranked'>('all');
   const [selectedMode, setSelectedMode] = useState<string>('Brawl Ball');
 
+  const { data: session, status: sessionStatus } = useSession();
+
   // 地图放大弹窗
   const [selectedMap, setSelectedMap] = useState<BrawlMap | null>(null);
   // 收藏列表（以地图 name 为唯一标识）
   const [favorites, setFavorites] = useState<string[]>(loadFavorites);
+
+  // 记录地图浏览
+  useRecordView(
+    'map',
+    selectedMap?.name,
+    selectedMap ? getMapNameCn(selectedMap.name) : undefined,
+    selectedMap?.imageUrl
+  );
 
   useEffect(() => {
     async function initMapDashboard() {
@@ -212,6 +224,22 @@ export default function MapSection() {
 
     initMapDashboard();
   }, []);
+
+  // 登录后从云端同步收藏，并缓存到 localStorage
+  useEffect(() => {
+    if (sessionStatus === 'loading' || !session?.user) return;
+
+    fetch('/api/user/favorites')
+      .then((res) => (res.ok ? res.json() : { favorites: [] }))
+      .then((data: { favorites?: string[] }) => {
+        const cloudFavorites = data.favorites || [];
+        setFavorites(cloudFavorites);
+        saveFavorites(cloudFavorites);
+      })
+      .catch((error) => {
+        console.error('同步云端收藏失败:', error);
+      });
+  }, [session, sessionStatus]);
 
   // 按地图名去重
   const dedupedAllMaps = useMemo(() => {
@@ -315,12 +343,35 @@ export default function MapSection() {
 
   const isFavorited = (mapName: string) => favorites.includes(mapName);
 
-  function toggleFavorite(mapName: string) {
-    const next = isFavorited(mapName)
+  async function toggleFavorite(mapName: string) {
+    if (!session?.user) {
+      signIn('github', { callbackUrl: '/#map' });
+      return;
+    }
+
+    const optimisticNext = isFavorited(mapName)
       ? favorites.filter((n) => n !== mapName)
       : [...favorites, mapName];
-    setFavorites(next);
-    saveFavorites(next);
+    setFavorites(optimisticNext);
+    saveFavorites(optimisticNext);
+
+    try {
+      const res = await fetch('/api/user/favorites', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mapName }),
+      });
+      if (!res.ok) throw new Error('同步收藏失败');
+      const data = await res.json();
+      const confirmedNext = data.favorited
+        ? [...favorites, mapName]
+        : favorites.filter((n) => n !== mapName);
+      setFavorites(confirmedNext);
+      saveFavorites(confirmedNext);
+    } catch (error) {
+      console.error('切换收藏失败:', error);
+      setFavorites(favorites);
+    }
   }
 
   return (
