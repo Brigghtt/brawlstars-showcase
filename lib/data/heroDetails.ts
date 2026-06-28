@@ -67,7 +67,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "雪莉是荒野乱斗的新手入门战士，拿着一把霰弹枪闯荡荒野。性格爽朗直率，近距离爆发伤害极高，是新手最友好的英雄。",
     "story": "雪莉从小在荒野长大，习惯用霰弹枪解决一切麻烦，性格火爆仗义，是荒野里人人都认识的大姐头。",
     "avatar": "/HeroAvatars/16000000.png",
-    "image": "/Usedinheroes/Sprite/1.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000000.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000000.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -199,13 +199,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "输出",
     "class": "Damage Dealer",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "柯尔特是西部风格的双枪快射手，拥有出色的中距离持续输出能力，子弹可穿透敌人，适合在开阔地形压制对手。作为新手英雄，易上手且泛用性强，是团队中稳定的火力点。",
     "story": "柯尔特是西部小镇的传奇枪手，以超快的拔枪速度闻名，梦想是成为荒野中最顶尖的射手，游走于各个战场证明自己的实力。",
     "avatar": "/HeroAvatars/16000001.png",
-    "image": "/Usedinheroes/Sprite/2.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000001.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000001.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -333,7 +333,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "天才机械少女杰西，擅长利用电磁脉冲和自动炮台掌控战场。她的炮台能持续输出并提供视野，普攻子弹可弹射多个目标，是团队中不可或缺的阵地战核心。",
     "story": "杰西从小痴迷机械制造，年仅12岁就造出了能自主战斗的炮台，她带着自己的发明闯荡荒野，用智慧和机械实力赢得了所有人的尊重。",
     "avatar": "/HeroAvatars/16000007.png",
-    "image": "/Usedinheroes/Sprite/3.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000007.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000007.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -444,13 +444,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "坦克",
     "class": "Tank",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "公牛是血厚防高的硬汉，手持霰弹枪近距离爆发恐怖，超级技能可穿墙冲锋并击退敌人，既是前排抗伤核心，也能突袭收割残血。适合贴脸作战，是荒野决斗模式的热门选择。",
     "story": "公牛曾是荒野帮派的头目，凭借一身蛮力和狠劲称霸一方，后来厌倦了帮派争斗，转而以赏金猎人的身份闯荡，没人敢轻易招惹这个满脸横肉的硬汉。",
     "avatar": "/HeroAvatars/16000002.png",
-    "image": "/Usedinheroes/Sprite/4.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000002.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000002.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -582,13 +582,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "射手",
     "class": "Marksman",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "布洛克是精通火箭筒的远程输出，火箭弹可造成范围伤害，超级技能能发射多枚火箭覆盖大片区域，适合远距离压制和清理掩体后的敌人，是宝石争霸、赏金猎人模式的强势英雄。",
     "story": "布洛克曾是军队的爆破专家，退役后带着心爱的火箭筒来到荒野，热衷于用爆炸解决一切问题，性格狂热且爱出风头，总喜欢在战场制造最大的动静。",
     "avatar": "/HeroAvatars/16000003.png",
-    "image": "/Usedinheroes/Sprite/5.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000003.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000003.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -705,7 +705,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "迪克是体型迷你的投弹手，普攻投掷的地雷会延迟爆炸，超级技能可投掷多枚地雷覆盖区域，擅长远程消耗和封锁走位。体型小的优势让他不易被瞄准，适合偷袭和拉扯作战。",
     "story": "迪克是荒野里的爆破鬼才，痴迷于各种爆炸物，体型虽小但破坏力惊人。他总喜欢躲在暗处布置地雷，看着敌人踩中陷阱时会发出得意的怪笑。",
     "avatar": "/HeroAvatars/16000022.png",
-    "image": "/Usedinheroes/Sprite/6.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000022.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000022.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -822,7 +822,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "8比特是复古游戏风格的机器人射手，普攻发射激光束，伤害随距离增加而提升，超级技能可部署伤害增幅器，为范围内队友提升攻击力，是团队增益型核心输出。",
     "story": "8比特是一台拥有自我意识的复古街机机器人，被程序员遗弃后闯入荒野，用像素激光和游戏风格的技能在战场打出一片天，总喜欢喊着游戏术语冲锋。",
     "avatar": "/HeroAvatars/16000027.png",
-    "image": "/Usedinheroes/Sprite/7.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000027.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000027.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -939,7 +939,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "艾魅是拥有魅惑能力的辅助型英雄，普攻发射的音波可造成持续伤害并减速敌人，超级技能能释放大范围音波，眩晕并伤害敌人，擅长控场和限制敌方走位。",
     "story": "艾魅是荒野中的人气偶像，用独特的音波能力征服了无数粉丝，她的战场表演既能迷惑敌人，也能为队友提供支援，始终保持着光鲜亮丽的形象。",
     "avatar": "/HeroAvatars/16000030.png",
-    "image": "/Usedinheroes/Sprite/8.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000030.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000030.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1071,13 +1071,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "投弹手",
     "class": "Artillery",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "巴利是擅长投掷燃烧瓶的投弹手，普攻的燃烧瓶落地后形成火焰区域，持续灼烧敌人，超级技能可投掷多枚燃烧瓶，形成大范围火海，适合封锁区域和消耗敌方血量。",
     "story": "巴里曾是酒吧的酒保，因一场意外学会了用燃烧瓶战斗，他性格暴躁且爱喝酒，战斗时总是醉醺醺的，但投掷燃烧瓶的准头却从未失手。",
     "avatar": "/HeroAvatars/16000006.png",
-    "image": "/Usedinheroes/Sprite/9.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000006.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000006.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1188,13 +1188,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "辅助",
     "class": "Support",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "波克是手持班卓琴的辅助英雄，普攻的音波可治疗友方单位并伤害敌人，超级技能能释放大范围治疗音波，为全体队友回复大量血量，是团队续航的核心。",
     "story": "波克是荒野中的流浪乐手，用班卓琴的旋律治愈伤痛、击退敌人，他走到哪里都能带来欢乐，是团队中最受欢迎的暖心队友。",
     "avatar": "/HeroAvatars/16000013.png",
-    "image": "/Usedinheroes/Sprite/10.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000013.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000013.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1305,13 +1305,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "坦克",
     "class": "Tank",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "罗莎是擅长近身格斗的植物系坦克，普攻挥舞藤蔓造成范围伤害，超级技能可进入草丛伪装并提升防御和移速，草丛中作战能力极强，是占点、守点模式的强势英雄。",
     "story": "罗莎是荒野植物园的守护者，能与植物沟通，擅长利用草丛和自然之力战斗。她性格沉稳，守护欲极强，绝不会让队友受到伤害。",
     "avatar": "/HeroAvatars/16000024.png",
-    "image": "/Usedinheroes/Sprite/11.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000024.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000024.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1428,7 +1428,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "爆破麦克（爆破麦克斯）是疯狂的投弹手，普攻投掷的炸弹可反弹，超级技能能投掷巨型炸弹，造成大范围高额伤害并击退敌人，擅长利用地形反弹炸弹消耗敌人。",
     "story": "爆破麦克是个沉迷爆炸的疯狂老头，一辈子都在研究各种炸弹，他的战斗方式简单粗暴——用炸弹把一切敌人炸飞，越混乱他越开心。",
     "avatar": "/HeroAvatars/16000009.png",
-    "image": "/Usedinheroes/Sprite/12.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000009.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000009.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1539,13 +1539,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "输出",
     "class": "Damage Dealer",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "妮塔是拥有驯熊能力的少女战士，普攻发射的能量波可穿透敌人，超级技能能召唤巨熊伙伴协同作战，巨熊拥有高额血量和伤害，是妮塔的核心战力，适合中近距离团战。",
     "story": "妮塔从小在森林中长大，与巨熊结下了深厚的羁绊，她能听懂动物的语言，巨熊是她最忠诚的伙伴。在战场中，一人一熊的组合让所有敌人闻风丧胆。",
     "avatar": "/HeroAvatars/16000008.png",
-    "image": "/Usedinheroes/Sprite/13.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000008.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000008.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1683,7 +1683,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "潘妮是海盗风格的射手，普攻发射的炮弹可在障碍物后爆炸，超级技能召唤海盗船炮台，炮台可远程攻击敌人并造成范围伤害，擅长远程压制和阵地战。",
     "story": "潘妮曾是海盗船长，带领船员掠夺无数财宝，后来厌倦了海上生活，带着心爱的炮台来到荒野，用海盗的方式在战场书写新的传奇。",
     "avatar": "/HeroAvatars/16000019.png",
-    "image": "/Usedinheroes/Sprite/14.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000019.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000019.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1798,7 +1798,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "佩佩是优雅的女枪手，普攻的子弹伤害随距离增加而大幅提升，超级技能可发射多枚高伤害子弹，远距离狙击能力极强，适合在安全位置收割残血敌人。",
     "story": "佩佩是荒野中的优雅贵妇，精通远距离狙击，她总是保持着精致的妆容和优雅的姿态，用精准的枪法让敌人在毫无察觉中倒下。",
     "avatar": "/HeroAvatars/16000015.png",
-    "image": "/Usedinheroes/Sprite/15.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000015.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000015.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -1915,7 +1915,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "瑞克（瑞科）是擅长弹射攻击的战士，普攻发射的弹珠可在障碍物间反弹，超级技能发射大量弹珠，覆盖大范围区域，适合利用地形反弹攻击多个敌人，泛用性极强。",
     "story": "瑞克是弹珠游戏的狂热爱好者，他把弹珠的弹射技巧运用到战斗中，总能利用地形打出意想不到的攻击，性格活泼开朗，战斗就像玩游戏一样轻松。",
     "avatar": "/HeroAvatars/16000004.png",
-    "image": "/Usedinheroes/Sprite/16.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000004.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000004.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2032,7 +2032,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "斯派克是仙人掌形态的战士，普攻发射的尖刺可穿透敌人，超级技能释放大范围尖刺陷阱，持续伤害并减速敌人，擅长控场和范围输出，是团战中的搅局者。",
     "story": "斯派克是荒野沙漠中的一株变异仙人掌，拥有自我意识和战斗能力，它沉默寡言，却能用尖刺给敌人最致命的打击，守护着自己的沙漠领地。",
     "avatar": "/HeroAvatars/16000005.png",
-    "image": "/Usedinheroes/Sprite/17.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000005.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000005.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2161,7 +2161,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "阿渤",
     "enName": "Bo",
     "slug": "bo",
-    "role": "控场",
+    "role": "输出",
     "class": "Controller",
     "rarity": {
       "name": "史诗",
@@ -2170,7 +2170,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "阿渤是擅长弓箭和陷阱的战士，普攻发射的弓箭可穿透敌人，超级技能布置多个陷阱，触发后造成高额伤害并减速敌人，适合埋伏和远程消耗，是荒野决斗的强势英雄。",
     "story": "阿渤是荒野中的猎人，精通弓箭和陷阱制作，他熟悉每一寸荒野的地形，擅长利用陷阱埋伏敌人，是个沉默而致命的荒野猎手。",
     "avatar": "/HeroAvatars/16000014.png",
-    "image": "/Usedinheroes/Sprite/18.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000014.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000014.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2302,13 +2302,13 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "role": "坦克",
     "class": "Tank",
     "rarity": {
-      "name": "Rare",
+      "name": "稀有",
       "color": "#68fd58"
     },
     "desc": "艾尔·普里莫是摔跤手风格的坦克，普攻近身拳击造成高额伤害，超级技能飞身冲撞，落地后造成范围伤害并眩晕敌人，擅长突袭和开团，是前排冲阵的核心。",
     "story": "艾尔·普里莫曾是蝉联多届的摔跤冠军，为了寻找更强的对手来到荒野，他信奉“力量就是一切”，用摔跤手的方式在战场中横冲直撞。",
     "avatar": "/HeroAvatars/16000010.png",
-    "image": "/Usedinheroes/Sprite/19.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000010.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000010.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2412,7 +2412,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "达里尔（达利尔）是双管霰弹枪的海盗射手，普攻近距离爆发极高，超级技能可滚动冲锋，期间免疫伤害并撞飞敌人，适合突袭和残血收割，生存能力极强。",
     "story": "达里尔是潘妮的船员，性格憨厚但战斗力爆表，他的双管霰弹枪从不会让敌人靠近，滚动冲锋的能力更是让他成为了战场上的“不死小强”。",
     "avatar": "/HeroAvatars/16000018.png",
-    "image": "/Usedinheroes/Sprite/20.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000018.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000018.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2529,7 +2529,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "卡尔是挥舞铲子的射手，普攻投掷的铲子可回旋，往返都能造成伤害，超级技能可旋转铲子，持续攻击周围敌人并移动，适合清理集群敌人和拉扯作战。",
     "story": "卡尔曾是工地的铲土工，意外获得了战斗用的强化铲子，他用这把铲子在荒野中打出了一片天，性格乐观，总说“一把铲子能解决所有问题”。",
     "avatar": "/HeroAvatars/16000025.png",
-    "image": "/Usedinheroes/Sprite/21.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000025.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000025.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2646,7 +2646,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "雅琪是手持电钻的战士，普攻的电钻可穿透障碍物，对掩体后的敌人造成伤害，超级技能释放范围电击，眩晕并伤害周围敌人，擅长攻坚和突破掩体。",
     "story": "雅琪是专业的建筑工人，擅长用电钻拆除障碍物，来到荒野后，她把电钻改造成了武器，专门对付躲在掩体后的敌人，是攻坚破阵的好手。",
     "avatar": "/HeroAvatars/16000034.png",
-    "image": "/Usedinheroes/Sprite/22.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000034.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000034.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2763,7 +2763,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "帕姆是手持机枪的射手，普攻的机枪子弹可散射，超级技能部署治疗台，为范围内友方单位持续回血，既是输出核心也是团队续航保障，适合阵地战。",
     "story": "帕姆是荒野中的“暖心大妈”，经营着一家移动诊所，她用机枪保护队友，用治疗台治愈伤痛，总是把队友的安危放在第一位。",
     "avatar": "/HeroAvatars/16000016.png",
-    "image": "/Usedinheroes/Sprite/23.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000016.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000016.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -2880,7 +2880,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "费兰肯（弗兰肯）是科学怪人风格的战士，普攻挥舞巨锤造成大范围伤害，超级技能释放电击波，眩晕并伤害直线上的所有敌人，擅长控场和范围输出。",
     "story": "费兰肯是疯狂科学家的实验产物，拥有巨大的身躯和力量，他虽然外表恐怖，但内心善良，只会用巨锤保护自己和队友。",
     "avatar": "/HeroAvatars/16000020.png",
-    "image": "/Usedinheroes/Sprite/24.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000020.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000020.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3018,7 +3018,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "比比是手持曲棍球棍的战士，普攻挥棍造成范围伤害并反弹，超级技能可蓄力冲刺，挥棍击飞敌人并造成高额伤害，擅长拉扯和突袭，机动性极强。",
     "story": "比比是曲棍球队的明星球员，来到荒野后把曲棍球棍改造成了武器，她的打法像打曲棍球一样灵活，总能用快速的冲刺和精准的挥棍击败敌人。",
     "avatar": "/HeroAvatars/16000026.png",
-    "image": "/Usedinheroes/Sprite/25.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000026.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000026.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3156,7 +3156,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "贝亚是蜜蜂女王风格的射手，普攻发射的针刺可叠加毒素，持续造成伤害，超级技能释放追踪蜜蜂群，自动攻击中毒敌人，擅长持续消耗和收割。",
     "story": "贝亚是荒野中蜜蜂群的女王，能与蜜蜂沟通并指挥它们战斗，她的毒刺和蜜蜂群让敌人闻风丧胆，守护着自己的蜂巢领地。",
     "avatar": "/HeroAvatars/16000029.png",
-    "image": "/Usedinheroes/Sprite/26.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000029.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000029.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3273,7 +3273,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "墨提斯（莫提斯）是吸血鬼风格的射手，普攻的蝙蝠攻击可吸血，超级技能向前突进并攻击路径上的敌人，擅长突袭和残血反打，机动性和续航兼备。",
     "story": "墨提斯是活了数百年的吸血鬼，厌倦了永生的孤独来到荒野，他用蝙蝠攻击敌人并汲取血液，是战场上令人恐惧的收割者。",
     "avatar": "/HeroAvatars/16000011.png",
-    "image": "/Usedinheroes/Sprite/27.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000011.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000011.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3411,7 +3411,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "塔拉是占卜师风格的射手，普攻投掷的卡牌可造成范围伤害，超级技能释放引力场，将敌人拉向中心并造成伤害，擅长控场和集火敌人，是团战核心。",
     "story": "塔拉是荒野中的占卜师，能通过卡牌预知敌人的行动，她用命运卡牌和引力场掌控战场，总是能在最关键的时刻打出致命的控场。",
     "avatar": "/HeroAvatars/16000017.png",
-    "image": "/Usedinheroes/Sprite/28.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000017.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000017.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3528,7 +3528,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "吉恩（吉恩）是灯神风格的战士，普攻发射的魔法弹可穿透敌人，超级技能释放魔法漩涡，吸扯敌人并造成伤害，擅长控场和范围输出，泛用性极强。",
     "story": "吉恩是被困在神灯中的灯神，偶然间获得自由后来到荒野，他用魔法弹和漩涡掌控战场，性格幽默，总喜欢用魔法搞些小恶作剧。",
     "avatar": "/HeroAvatars/16000021.png",
-    "image": "/Usedinheroes/Sprite/29.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000021.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000021.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3645,7 +3645,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "麦克斯是极速风格的坦克，普攻发射的能量弹可穿透敌人，超级技能提升自身和队友的移动速度，擅长拉扯和支援，是团队的机动性核心。",
     "story": "麦克斯是荒野中速度最快的英雄，痴迷于一切能提升速度的东西，她的极速领域能让整个团队变得灵活，是游击战的核心人物。",
     "avatar": "/HeroAvatars/16000032.png",
-    "image": "/Usedinheroes/Sprite/30.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000032.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000032.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3762,7 +3762,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "P先生是企鹅风格的辅助英雄，普攻发射的泡泡弹可造成范围伤害，超级技能召唤企鹅小弟协同作战，小弟拥有独立攻击能力，擅长阵地战和持续输出。",
     "story": "P先生是企鹅军团的首领，带着一群忠心的企鹅小弟闯荡荒野，他的泡泡弹和小弟们的组合让他成为了阵地战的王者，没人敢轻易招惹这个企鹅团队。",
     "avatar": "/HeroAvatars/16000031.png",
-    "image": "/Usedinheroes/Sprite/31.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000031.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000031.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -3976,7 +3976,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "黑鸦是乌鸦风格的坦克，普攻发射的羽毛可叠加毒素，持续造成伤害，超级技能释放乌鸦群，覆盖大范围区域并叠加毒素，擅长持续消耗和收割残血。",
     "story": "黑鸦是荒野中的暗影刺客，总是悄无声息地接近敌人，用剧毒羽毛和乌鸦群收割生命，它沉默寡言，是战场上最致命的暗箭。",
     "avatar": "/HeroAvatars/16000012.png",
-    "image": "/Usedinheroes/Sprite/33.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000012.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000012.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -4114,7 +4114,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "里昂是忍者风格的坦克，普攻发射的飞镖可穿透敌人，超级技能进入隐形状态，提升移动速度并能穿墙，擅长偷袭和收割残血，是荒野决斗的强势英雄。",
     "story": "里昂是荒野中的顶尖忍者，精通隐形和飞镖技巧，他总能在敌人毫无察觉的情况下完成收割，是战场上的“隐形杀手”。",
     "avatar": "/HeroAvatars/16000023.png",
-    "image": "/Usedinheroes/Sprite/34.webp",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000023.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000023.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -4252,7 +4252,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "沙迪是沙之精灵风格的射手，普攻发射的沙粒可造成范围伤害，超级技能释放沙尘暴，遮挡敌人视野并减速，擅长控场和掩护队友推进。",
     "story": "沙迪是沙漠中的精灵，能操控沙子制造沙尘暴，他性格慵懒但实力强大，总能用沙尘暴掩护队友，让敌人陷入混乱。",
     "avatar": "/HeroAvatars/16000028.png",
-    "image": "/Usedinheroes/Sprite/35.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000028.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000028.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -4369,7 +4369,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "desc": "格尔是冰雪风格的战士，普攻发射的雪球可造成范围伤害，超级技能释放冰风，击退敌人并造成伤害，擅长控场和拉扯，是团战中的搅局者。",
     "story": "格尔是冰雪王国的守护者，能操控冰雪和寒风战斗，他的雪球和冰风让敌人寸步难行，是荒野中最令人头疼的控场英雄之一。",
     "avatar": "/HeroAvatars/16000035.png",
-    "image": "/Usedinheroes/Sprite/36.png",
+    "image": "https://cdn.brawlify.com/brawlers/model/16000035.png",
     "modelImage": "https://cdn.brawlify.com/brawlers/model/16000035.png",
     "bgImage": "/Usedinheroes/bg/3.png",
     "stats": {
@@ -8562,7 +8562,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "查克",
     "enName": "Chuck",
     "slug": "chuck",
-    "role": "控场",
+    "role": "输出",
     "class": "Damage Dealer",
     "rarity": {
       "name": "神话",
@@ -10401,7 +10401,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "谜宝",
     "enName": "Meeple",
     "slug": "meeple",
-    "role": "控场",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "史诗",
@@ -10517,7 +10517,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "奥利",
     "enName": "Ollie",
     "slug": "ollie",
-    "role": "坦克",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -10748,7 +10748,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "芬克斯",
     "enName": "Finx",
     "slug": "finx",
-    "role": "控场",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -10967,7 +10967,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "风姬",
     "enName": "Kaze",
     "slug": "kaze",
-    "role": "刺客",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "Ultra Legendary",
@@ -11071,7 +11071,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "鳄梨",
     "enName": "Alli",
     "slug": "alli",
-    "role": "刺客",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -11110,7 +11110,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000990,
         "name": "你最好跑，最好躲起来",
-        "desc": "愤怒时，阿利 的重新装弹速度会加快 25% 速度。",
+        "desc": "愤怒时，鳄梨 的重新装弹速度会加快 25% 速度。",
         "icon": "/starpowers/Alli/alli_starpower_2.png"
       }
     ],
@@ -11124,7 +11124,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       {
         "id": 23000992,
         "name": "冷血",
-        "desc": "阿利 在接下来的 4 秒内变得愤怒。仅当敌人可见时才能激活。（冷却：17 秒）",
+        "desc": "鳄梨 在接下来的 4 秒内变得愤怒。仅当敌人可见时才能激活。（冷却：17 秒）",
         "icon": "/gadgets/Alli/alli_gadget_2.png"
       }
     ],
@@ -11161,7 +11161,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
       }
     ],
     "hypercharge": {
-      "name": "阿利·极限充能",
+      "name": "鳄梨·极限充能",
       "desc": "倍率：25%。激活后，阿里超级技能的额外伤害现在为敌人最大生命值的 25%，而不是当前生命值。此外，在超充能期间，即使艾丽没有使用超级技能，她的攻击也会恢复其攻击造成伤害的 20%。阿里还获得 20% 的速度提升，以及 5% 的伤害和护盾提升。此外，超充能伤害提升会增加她的超级的最小和最大额外伤害，以及她的特殊目标伤害。",
       "icon": "/hypercharges/Alli/alli_hypercharge.png"
     },
@@ -11172,10 +11172,10 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
   "95": {
     "id": "95",
     "apiId": 16000096,
-    "name": "桩",
+    "name": "查克",
     "enName": "Trunk",
     "slug": "trunk",
-    "role": "坦克",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "史诗",
@@ -11383,7 +11383,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "兹奇",
     "enName": "Ziggy",
     "slug": "ziggy",
-    "role": "控场",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -11487,7 +11487,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "皮尔斯",
     "enName": "Pierce",
     "slug": "pierce",
-    "role": "射手",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "传奇",
@@ -11591,7 +11591,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "琪琪",
     "enName": "Gigi",
     "slug": "gigi",
-    "role": "刺客",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -11695,7 +11695,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "西里乌斯",
     "enName": "Sirius",
     "slug": "sirius",
-    "role": "控场",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "Ultra Legendary",
@@ -11903,7 +11903,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "达米安",
     "enName": "Damian",
     "slug": "damian",
-    "role": "坦克",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -12007,7 +12007,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "丝塔诺娃",
     "enName": "Starr Nova",
     "slug": "starr-nova",
-    "role": "刺客",
+    "role": "输出",
     "class": "Unknown",
     "rarity": {
       "name": "神话",

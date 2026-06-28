@@ -147,6 +147,7 @@ const knownByApiId = new Map(KNOWN_HEROES.map(k => [k.apiId, k]));
 const RARITY_CN = {
   'Common': '普通',
   'Starting Brawler': '初始英雄',
+  'Rare': '稀有',
   'Super Rare': '超稀有',
   'Epic': '史诗',
   'Mythic': '神话',
@@ -405,11 +406,7 @@ async function resolveHypercharge(enName, cnName) {
 }
 
 async function resolveHeroImage(localId, apiId) {
-  const spriteDir = path.join(ROOT, 'public', 'Usedinheroes', 'Sprite');
-  for (const ext of ['webp', 'png']) {
-    const p = path.join(spriteDir, `${localId}.${ext}`);
-    if (await fileExists(p)) return `/Usedinheroes/Sprite/${localId}.${ext}`;
-  }
+  // 本地 Sprite 编号与 localId 不对应，直接统一使用 CDN 模型图
   return `https://cdn.brawlify.com/brawlers/model/${apiId}.png`;
 }
 
