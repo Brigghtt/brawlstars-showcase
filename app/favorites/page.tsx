@@ -144,7 +144,6 @@ export default function FavoritesPage() {
     });
     return Object.entries(counts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 3)
       .map(([mode, count]) => ({
         mode,
         cnName: modeNameCnMap[mode] || mode,
@@ -167,17 +166,38 @@ export default function FavoritesPage() {
       .map(([mode]) => mode);
 
     const favoriteNames = new Set(favorites);
-    const candidates = dedupedAllMaps.filter(
-      (map) => !favoriteNames.has(map.name) && map.gameMode?.name && preferredModes.includes(map.gameMode.name)
-    );
-
-    candidates.sort((a, b) => {
-      const idxA = preferredModes.indexOf(a.gameMode?.name || '');
-      const idxB = preferredModes.indexOf(b.gameMode?.name || '');
-      return idxA - idxB;
+    const candidatesByMode: Record<string, BrawlMap[]> = {};
+    preferredModes.forEach((mode) => {
+      candidatesByMode[mode] = dedupedAllMaps.filter(
+        (map) => !favoriteNames.has(map.name) && map.gameMode?.name === mode
+      );
     });
 
-    return candidates.slice(0, 8);
+    const result: BrawlMap[] = [];
+    const pointers: Record<string, number> = {};
+    preferredModes.forEach((mode) => { pointers[mode] = 0; });
+    const seen = new Set<string>();
+
+    while (result.length < 12) {
+      let added = false;
+      for (const mode of preferredModes) {
+        const list = candidatesByMode[mode];
+        let p = pointers[mode];
+        while (p < list.length && seen.has(list[p].name)) p++;
+        if (p < list.length) {
+          result.push(list[p]);
+          seen.add(list[p].name);
+          pointers[mode] = p + 1;
+          added = true;
+          if (result.length >= 12) break;
+        } else {
+          pointers[mode] = p;
+        }
+      }
+      if (!added) break;
+    }
+
+    return result;
   }, [dedupedAllMaps, favoriteMaps, favorites]);
 
   async function toggleFavorite(mapName: string) {
@@ -317,7 +337,7 @@ export default function FavoritesPage() {
         {recommendedMaps.length > 0 && (
           <section>
             <h2 className="text-xl font-black text-white mb-2">🎯 猜你喜欢</h2>
-            <p className="text-zinc-400 mb-6 text-sm">基于你收藏地图的模式偏好推荐</p>
+            <p className="text-zinc-400 mb-6 text-sm">基于你收藏的多个模式偏好轮询推荐</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {recommendedMaps.map((map) => (
                 <MapCard

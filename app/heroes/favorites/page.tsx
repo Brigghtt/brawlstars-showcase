@@ -59,7 +59,6 @@ export default function HeroFavoritesPage() {
     });
     return Object.entries(counts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 3)
       .map(([role, count]) => ({
         role,
         count,
@@ -79,17 +78,38 @@ export default function HeroFavoritesPage() {
       .map(([role]) => role);
 
     const favoriteIds = new Set(favoriteHeroes.map((h) => h.id));
-    const candidates = Object.values(heroDetailsData).filter(
-      (hero) => !favoriteIds.has(hero.id) && hero.role && preferredRoles.includes(hero.role)
-    );
-
-    candidates.sort((a, b) => {
-      const idxA = preferredRoles.indexOf(a.role);
-      const idxB = preferredRoles.indexOf(b.role);
-      return idxA - idxB;
+    const candidatesByRole: Record<string, HeroDetailV2[]> = {};
+    preferredRoles.forEach((role) => {
+      candidatesByRole[role] = Object.values(heroDetailsData).filter(
+        (hero) => !favoriteIds.has(hero.id) && hero.role === role
+      );
     });
 
-    return candidates.slice(0, 8);
+    const result: HeroDetailV2[] = [];
+    const pointers: Record<string, number> = {};
+    preferredRoles.forEach((role) => { pointers[role] = 0; });
+    const seen = new Set<string>();
+
+    while (result.length < 12) {
+      let added = false;
+      for (const role of preferredRoles) {
+        const list = candidatesByRole[role];
+        let p = pointers[role];
+        while (p < list.length && seen.has(list[p].id)) p++;
+        if (p < list.length) {
+          result.push(list[p]);
+          seen.add(list[p].id);
+          pointers[role] = p + 1;
+          added = true;
+          if (result.length >= 12) break;
+        } else {
+          pointers[role] = p;
+        }
+      }
+      if (!added) break;
+    }
+
+    return result;
   }, [favoriteHeroes]);
 
   async function toggleFavorite(heroId: string) {
@@ -217,7 +237,7 @@ export default function HeroFavoritesPage() {
         {recommendedHeroes.length > 0 && (
           <section>
             <h2 className="text-xl font-black text-white mb-2">🎯 猜你喜欢的英雄</h2>
-            <p className="text-zinc-400 mb-6 text-sm">基于你收藏英雄的职位偏好推荐</p>
+            <p className="text-zinc-400 mb-6 text-sm">基于你收藏的多个职位偏好轮询推荐</p>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {recommendedHeroes.map((hero) => (
                 <HeroCard
