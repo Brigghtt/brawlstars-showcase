@@ -362,6 +362,7 @@ export type FavoriteHeroCreateOrConnectWithoutUserInput = {
 
 export type FavoriteHeroCreateManyUserInputEnvelope = {
   data: Prisma.FavoriteHeroCreateManyUserInput | Prisma.FavoriteHeroCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type FavoriteHeroUpsertWithWhereUniqueWithoutUserInput = {
@@ -1130,6 +1131,7 @@ export type FavoriteHeroCreateManyArgs<ExtArgs extends runtime.Types.Extensions.
    * The data used to create many FavoriteHeroes.
    */
   data: Prisma.FavoriteHeroCreateManyInput | Prisma.FavoriteHeroCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1148,6 +1150,7 @@ export type FavoriteHeroCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Ex
    * The data used to create many FavoriteHeroes.
    */
   data: Prisma.FavoriteHeroCreateManyInput | Prisma.FavoriteHeroCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

@@ -435,6 +435,7 @@ export type EventFavoriteCreateOrConnectWithoutUserInput = {
 
 export type EventFavoriteCreateManyUserInputEnvelope = {
   data: Prisma.EventFavoriteCreateManyUserInput | Prisma.EventFavoriteCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type EventFavoriteUpsertWithWhereUniqueWithoutUserInput = {
@@ -1236,6 +1237,7 @@ export type EventFavoriteCreateManyArgs<ExtArgs extends runtime.Types.Extensions
    * The data used to create many EventFavorites.
    */
   data: Prisma.EventFavoriteCreateManyInput | Prisma.EventFavoriteCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1254,6 +1256,7 @@ export type EventFavoriteCreateManyAndReturnArgs<ExtArgs extends runtime.Types.E
    * The data used to create many EventFavorites.
    */
   data: Prisma.EventFavoriteCreateManyInput | Prisma.EventFavoriteCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

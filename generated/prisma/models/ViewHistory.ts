@@ -435,6 +435,7 @@ export type ViewHistoryCreateOrConnectWithoutUserInput = {
 
 export type ViewHistoryCreateManyUserInputEnvelope = {
   data: Prisma.ViewHistoryCreateManyUserInput | Prisma.ViewHistoryCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type ViewHistoryUpsertWithWhereUniqueWithoutUserInput = {
@@ -1236,6 +1237,7 @@ export type ViewHistoryCreateManyArgs<ExtArgs extends runtime.Types.Extensions.I
    * The data used to create many ViewHistories.
    */
   data: Prisma.ViewHistoryCreateManyInput | Prisma.ViewHistoryCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1254,6 +1256,7 @@ export type ViewHistoryCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Ext
    * The data used to create many ViewHistories.
    */
   data: Prisma.ViewHistoryCreateManyInput | Prisma.ViewHistoryCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

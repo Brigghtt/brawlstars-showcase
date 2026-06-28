@@ -462,6 +462,7 @@ export type PredictionCreateOrConnectWithoutUserInput = {
 
 export type PredictionCreateManyUserInputEnvelope = {
   data: Prisma.PredictionCreateManyUserInput | Prisma.PredictionCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type PredictionUpsertWithWhereUniqueWithoutUserInput = {
@@ -1274,6 +1275,7 @@ export type PredictionCreateManyArgs<ExtArgs extends runtime.Types.Extensions.In
    * The data used to create many Predictions.
    */
   data: Prisma.PredictionCreateManyInput | Prisma.PredictionCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1292,6 +1294,7 @@ export type PredictionCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Exte
    * The data used to create many Predictions.
    */
   data: Prisma.PredictionCreateManyInput | Prisma.PredictionCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

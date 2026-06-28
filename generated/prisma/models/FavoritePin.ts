@@ -362,6 +362,7 @@ export type FavoritePinCreateOrConnectWithoutUserInput = {
 
 export type FavoritePinCreateManyUserInputEnvelope = {
   data: Prisma.FavoritePinCreateManyUserInput | Prisma.FavoritePinCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type FavoritePinUpsertWithWhereUniqueWithoutUserInput = {
@@ -1130,6 +1131,7 @@ export type FavoritePinCreateManyArgs<ExtArgs extends runtime.Types.Extensions.I
    * The data used to create many FavoritePins.
    */
   data: Prisma.FavoritePinCreateManyInput | Prisma.FavoritePinCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1148,6 +1150,7 @@ export type FavoritePinCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Ext
    * The data used to create many FavoritePins.
    */
   data: Prisma.FavoritePinCreateManyInput | Prisma.FavoritePinCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

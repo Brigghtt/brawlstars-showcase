@@ -18,9 +18,9 @@
 - **游戏模式**：展示游戏模式卡片、实时轮换（rotation）倒计时、模式详情页。
 - **对战地图**：展示地图列表，可按模式 / 是否在实时天梯池中筛选。
 - **赛事中心**：赛事（tournaments）、战队（teams）、选手（players）、赛程（schedule）、数据统计（stats）。
-- **用户系统**：基于 Auth.js + Prisma + SQLite 的邮箱/密码注册登录；地图、英雄、表情收藏按用户持久化，提供"我的地图"、"我的英雄"、"个人中心"、"个人分享卡片"页面与基于偏好的个性化推荐；支持自定义昵称与英雄表情头像；记录最近浏览历史。
+- **用户系统**：基于 Auth.js + Prisma 的邮箱/密码注册登录；地图、英雄、表情收藏按用户持久化，提供"我的地图"、"我的英雄"、"个人中心"、"个人分享卡片"页面与基于偏好的个性化推荐；支持自定义昵称与英雄表情头像；记录最近浏览历史。
 
-静态数据集中在 `lib/data.ts` 和 `lib/data/esports.ts`；用户数据（收藏）持久化在 SQLite 数据库中。动态数据通过 Next.js API Route 代理，默认使用 Supercell 官方 API `https://api.brawlstars.com/v1`（需要配置 `BRAWL_API_TOKEN` 且部署 IP 在白名单内）；未配置 token 时部分接口将返回空数据或 503。
+静态数据集中在 `lib/data.ts` 和 `lib/data/esports.ts`；用户数据（收藏）持久化在数据库中。动态数据通过 Next.js API Route 代理，默认使用 Supercell 官方 API `https://api.brawlstars.com/v1`（需要配置 `BRAWL_API_TOKEN` 且部署 IP 在白名单内）；未配置 token 时部分接口将返回空数据或 503。
 
 ---
 
@@ -36,8 +36,8 @@
 | 包管理 | npm（`package-lock.json` 存在） |
 | 认证 | Auth.js (NextAuth.js v5) + Credentials Provider（邮箱密码） |
 | 密码哈希 | bcryptjs |
-| 数据库 ORM | Prisma 7 + SQLite（文件数据库） |
-| 数据库驱动 | better-sqlite3 + @prisma/adapter-better-sqlite3 |
+| 数据库 ORM | Prisma 7（本地 SQLite / 生产 PostgreSQL） |
+| 数据库驱动 | 本地：better-sqlite3 + @prisma/adapter-better-sqlite3；生产：pg + @prisma/adapter-pg |
 | 运行时 | Node.js（本地开发 / Vercel 等 Node 部署环境） |
 
 ---
@@ -155,7 +155,7 @@ npm run lint          # 运行 ESLint
    - `/api/rotation` 请求 `api.brawlstars.com/v1/events/rotation`，服务端缓存 5 分钟，并把原始 mode 名称映射为站内 `modeId`。
    - 调用官方 API 需要 `BRAWL_API_TOKEN`，且服务器出口 IP 必须在 Supercell 开发者后台白名单中。
 4. **首页数据获取**：`ModeSection` 和 `MapSection` 在客户端请求上述 API，渲染实时轮换与地图列表。
-5. **用户与收藏**：`AuthProvider` 包裹全局提供 JWT 会话。地图收藏：`MapSection` 未登录时使用 `localStorage` 收藏，登录后同步到 `/api/user/favorites` 并持久化到 SQLite；`/favorites` 页面展示收藏并基于模式分布推荐同模式地图。英雄收藏：英雄详情页与首页英雄板块均提供收藏按钮；`/heroes/favorites` 页面展示收藏并基于英雄职位（role）推荐相似英雄。表情收藏：`/profile/settings` 可对英雄表情（pins）点心形收藏，建立"我的表情库"，并从中选择头像。浏览历史：查看地图弹窗、英雄详情页、模式详情页时通过 `useRecordView` 记录到 `ViewHistory`；`/profile` 个人中心展示最近浏览。资料设置：`/profile/settings` 可修改昵称并选择表情头像；更新后通过 `update()` 刷新会话。分享卡片：`/profile/card` 聚合地图/英雄收藏数、最近浏览、最爱职位等数据，使用 `html2canvas` 生成可保存分享的名片图片。
+5. **用户与收藏**：`AuthProvider` 包裹全局提供 JWT 会话。地图收藏：`MapSection` 未登录时使用 `localStorage` 收藏，登录后同步到 `/api/user/favorites` 并持久化到数据库；`/favorites` 页面展示收藏并基于模式分布推荐同模式地图。英雄收藏：英雄详情页与首页英雄板块均提供收藏按钮；`/heroes/favorites` 页面展示收藏并基于英雄职位（role）推荐相似英雄。表情收藏：`/profile/settings` 可对英雄表情（pins）点心形收藏，建立"我的表情库"，并从中选择头像。浏览历史：查看地图弹窗、英雄详情页、模式详情页时通过 `useRecordView` 记录到 `ViewHistory`；`/profile` 个人中心展示最近浏览。资料设置：`/profile/settings` 可修改昵称并选择表情头像；更新后通过 `update()` 刷新会话。分享卡片：`/profile/card` 聚合地图/英雄收藏数、最近浏览、最爱职位等数据，使用 `html2canvas` 生成可保存分享的名片图片。
 6. **详情页**：直接读取 `lib/data/heroDetails.ts`（V2）中的静态记录，无额外请求。页面已按 Brawl Insights Stats 页风格拆分为属性、普攻&大招、随身妙具、星辉之力、极限充能、随身秒具、皮肤、表情&芭菲、模式/地图表现等可折叠区块。
 
 ---
@@ -238,8 +238,8 @@ npm run lint          # 运行 ESLint
    - 用户系统新增 `DATABASE_URL`、`AUTH_SECRET`，参考 `.env.local.example` 进行配置。
    - `AUTH_SECRET` 生产环境请使用 `npx auth secret` 生成随机密钥。
 3. **数据库**：
-   - 当前使用 SQLite 文件数据库（`prisma/dev.db`），适合本地开发与低流量场景。
-   - 部署到 Vercel 等 Serverless 平台时，文件系统通常只读，需要迁移到 PostgreSQL（如 Vercel Postgres / Neon）并更新 `prisma/schema.prisma`、`prisma.config.ts`、`lib/prisma.ts`。
+   - 本地开发使用 SQLite 文件数据库（`prisma/dev.db`），适合低流量场景。
+   - 部署到 Vercel 等 Serverless 平台时，文件系统通常只读，已迁移到 PostgreSQL（当前使用 Neon + `pg` + `@prisma/adapter-pg`）。相关文件：`prisma/schema.prisma`（`provider = "postgresql"`）、`prisma.config.ts`、`lib/prisma.ts`、`package.json`（`build` 脚本中先执行 `prisma generate`）。
    - 迁移命令：`npx prisma migrate dev`（开发） / `npx prisma migrate deploy`（生产）。
 4. **部署**:
    - 默认输出为 Next.js SSR/ISR，可直接部署到 Vercel。

@@ -362,6 +362,7 @@ export type FavoriteMapCreateOrConnectWithoutUserInput = {
 
 export type FavoriteMapCreateManyUserInputEnvelope = {
   data: Prisma.FavoriteMapCreateManyUserInput | Prisma.FavoriteMapCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type FavoriteMapUpsertWithWhereUniqueWithoutUserInput = {
@@ -1130,6 +1131,7 @@ export type FavoriteMapCreateManyArgs<ExtArgs extends runtime.Types.Extensions.I
    * The data used to create many FavoriteMaps.
    */
   data: Prisma.FavoriteMapCreateManyInput | Prisma.FavoriteMapCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1148,6 +1150,7 @@ export type FavoriteMapCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Ext
    * The data used to create many FavoriteMaps.
    */
   data: Prisma.FavoriteMapCreateManyInput | Prisma.FavoriteMapCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */

@@ -362,6 +362,7 @@ export type FollowedPlayerCreateOrConnectWithoutUserInput = {
 
 export type FollowedPlayerCreateManyUserInputEnvelope = {
   data: Prisma.FollowedPlayerCreateManyUserInput | Prisma.FollowedPlayerCreateManyUserInput[]
+  skipDuplicates?: boolean
 }
 
 export type FollowedPlayerUpsertWithWhereUniqueWithoutUserInput = {
@@ -1130,6 +1131,7 @@ export type FollowedPlayerCreateManyArgs<ExtArgs extends runtime.Types.Extension
    * The data used to create many FollowedPlayers.
    */
   data: Prisma.FollowedPlayerCreateManyInput | Prisma.FollowedPlayerCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1148,6 +1150,7 @@ export type FollowedPlayerCreateManyAndReturnArgs<ExtArgs extends runtime.Types.
    * The data used to create many FollowedPlayers.
    */
   data: Prisma.FollowedPlayerCreateManyInput | Prisma.FollowedPlayerCreateManyInput[]
+  skipDuplicates?: boolean
   /**
    * Choose, which related nodes to fetch as well
    */
