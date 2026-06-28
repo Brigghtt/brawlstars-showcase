@@ -43,7 +43,7 @@ export default function EventsPage() {
   const regions: RegionFilter[] = ['全部', '欧洲', '东亚', '大陆', '北美', '南美'];
   const subs: SubFilter[] = ['全部', '小组赛', '淘汰赛'];
   const rounds: RoundFilter[] = ['全部', '八强赛', '半决赛', '总决赛'];
-  const months: MonthFilter[] = ['全部', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06'];
+  const months: MonthFilter[] = ['全部', '2025-05', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08'];
 
   const filtered = useMemo(() => {
     return tournaments.filter(t => {

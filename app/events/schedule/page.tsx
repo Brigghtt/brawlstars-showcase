@@ -12,7 +12,7 @@ type CategoryFilter = TournamentCategory | '全部';
 type RegionFilter = TournamentRegion | '全部';
 
 const MONTHS = [
-  '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06',
+  '2025-05', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08',
 ];
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; border: string; glow: string }> = {
