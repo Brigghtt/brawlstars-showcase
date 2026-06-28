@@ -52,6 +52,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     jwt({ token, user, trigger, session }) {
       if (user) {
         token.id = user.id;
+        token.nickname = user.nickname;
+        token.avatarUrl = user.avatarUrl;
       }
       // 当调用 useSession().update() 刷新资料时同步 token
       if (trigger === 'update' && session && typeof session === 'object') {
