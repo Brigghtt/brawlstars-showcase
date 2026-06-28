@@ -2161,7 +2161,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "阿渤",
     "enName": "Bo",
     "slug": "bo",
-    "role": "输出",
+    "role": "控场",
     "class": "Controller",
     "rarity": {
       "name": "史诗",
@@ -8562,7 +8562,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "查克",
     "enName": "Chuck",
     "slug": "chuck",
-    "role": "输出",
+    "role": "控场",
     "class": "Damage Dealer",
     "rarity": {
       "name": "神话",
@@ -10401,7 +10401,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "谜宝",
     "enName": "Meeple",
     "slug": "meeple",
-    "role": "输出",
+    "role": "控场",
     "class": "Unknown",
     "rarity": {
       "name": "史诗",
@@ -10517,7 +10517,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "奥利",
     "enName": "Ollie",
     "slug": "ollie",
-    "role": "输出",
+    "role": "坦克",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -10748,7 +10748,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "芬克斯",
     "enName": "Finx",
     "slug": "finx",
-    "role": "输出",
+    "role": "控场",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -10967,7 +10967,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "风姬",
     "enName": "Kaze",
     "slug": "kaze",
-    "role": "输出",
+    "role": "刺客",
     "class": "Unknown",
     "rarity": {
       "name": "Ultra Legendary",
@@ -11172,10 +11172,10 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
   "95": {
     "id": "95",
     "apiId": 16000096,
-    "name": "查克",
+    "name": "桩",
     "enName": "Trunk",
     "slug": "trunk",
-    "role": "输出",
+    "role": "坦克",
     "class": "Unknown",
     "rarity": {
       "name": "史诗",
@@ -11383,7 +11383,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "兹奇",
     "enName": "Ziggy",
     "slug": "ziggy",
-    "role": "输出",
+    "role": "控场",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -11487,7 +11487,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "皮尔斯",
     "enName": "Pierce",
     "slug": "pierce",
-    "role": "输出",
+    "role": "射手",
     "class": "Unknown",
     "rarity": {
       "name": "传奇",
@@ -11591,7 +11591,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "琪琪",
     "enName": "Gigi",
     "slug": "gigi",
-    "role": "输出",
+    "role": "刺客",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -11695,7 +11695,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "西里乌斯",
     "enName": "Sirius",
     "slug": "sirius",
-    "role": "输出",
+    "role": "控场",
     "class": "Unknown",
     "rarity": {
       "name": "Ultra Legendary",
@@ -11903,7 +11903,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "达米安",
     "enName": "Damian",
     "slug": "damian",
-    "role": "输出",
+    "role": "坦克",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
@@ -12007,7 +12007,7 @@ export const heroDetailsData: Record<string, HeroDetailV2> = {
     "name": "丝塔诺娃",
     "enName": "Starr Nova",
     "slug": "starr-nova",
-    "role": "输出",
+    "role": "刺客",
     "class": "Unknown",
     "rarity": {
       "name": "神话",
