@@ -9,6 +9,7 @@ type RegionFilter = TournamentRegion | '全部';
 type SubFilter = '全部' | '小组赛' | '淘汰赛';
 type RoundFilter = EliminationRound | '全部';
 type MonthFilter = string | '全部';
+type YearFilter = '全部' | '2025' | '2026';
 
 function TeamLogo({ src, alt, className }: { src?: string; alt: string; className?: string }) {
   const [error, setError] = useState(false);
@@ -31,6 +32,7 @@ export default function EventsPage() {
   const [sub, setSub] = useState<SubFilter>('全部');
   const [round, setRound] = useState<RoundFilter>('全部');
   const [month, setMonth] = useState<MonthFilter>('全部');
+  const [year, setYear] = useState<YearFilter>('全部');
 
   const categories: { key: CategoryFilter; label: string }[] = [
     { key: '全部', label: '全部' },
@@ -44,6 +46,7 @@ export default function EventsPage() {
   const subs: SubFilter[] = ['全部', '小组赛', '淘汰赛'];
   const rounds: RoundFilter[] = ['全部', '八强赛', '半决赛', '总决赛'];
   const months: MonthFilter[] = ['全部', '2025-05', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08'];
+  const years: YearFilter[] = ['全部', '2025', '2026'];
 
   const filtered = useMemo(() => {
     return tournaments.filter(t => {
@@ -52,14 +55,16 @@ export default function EventsPage() {
       if (sub !== '全部' && t.subCategory !== sub) return false;
       if (round !== '全部' && t.eliminationRound !== round) return false;
       if (month !== '全部' && !t.date.startsWith(month)) return false;
+      if (year !== '全部' && !t.date.startsWith(year)) return false;
       return true;
     });
-  }, [category, region, sub, round, month]);
+  }, [category, region, sub, round, month, year]);
 
   const showRegion = category === '月赛' || category === '全部';
   const showSub = category !== '全部';
   const showRound = sub === '淘汰赛' || (sub === '全部' && category !== '全部');
   const showMonth = category === '月赛' || category === '全部';
+  const showYear = category === '全部' || category === 'LCQ' || category === '全球总决赛' || category === 'brawlcup';
 
   const getCategoryColor = (c: string) => {
     const map: Record<string, string> = {
@@ -109,7 +114,7 @@ export default function EventsPage() {
             {categories.map(c => (
               <button
                 key={c.key}
-                onClick={() => { setCategory(c.key); setSub('全部'); setRound('全部'); setMonth('全部'); }}
+                onClick={() => { setCategory(c.key); setSub('全部'); setRound('全部'); setMonth('全部'); setYear('全部'); }}
                 className={`px-5 py-2 rounded-full font-bold transition-all duration-300 ${
                   category === c.key
                     ? 'bg-[#FFD500] text-[#1A3A8A] shadow-lg scale-105'
@@ -120,6 +125,26 @@ export default function EventsPage() {
               </button>
             ))}
           </div>
+
+          {/* 年份筛选（LCQ/全球总决赛/brawlcup/全部时显示） */}
+          {showYear && (
+            <div className="flex flex-wrap gap-3">
+              <span className="text-sm font-bold text-white/50 py-2">年份:</span>
+              {years.map(y => (
+                <button
+                  key={y}
+                  onClick={() => setYear(y)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-bold transition-all duration-300 ${
+                    year === y
+                      ? 'bg-white/25 text-white border border-white/30'
+                      : 'bg-white/5 text-white/60 hover:bg-white/10 border border-transparent'
+                  }`}
+                >
+                  {y}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* 月份筛选（月赛/全部时显示） */}
           {showMonth && (

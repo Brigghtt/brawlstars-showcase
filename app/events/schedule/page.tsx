@@ -10,6 +10,7 @@ import EventFavoriteButton from '@/components/esports/EventFavoriteButton';
 type StatusFilter = 'all' | 'upcoming' | 'ended';
 type CategoryFilter = TournamentCategory | '全部';
 type RegionFilter = TournamentRegion | '全部';
+type YearFilter = '全部' | '2025' | '2026';
 
 const MONTHS = [
   '2025-05', '2025-10', '2025-11', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08',
@@ -52,6 +53,7 @@ export default function SchedulePage() {
   const [category, setCategory] = useState<CategoryFilter>('全部');
   const [region, setRegion] = useState<RegionFilter>('全部');
   const [month, setMonth] = useState<string>('全部');
+  const [year, setYear] = useState<YearFilter>('全部');
   const [followedTeams, setFollowedTeams] = useState<string[]>([]);
   const [showOnlyFollowed, setShowOnlyFollowed] = useState(false);
 
@@ -76,13 +78,14 @@ export default function SchedulePage() {
       if (category !== '全部' && s.category !== category) return false;
       if (region !== '全部' && s.region !== region) return false;
       if (month !== '全部' && s.month !== month) return false;
+      if (year !== '全部' && !s.month.startsWith(year)) return false;
       if (showOnlyFollowed) {
         const teamIds = new Set(teams.filter(t => followedTeams.includes(t.id)).map(t => t.name));
         if (!teamIds.has(s.teamA) && !teamIds.has(s.teamB)) return false;
       }
       return true;
     });
-  }, [status, category, region, month, showOnlyFollowed, followedTeams]);
+  }, [status, category, region, month, year, showOnlyFollowed, followedTeams]);
 
   return (
     <main className="min-h-screen pt-28 pb-24">
@@ -136,7 +139,7 @@ export default function SchedulePage() {
                 key={c.key}
                 label={c.label}
                 active={category === c.key}
-                onClick={() => setCategory(c.key)}
+                onClick={() => { setCategory(c.key); setMonth('全部'); setYear('全部'); }}
                 size="sm"
               />
             ))}
@@ -155,6 +158,28 @@ export default function SchedulePage() {
               />
             ))}
           </div>
+
+          {/* 年份选择 */}
+          {(category === '全部' || category === 'LCQ' || category === '全球总决赛' || category === 'brawlcup') && (
+            <div className="pt-1 border-t border-white/[0.06]">
+              <span className="text-[10px] font-black text-[#FFD500]/60 uppercase tracking-[0.15em] mb-2.5 block">年份</span>
+              <div className="flex flex-wrap gap-1.5">
+                {(['全部', '2025', '2026'] as YearFilter[]).map(y => (
+                  <button
+                    key={y}
+                    onClick={() => setYear(y)}
+                    className={`px-3.5 py-2 rounded-xl text-xs font-bold font-mono transition-all duration-300 ${
+                      year === y
+                        ? 'bg-[#FFD500] text-[#1A3A8A] shadow-lg shadow-[#FFD500]/20 scale-105'
+                        : 'bg-white/[0.06] text-white/45 hover:bg-white/[0.12] hover:text-white/75 border border-white/[0.06] hover:border-white/[0.15]'
+                    }`}
+                  >
+                    {y}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* 月份选择 */}
           <div className="pt-1 border-t border-white/[0.06]">
